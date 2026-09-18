@@ -976,6 +976,21 @@ es:{
   }
   function t(k){ var d = I18N[lang()] || I18N.en; return d[k] || I18N.en[k] || ""; }
 
+  /* Kaynak etiketi: hangi gönderi/kanal getirdi (sezonoleague.com/?src=x_launch).
+     Ziyaretçi sayfa içinde dolaştıkça kaybolmasın diye oturum belleğinde tutulur;
+     BE `^[a-z0-9_-]{1,24}$` dışını zaten reddediyor, burada da aynı süzgeç var. */
+  function src(){
+    var key = "sezono.src";
+    var q = new URLSearchParams(location.search);
+    var raw = q.get("src") || q.get("utm_source") || "";
+    var clean = String(raw).trim().toLowerCase().replace(/[^a-z0-9_-]/g, "").slice(0, 24);
+    try {
+      if (clean) sessionStorage.setItem(key, clean);
+      else clean = sessionStorage.getItem(key) || "";
+    } catch (e) {}
+    return clean || "site";
+  }
+
   /* geri sayım */
   var d = document.getElementById("cd-d"), h = document.getElementById("cd-h"),
       m = document.getElementById("cd-m"), s = document.getElementById("cd-s");
@@ -1015,7 +1030,7 @@ es:{
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        email: email, lang: lang(), source: "site",
+        email: email, lang: lang(), source: src(),
         wantsTest: wantsTest,
         platform: wantsTest && picked ? picked.value : null
       })
