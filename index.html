@@ -235,6 +235,39 @@ footer a:hover{color:var(--cream)}
   .btn{transition:none}
   .scrollcue .arrow{animation:none}
 }
+
+/* ── lansman: geri sayım + bekleme listesi (2026-09-19) ── */
+.kick{font:600 13px/1 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin:22px 0 0}
+.cdown{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:14px 0 0}
+.cdown div{min-width:74px;background:rgba(5,11,43,.55);border:1px solid rgba(159,178,232,.28);border-radius:10px;padding:10px 8px}
+.cdown b{display:block;font:400 30px/1 var(--display);color:var(--cream);font-variant-numeric:tabular-nums}
+.cdown span{display:block;font:500 10px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--t3);margin-top:6px}
+.signup{margin:26px auto 0;max-width:430px}
+.signup .row{display:flex;gap:8px;flex-wrap:wrap}
+.signup input{flex:1 1 210px;min-width:0;font:400 15px/1.2 var(--body);color:var(--cream);background:rgba(255,255,255,.06);
+  border:1px solid rgba(159,178,232,.32);border-radius:10px;padding:13px 14px}
+.signup input::placeholder{color:var(--t3)}
+.signup input:focus-visible{outline:2px solid var(--gold);outline-offset:1px}
+.signup button{flex:0 0 auto}
+.signup button[disabled]{opacity:.6;cursor:progress}
+.tester{display:flex;align-items:flex-start;gap:9px;margin:14px 0 0;text-align:left;cursor:pointer;
+  font:400 13.5px/1.45 var(--body);color:var(--t2)}
+.tester input{flex:none;width:17px;height:17px;margin:1px 0 0;accent-color:var(--gold);cursor:pointer}
+.plat{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;margin:10px 0 0;padding-left:26px;text-align:left;
+  font:400 12.5px/1.4 var(--body);color:var(--t3)}
+.plat label{display:inline-flex;align-items:center;gap:6px;color:var(--t2);cursor:pointer}
+.plat input{accent-color:var(--gold);cursor:pointer}
+.sig-msg{min-height:20px;margin:10px 0 0;font:500 13px/1.4 var(--body);color:var(--gold)}
+.sig-msg.bad{color:#FF9DA8}
+.sig-note{margin:6px 0 0;font:400 12px/1.5 var(--body);color:var(--t3)}
+.sig-note a{color:var(--t2);text-decoration:underline}
+/* satır içi span'a genişlik işlemiyordu: kapanış bölümündeki işaret canlıda da
+   0 px genişlikle çiziliyordu (2026-09-19 ölçümü) */
+.final .mark{display:block}
+.final .cta{margin-top:26px}
+.btn.is-soon{cursor:default;opacity:.62;border-style:dashed}
+.btn.is-soon em{font-style:normal;letter-spacing:.1em;text-transform:uppercase;font-size:11px;color:var(--gold)}
+@media(max-width:520px){.cdown div{min-width:66px}.cdown b{font-size:25px}}
 </style>
 
 <header class="nav">
@@ -285,8 +318,8 @@ footer a:hover{color:var(--cream)}
       <h1 data-i18n-html="hero.h1"></h1>
       <p class="lead" data-i18n="hero.lead"></p>
       <div class="cta">
-        <a class="btn btn-gold" href="#download"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4 12.6c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.3-.9-1.7 0-3.3 1-4.2 2.5-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8s2 .8 3.3.8c1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9-.1 0-2.7-1-2.7-4zM13.9 5c.7-.8 1.2-2 1-3.1-1 0-2.2.7-2.9 1.5-.6.7-1.2 1.9-1 3 1.1.1 2.2-.6 2.9-1.4z"/></svg>App Store</a>
-        <a class="btn btn-ghost" href="#download"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 2.4 13 12l-9.4 9.6c-.4-.2-.6-.7-.6-1.2V3.6c0-.5.2-1 .6-1.2zM14.4 13.4l2.7 2.7-10.7 6.1c-.6.3-1.2.3-1.7.1l9.7-8.9zM14.4 10.6 4.7 1.7c.5-.2 1.1-.2 1.7.1l10.7 6.1-2.7 2.7zM18.3 9l3 1.7c1 .6 1 1.9 0 2.5l-3 1.8-3-3 3-3z"/></svg>Google Play</a>
+        <a class="btn btn-gold" href="#download" data-i18n="hero.cta"></a>
+        <a class="btn btn-ghost" href="#story" data-i18n="hero.cta2"></a>
       </div>
       <p class="note" data-i18n="hero.note"></p>
     </div>
@@ -483,9 +516,34 @@ footer a:hover{color:var(--cream)}
     <span class="mark" aria-hidden="true"></span>
     <span class="lock lock-xl" style="font-size:clamp(38px,6vw,68px)" aria-hidden="true"><span class="l1">SE<i>Z</i>ONO</span><span class="l2">LEA<i>G</i>UE</span></span>
     <p class="lead" data-i18n="final.lead"></p>
+    <p class="kick" data-i18n="launch.when"></p>
+    <div class="cdown" id="cdown">
+      <div><b id="cd-d">–</b><span data-i18n="cd.d"></span></div>
+      <div><b id="cd-h">–</b><span data-i18n="cd.h"></span></div>
+      <div><b id="cd-m">–</b><span data-i18n="cd.m"></span></div>
+      <div><b id="cd-s">–</b><span data-i18n="cd.s"></span></div>
+    </div>
+
+    <form class="signup" id="signup" novalidate>
+      <div class="row">
+        <input id="wl-email" name="email" type="email" inputmode="email" autocomplete="email"
+               spellcheck="false" required data-i18n-ph="wl.ph" aria-describedby="wl-msg">
+        <button class="btn btn-gold" type="submit" data-i18n="wl.cta"></button>
+      </div>
+      <label class="tester"><input type="checkbox" id="wl-test"><span data-i18n="wl.test"></span></label>
+      <div class="plat" id="wl-plat" hidden>
+        <span data-i18n="wl.plat"></span>
+        <label><input type="radio" name="plat" value="ios"><span>iPhone</span></label>
+        <label><input type="radio" name="plat" value="android"><span>Android</span></label>
+        <label><input type="radio" name="plat" value="both" checked><span data-i18n="wl.both"></span></label>
+      </div>
+      <p class="sig-msg" id="wl-msg" role="status" aria-live="polite"></p>
+      <p class="sig-note" data-i18n-html="wl.note"></p>
+    </form>
+
     <div class="cta">
-      <a class="btn btn-gold" href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4 12.6c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.3-.9-1.7 0-3.3 1-4.2 2.5-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8s2 .8 3.3.8c1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9-.1 0-2.7-1-2.7-4zM13.9 5c.7-.8 1.2-2 1-3.1-1 0-2.2.7-2.9 1.5-.6.7-1.2 1.9-1 3 1.1.1 2.2-.6 2.9-1.4z"/></svg>App Store</a>
-      <a class="btn btn-ghost" href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 2.4 13 12l-9.4 9.6c-.4-.2-.6-.7-.6-1.2V3.6c0-.5.2-1 .6-1.2zM14.4 13.4l2.7 2.7-10.7 6.1c-.6.3-1.2.3-1.7.1l9.7-8.9zM14.4 10.6 4.7 1.7c.5-.2 1.1-.2 1.7.1l10.7 6.1-2.7 2.7zM18.3 9l3 1.7c1 .6 1 1.9 0 2.5l-3 1.8-3-3 3-3z"/></svg>Google Play</a>
+      <span class="btn btn-ghost is-soon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4 12.6c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.3-.9-1.7 0-3.3 1-4.2 2.5-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8s2 .8 3.3.8c1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9-.1 0-2.7-1-2.7-4zM13.9 5c.7-.8 1.2-2 1-3.1-1 0-2.2.7-2.9 1.5-.6.7-1.2 1.9-1 3 1.1.1 2.2-.6 2.9-1.4z"/></svg>App Store · <em data-i18n="soon"></em></span>
+      <span class="btn btn-ghost is-soon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 2.4 13 12l-9.4 9.6c-.4-.2-.6-.7-.6-1.2V3.6c0-.5.2-1 .6-1.2zM14.4 13.4l2.7 2.7-10.7 6.1c-.6.3-1.2.3-1.7.1l9.7-8.9zM14.4 10.6 4.7 1.7c.5-.2 1.1-.2 1.7.1l10.7 6.1-2.7 2.7zM18.3 9l3 1.7c1 .6 1 1.9 0 2.5l-3 1.8-3-3 3-3z"/></svg>Google Play · <em data-i18n="soon"></em></span>
     </div>
     <p class="note" data-i18n="final.note"></p>
   </div>
@@ -495,10 +553,8 @@ footer a:hover{color:var(--cream)}
   <div class="wrap">
     <span>© 2026 SEZONO · sezonoleague.com</span>
     <div class="links">
-      <a href="#" data-i18n="ft.privacy"></a>
-      <a href="#" data-i18n="ft.terms"></a>
-      <a href="#" data-i18n="ft.delete"></a>
-      <a href="#" data-i18n="ft.support"></a>
+      <a href="https://gfbiskender85.github.io/sezono-legal/privacy" target="_blank" rel="noopener" data-i18n="ft.privacy"></a>
+      <a href="mailto:gfbiskender85@gmail.com" data-i18n="ft.support"></a>
     </div>
   </div>
 </footer>
@@ -589,6 +645,26 @@ en:{
  "ft.privacy":"Privacy",
  "ft.terms":"Terms",
  "ft.delete":"Delete account",
+ "nav.cta":"Get notified",
+ "hero.cta":"Get notified",
+ "hero.cta2":"See how it plays",
+ "launch.when":"Season 1 kicks off Sunday 18 October, 21:00",
+ "cd.d":"days",
+ "cd.h":"hours",
+ "cd.m":"min",
+ "cd.s":"sec",
+ "wl.ph":"your@email.com",
+ "wl.cta":"Notify me",
+ "wl.note":"One email when the season opens. Nothing else, ever. <a href=\"https://gfbiskender85.github.io/sezono-legal/privacy\" target=\"_blank\" rel=\"noopener\">Privacy</a>",
+ "wl.ok":"You are on the list. See you on 18 October.",
+ "wl.bad":"That address does not look right.",
+ "wl.err":"Could not save it. Please try again in a moment.",
+ "wl.wait":"Sending…",
+ "soon":"Coming soon",
+ "wl.test":"I also want to join the closed test, before launch.",
+ "wl.plat":"On:",
+ "wl.both":"Either",
+ "wl.oktest":"You are on the list and on the test squad. The invite comes by email.",
  "ft.support":"Support"
 },
 tr:{
@@ -675,6 +751,26 @@ tr:{
  "ft.privacy":"Gizlilik",
  "ft.terms":"Kullanım koşulları",
  "ft.delete":"Hesap silme",
+ "nav.cta":"Haber ver",
+ "hero.cta":"Haber ver",
+ "hero.cta2":"Nasıl oynanıyor",
+ "launch.when":"1. Sezon 18 Ekim Pazar, 21:00'de başlıyor",
+ "cd.d":"gün",
+ "cd.h":"saat",
+ "cd.m":"dk",
+ "cd.s":"sn",
+ "wl.ph":"eposta@adresin.com",
+ "wl.cta":"Haber ver",
+ "wl.note":"Sezon açıldığında tek e-posta. Başka hiçbir şey. <a href=\"https://gfbiskender85.github.io/sezono-legal/privacy\" target=\"_blank\" rel=\"noopener\">Gizlilik</a>",
+ "wl.ok":"Listedesin. 18 Ekim'de görüşürüz.",
+ "wl.bad":"Bu adres doğru görünmüyor.",
+ "wl.err":"Kaydedilemedi. Birazdan tekrar dene.",
+ "wl.wait":"Gönderiliyor…",
+ "soon":"Çok yakında",
+ "wl.test":"Lansmandan önce kapalı teste de girmek istiyorum.",
+ "wl.plat":"Cihaz:",
+ "wl.both":"Fark etmez",
+ "wl.oktest":"Listedesin, test kadrosundasın. Davet e-postayla gelecek.",
  "ft.support":"Destek"
 },
 es:{
@@ -761,6 +857,26 @@ es:{
  "ft.privacy":"Privacidad",
  "ft.terms":"Términos",
  "ft.delete":"Eliminar cuenta",
+ "nav.cta":"Avísame",
+ "hero.cta":"Avísame",
+ "hero.cta2":"Mira cómo se juega",
+ "launch.when":"La Temporada 1 arranca el domingo 18 de octubre, 21:00",
+ "cd.d":"días",
+ "cd.h":"horas",
+ "cd.m":"min",
+ "cd.s":"seg",
+ "wl.ph":"tu@correo.com",
+ "wl.cta":"Avísame",
+ "wl.note":"Un correo cuando abra la temporada. Nada más. <a href=\"https://gfbiskender85.github.io/sezono-legal/privacy\" target=\"_blank\" rel=\"noopener\">Privacidad</a>",
+ "wl.ok":"Estás en la lista. Nos vemos el 18 de octubre.",
+ "wl.bad":"Esa dirección no parece correcta.",
+ "wl.err":"No se pudo guardar. Inténtalo de nuevo en un momento.",
+ "wl.wait":"Enviando…",
+ "soon":"Muy pronto",
+ "wl.test":"También quiero entrar en la prueba cerrada, antes del lanzamiento.",
+ "wl.plat":"En:",
+ "wl.both":"Cualquiera",
+ "wl.oktest":"Estás en la lista y en el equipo de pruebas. La invitación llega por correo.",
  "ft.support":"Soporte"
 }
 };
@@ -781,6 +897,9 @@ es:{
     });
     document.querySelectorAll("[data-i18n-html]").forEach(function(el){
       var v=dict[el.getAttribute("data-i18n-html")]; if(v!=null) el.innerHTML=v;
+    });
+    document.querySelectorAll("[data-i18n-ph]").forEach(function(el){
+      var v=dict[el.getAttribute("data-i18n-ph")]; if(v!=null) el.setAttribute("placeholder",v);
     });
     document.documentElement.lang=lang;
     label.textContent=names[lang]||names[DEFAULT];
@@ -840,5 +959,76 @@ es:{
 })();
 </script>
 
+
+<script>
+/* Lansman (2026-09-19): geri sayım + bekleme listesi.
+   Sözlük ve dil seçimi yukarıdaki I18N/`sezono.lang` ile aynı kaynaktan okunur. */
+(function(){
+  var API = "https://futbol-tycoon-api-production.up.railway.app/api/waitlist";
+  var LAUNCH = new Date("2026-10-18T21:00:00+03:00");
+  function lang(){
+    try { var l = localStorage.getItem("sezono.lang"); if (l && I18N[l]) return l; } catch(e){}
+    return document.documentElement.lang && I18N[document.documentElement.lang] ? document.documentElement.lang : "en";
+  }
+  function t(k){ var d = I18N[lang()] || I18N.en; return d[k] || I18N.en[k] || ""; }
+
+  /* geri sayım */
+  var d = document.getElementById("cd-d"), h = document.getElementById("cd-h"),
+      m = document.getElementById("cd-m"), s = document.getElementById("cd-s");
+  function two(n){ return (n < 10 ? "0" : "") + n; }
+  function tick(){
+    if (!d) return;
+    var ms = LAUNCH - new Date();
+    if (ms < 0) ms = 0;
+    var x = Math.floor(ms / 1000);
+    var dd = Math.floor(x / 86400); x -= dd * 86400;
+    var hh = Math.floor(x / 3600);  x -= hh * 3600;
+    var mm = Math.floor(x / 60);
+    d.textContent = dd; h.textContent = two(hh); m.textContent = two(mm); s.textContent = two(x - mm * 60);
+  }
+  tick(); setInterval(tick, 1000);
+
+  /* bekleme listesi */
+  var form = document.getElementById("signup");
+  if (!form) return;
+  var input = document.getElementById("wl-email"), msg = document.getElementById("wl-msg");
+  /* testçi kutusu: işaretlenince cihaz seçimi açılır (kapalı testte davet yolu ayrışıyor) */
+  var test = document.getElementById("wl-test"), plat = document.getElementById("wl-plat");
+  if (test && plat) test.addEventListener("change", function(){ plat.hidden = !test.checked; });
+  var btn = form.querySelector("button[type=submit]"), sent = false;
+  function say(text, bad){ msg.textContent = text; msg.className = "sig-msg" + (bad ? " bad" : ""); }
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+    if (sent) return;
+    var email = (input.value || "").trim();
+    if (email.length < 6 || email.indexOf("@") < 1 || email.indexOf(".", email.indexOf("@")) < 0){
+      say(t("wl.bad"), true); input.focus(); return;
+    }
+    btn.disabled = true; say(t("wl.wait"), false);
+    var wantsTest = !!(test && test.checked);
+    var picked = form.querySelector("input[name=plat]:checked");
+    fetch(API, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        email: email, lang: lang(), source: "site",
+        wantsTest: wantsTest,
+        platform: wantsTest && picked ? picked.value : null
+      })
+    }).then(function(r){ return r.json().catch(function(){ return null; }).then(function(j){ return { ok: r.ok, j: j }; }); })
+      .then(function(r){
+        if (r.ok && r.j && r.j.success){
+          sent = true; say(t(wantsTest ? "wl.oktest" : "wl.ok"), false);
+          input.disabled = true; btn.disabled = true;
+        } else {
+          var code = r.j && r.j.error && r.j.error.code;
+          say(code === "INVALID_EMAIL" ? t("wl.bad") : t("wl.err"), true);
+          btn.disabled = false;
+        }
+      })
+      .catch(function(){ say(t("wl.err"), true); btn.disabled = false; });
+  });
+})();
+</script>
 </body>
 </html>
