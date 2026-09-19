@@ -66,6 +66,16 @@ p{margin:0}
 .lock{display:inline-grid;justify-items:start;font-family:var(--display);font-weight:700;text-transform:uppercase;line-height:.92;letter-spacing:.14em;color:var(--white)}
 .lock>span{display:block;white-space:nowrap}
 .lock .l2{color:var(--gold)}
+/* ── Marka kilidi GÖRSEL (2026-09-19) ────────────────────────────────────────
+   Kilit canlı metinken tarayıcının otomatik çevirisi ona dokunuyordu: Google
+   Çeviri "LEA"+"G"+"UE" parçalarını ayrı ayrı çevirip "UE"→"AB" yaptı ve marka
+   sahada "LEAGAB" diye okundu (İskender'in ekran görüntüsü). Marka işareti artık
+   yola çevrilmiş SVG — çeviri, font yüklenmesi ve tarayıcı farkı ona dokunamaz. */
+.lock-img{display:block;height:auto}
+.lock-img.sm{width:132px}
+.lock-img.xl{width:min(72vw,300px)}
+.lock-img.final{width:min(78vw,330px);margin-inline:auto}
+
 .lock i{font-style:normal;font-family:var(--accent);font-weight:400;display:inline-block;font-size:.816em;line-height:1;vertical-align:baseline;margin:0 .09em;transform:rotate(-7deg);transform-origin:50% 50%}
 .lock .l1 i{color:var(--gold)}
 .lock .l2 i{color:var(--white)}
@@ -278,7 +288,7 @@ footer a:hover{color:var(--cream)}
   <div class="wrap">
     <a class="brand" href="#top" aria-label="Sezono League">
       <span class="mark" aria-hidden="true"></span>
-      <span class="lock lock-sm" aria-hidden="true"><span class="l1">SE<i>Z</i>ONO</span><span class="l2">LEA<i>G</i>UE</span></span>
+      <img class="lock-img sm" src="/img/wordmark.svg" alt="SEZONO League" width="3557" height="1500">
     </a>
     <nav class="navlinks">
       <a href="#story" data-i18n="nav.story"></a>
@@ -329,7 +339,7 @@ footer a:hover{color:var(--cream)}
     </div>
     <div class="fig">
       <span class="mark" role="img" aria-label="SEZONO"></span>
-      <span class="lock lock-xl" aria-hidden="true"><span class="l1">SE<i>Z</i>ONO</span><span class="l2">LEA<i>G</i>UE</span></span>
+      <img class="lock-img xl" src="/img/wordmark.svg" alt="SEZONO League" width="3557" height="1500">
     </div>
   </div>
   <div class="wrap">
@@ -518,7 +528,7 @@ footer a:hover{color:var(--cream)}
 <section class="final" id="download">
   <div class="wrap">
     <span class="mark" aria-hidden="true"></span>
-    <span class="lock lock-xl" style="font-size:clamp(38px,6vw,68px)" aria-hidden="true"><span class="l1">SE<i>Z</i>ONO</span><span class="l2">LEA<i>G</i>UE</span></span>
+    <img class="lock-img final" src="/img/wordmark.svg" alt="SEZONO League" width="3557" height="1500">
     <p class="lead" data-i18n="final.lead"></p>
     <p class="kick" data-i18n="launch.when"></p>
     <div class="cdown" id="cdown">
