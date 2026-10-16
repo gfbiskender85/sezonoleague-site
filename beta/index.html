@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <!-- `flutter build web --base-href` değeri buraya yazılır. -->
+  <base href="/beta/">
+  <meta name="robots" content="noindex, nofollow">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gerçekçi futbol menajerliği oyunu.">
+  <meta name="theme-color" content="#091344">
+
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="SEZONO">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>SEZONO</title>
+  <link rel="manifest" href="manifest.json">
+
+  <style>
+    /* Tek renk: #091344 = tarayıcı çubuğu = manifest = ikon zemini (2026-10-16). */
+    html, body { margin: 0; height: 100%; background: #091344; }
+    #sezono-splash {
+      position: fixed; inset: 0; display: flex; flex-direction: column;
+      align-items: center; justify-content: center; background: #091344;
+      z-index: 1; transition: opacity .4s ease;
+    }
+    #sezono-splash .kilit { display: flex; align-items: center; gap: 14px; }
+    #sezono-splash img { width: 52px; height: 52px; display: block; }
+    #sezono-splash .yazi {
+      font: 400 23px/1.15 Anton, Impact, "Arial Narrow", system-ui, sans-serif;
+      letter-spacing: .06em; text-transform: uppercase;
+    }
+    #sezono-splash .yazi b { font-weight: 400; }
+    #sezono-splash .s1 { color: #fff; } #sezono-splash .s1 b { color: #EFC987; }
+    #sezono-splash .s2 { color: #EFC987; } #sezono-splash .s2 b { color: #fff; }
+    #sezono-splash .cizgi {
+      width: 148px; height: 2px; margin-top: 26px; border-radius: 1px;
+      background: rgba(25, 211, 197, .16); overflow: hidden;
+    }
+    #sezono-splash .cizgi i {
+      display: block; height: 100%; background: #19D3C5;
+      transform: scaleX(0); transform-origin: left; transition: transform .25s ease;
+    }
+  </style>
+</head>
+<body>
+  <div id="sezono-splash">
+    <div class="kilit">
+      <img src="assets/assets/brand/sezono_mark.png" alt="">
+      <div class="yazi">
+        <div class="s1">SE<b>Z</b>ONO</div>
+        <div class="s2">LEA<b>G</b>UE</div>
+      </div>
+    </div>
+    <div class="cizgi"><i id="sezono-cizgi"></i></div>
+  </div>
+  <script>
+    // Yükleme: çizgi GERÇEK indirmeye bağlı (yazı/yüzde yok). Oyun kodu akış
+    // olarak okunur (tarayıcı önbelleğine girer, Flutter aynı dosyayı oradan alır);
+    // boy bilinmiyorsa çizgi yaklaşık ilerler. Flutter ilk kareyi çizince kilit
+    // kalkar; çizmezse 10 sn sonra yine kalkar (güvenli zaman aşımı).
+    (function () {
+      var bar = document.getElementById('sezono-cizgi');
+      var p = 0;
+      function set(v) {
+        if (v > p) { p = Math.min(v, 1); if (bar) bar.style.transform = 'scaleX(' + p + ')'; }
+      }
+      function kaldir() {
+        var s = document.getElementById('sezono-splash');
+        if (!s) return;
+        set(1);
+        s.style.opacity = '0';
+        setTimeout(function () { if (s.parentNode) s.remove(); }, 450);
+      }
+      window.addEventListener('flutter-first-frame', kaldir);
+      setTimeout(kaldir, 10000);
+      try {
+        fetch('main.dart.js').then(function (r) {
+          var toplam = parseInt(r.headers.get('content-length') || '0', 10);
+          if (!r.body || !r.body.getReader) return;
+          var rd = r.body.getReader(), okunan = 0;
+          (function oku() {
+            rd.read().then(function (x) {
+              if (x.done) { set(0.92); return; }
+              okunan += x.value.length;
+              set(toplam > 0 ? Math.min(okunan / toplam, 1) * 0.92
+                             : 0.9 * (1 - Math.exp(-okunan / 2500000)));
+              oku();
+            });
+          })();
+        }).catch(function () {});
+      } catch (e) {}
+    })();
+  </script>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
