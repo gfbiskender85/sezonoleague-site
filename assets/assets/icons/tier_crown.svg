@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 24" width="30" height="24">
+  <defs><linearGradient id="crownGold" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FFF8D6"/><stop offset=".46" stop-color="#FFD447"/><stop offset="1" stop-color="#E09A0B"/></linearGradient></defs>
+  <path d="M3 17 L1.5 5.5 L9 10 L15 1.5 L21 10 L28.5 5.5 L27 17 Z M3 19 L27 19 L27 22 L3 22 Z" fill="url(#crownGold)" stroke="#5A3300" stroke-width="1" stroke-linejoin="round"/>
+  <path d="M15 6 L12 11 L15 15 L18 11 Z" fill="#C0182F"/>
+  <path d="M5 15 L25 15" stroke="#FFF6D5" stroke-width=".65" opacity=".65"/>
+</svg>
