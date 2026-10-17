@@ -1,0 +1,15 @@
+<svg viewBox="0 0 876 947" xmlns="http://www.w3.org/2000/svg">
+  <!-- deneme arması — PNG ile aynı tasarım: siyah konturlu kalkan, lacivert/beyaz dikey şeritler -->
+  <defs>
+    <clipPath id="shield">
+      <path d="M438 28 C560 62 700 84 828 74 C846 300 838 520 770 668 C702 812 580 890 438 922 C296 890 174 812 106 668 C38 520 30 300 48 74 C176 84 316 62 438 28 Z"/>
+    </clipPath>
+  </defs>
+  <path d="M438 6 C566 42 712 64 848 52 C870 292 862 532 790 688 C716 844 584 916 438 946 C292 916 160 844 86 688 C14 532 6 292 28 52 C164 64 310 42 438 6 Z" fill="#0f1116"/>
+  <g clip-path="url(#shield)">
+    <rect x="30" y="20" width="820" height="910" fill="#f1f0f6"/>
+    <rect x="146" y="20" width="118" height="910" fill="#1d2340"/>
+    <rect x="380" y="20" width="118" height="910" fill="#1d2340"/>
+    <rect x="614" y="20" width="118" height="910" fill="#1d2340"/>
+  </g>
+</svg>

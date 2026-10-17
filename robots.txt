@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sezonoleague.com/sitemap.xml
