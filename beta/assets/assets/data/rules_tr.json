@@ -1,0 +1,1283 @@
+{
+ "_kunye": {
+  "kaynak": "BE getGameRules('tr') → GET /api/meta/rules zarfı (gfbiskender85/futbol-tycoon-api, src/constants/gameRules.ts)",
+  "komut": "npx tsx -e \"console.log(JSON.stringify({success:true,data:{lang:'tr',...require('./src/constants/gameRules').getGameRules('tr')}},null,1))\" > rules_tr.json",
+  "uretim": "2026-10-18",
+  "elleDuzenlenmez": true
+ },
+ "success": true,
+ "data": {
+  "lang": "tr",
+  "textLang": "tr",
+  "chapters": [
+   {
+    "id": "baslangic",
+    "no": 1,
+    "title": "Başlangıç",
+    "updated": "2026-10-18",
+    "sections": [
+     {
+      "id": "sezono-nedir",
+      "title": "SEZONO nedir",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "SEZONO'da yaşayan bir futbol kulübünün tam yetkili menajerisin. Kadroyu kurar, antrenman sahasında oyuncuları geliştirir, takımı maça hazırlar, transfer masasında pazarlık yürütür ve kulübün kasasını idare edersin. Sahada karşılaştığın rakiplerin bir kısmı senin gibi gerçek menajerler, bir kısmı ise oyunun kendi futbol aklıyla yönetilen kulüplerdir."
+       }
+      ]
+     },
+     {
+      "id": "kariyer-dongusu",
+      "title": "Kariyer döngüsü",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Menajerlik yolculuğun sana emanet edilen kulübün mevcut kadrosunu, mali tablosunu ve fikstürünü tanımakla başlar. Günlük akışta antrenman programını belirler, gözlemcilerini oyuncu ve rakip takibine gönderir, maç günü yaklaştığında dizilişini ve soyunma odası konuşmanı seçersin. Sezon ilerledikçe ligde üst sıraları ve kupa turlarını kovalar, transfer dönemlerinde kadronu güçlendirir, kazandığın başarılarla menajerlik puanını ve lisansını yükselterek daha prestijli kulüplerin kapısını açarsın."
+       }
+      ]
+     },
+     {
+      "id": "dunyani-secmek",
+      "title": "Dünyanı seçmek",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Oyun sezon dünyalarında oynanır. Her dünya kendi lig piramidi, kulüpleri, transfer pazarı ve takvimiyle bağımsız bir futbol evrenidir. Aynı anda yalnız tek bir kulübü yönetirsin; başka bir dünyada yeni bir takımın başına geçmek mevcut kulübünden ayrılmak anlamına gelir."
+       },
+       {
+        "kind": "p",
+        "text": "Bazı dünyalara adım atmak için belirli bir menajerlik geçmişi, lisans basamağı ya da şöhret gerekir. Bir dünyanın katılım koşullarını ve doluluk durumunu dünya seçicide ilgili dünyanın kartına dokunarak incelersin."
+       }
+      ]
+     },
+     {
+      "id": "ilk-kulubun",
+      "title": "İlk kulübün",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Kayıt olurken bir ülke seçersin ve o ülkenin lig piramidinde menajer bekleyen mütevazı bir kulüp sana emanet edilir. Her menajer kariyerine benzer ölçekte bir kulüple başlar; dev kulüplerin koltuğuna oturmanın yolu sahadaki sonuçlardan, sağlıklı bütçe yönetiminden ve kazanılan kupalardan geçer."
+       }
+      ]
+     },
+     {
+      "id": "takvim-nasil-akar",
+      "title": "Takvim nasıl akar",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "SEZONO gerçek zamanla akar. Takvim her gerçek günde sezon içinde yeni bir döneme ilerler; lig maçları, kupa turları, antrenman seansları ve transfer gelişmeleri sen oyunda olmasan da kesintisiz sürer. Bir sezon yaz hazırlık döneminden başlayıp devre arası transfer dönemini, bahar virajını ve sezon sonu ödül törenlerini kapsayan tam bir futbol yılını tamamlar."
+       },
+       {
+        "kind": "note",
+        "text": "Oyunda olmadığın günlerde de kulübün yaşar. Kadronu, taktiğini ve antrenman programını kaydettiğin sürece takım senin planınla sahaya çıkar ve çalışmaya devam eder."
+       }
+      ]
+     },
+     {
+      "id": "ofis-ve-mesajlar",
+      "title": "Ofis ve mesajlar",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Ana sayfadaki ofisin kulübün komuta merkezidir: sıradaki maçın hazırlık durumu, kulüp göstergeleri, bekleyen kararlar, yönetimden gelen mesajlar ve futbol gündemi aynı ekranda toplanır. Yanıt bekleyen bir sponsor teklifi, kontrat uyarısı ya da basın daveti olduğunda ofiste öne çıkar. Zamanında ele alınmayan kararlar kulübün akışını durdurmaz ama yönetim senin yerine varsayılan tercihi uygular."
+       }
+      ]
+     },
+     {
+      "id": "gundem-ve-kulup-tv",
+      "title": "Gündem ve Kulüp TV",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Ofisteki Gündem akışı ligdeki önemli maç sonuçlarını, dikkat çeken transferleri, teknik direktör değişikliklerini ve basın toplantısı yansımalarını canlı bir spor gazetesi gibi önüne serer. Kulüp TV ve maç merkezi üzerinden haftanın öne çıkan karşılaşmalarını ve kendi takımının sahadaki mücadelesini takip edersin."
+       }
+      ]
+     }
+    ],
+    "where": [
+     {
+      "key": "ofis",
+      "title": "Ofis",
+      "path": "Ana Sayfa › Ofis"
+     },
+     {
+      "key": "mesajlar",
+      "title": "Mesajlar",
+      "path": "Ana Sayfa › Mesajlar"
+     },
+     {
+      "key": "takvim",
+      "title": "Sezon takvimi",
+      "path": "Ana Sayfa › Takvim"
+     }
+    ],
+    "faq": [
+     {
+      "q": "Oyunda değilken ne olur?",
+      "a": "Takvim akmaya devam eder. Maçların son kaydettiğin diziliş ve taktikle oynanır, antrenman programın yardımcı antrenörün gözetiminde uygulanır. Geri döndüğünde ofisin ve mesaj kutun yaşanan tüm gelişmeleri özetler."
+     },
+     {
+      "q": "Kulüpsüz kalırsam ne yaparım?",
+      "a": "İş ilanlarına başvurabilirsin. İlanlar menajer profilinden açılır; yeni bir kulüple sözleşme imzalayana kadar futbol gündemini ve puan durumlarını takip etmeye devam edersin."
+     },
+     {
+      "q": "Başka bir kulübe nasıl geçerim?",
+      "a": "Başarılarınla menajer puanını ve lisansını yükselttikçe diğer kulüplerin dikkatini çekersin. Menajer profilindeki sözleşme masasından açık iş ilanlarına başvurabilir ya da sana gelen kulüp tekliflerini değerlendirebilirsin."
+     }
+    ]
+   },
+   {
+    "id": "mac-ve-taktik",
+    "no": 2,
+    "title": "Maç ve Taktik",
+    "updated": "2026-10-18",
+    "sections": [
+     {
+      "id": "mac-nasil-oynanir",
+      "title": "Maç nasıl oynanır",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Maçlar her iki takımın sahadaki oyuncu kalitesiyle ve menajerlerin kurduğu taktik planla oynanır. Karşılaşmanın akışını oyuncuların teknik, zihinsel ve fiziksel nitelikleri, kondisyonu, morali, güncel formu ve sahadaki görev uyumu belirler; futbolun doğası gereği her maçta beklenmedik anlara da yer vardır. Maçı canlı yayında dakika dakika izleyebilir, kaçırdıysan maç sonu özetini ve detaylı analizini istediğin an inceleyebilirsin."
+       }
+      ]
+     },
+     {
+      "id": "takim-gucu-ve-saha-ici-uyum",
+      "title": "Takım gücü ve saha içi uyum",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Kağıt üstündeki oyuncu gücü sahadaki başarının yalnız bir parçasıdır. Birlikte üst üste maç oynayan futbolcuların birbirine alışmasıyla takım uyumu yükselir; sık yapılan köklü kadro değişimleri ise saha içi anlaşmayı geçici olarak zayıflatır. Kaptanın liderlik vasfı, takımın genel morali ve iç saha maçlarında tribünleri dolduran taraftarların coşkusu takımın sahadaki gerçek gücünü yukarı taşır."
+       }
+      ]
+     },
+     {
+      "id": "ilk-on-bir-ve-yedekler",
+      "title": "İlk on bir ve yedekler",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Kadro ve Taktik ekranında ilk on biri, yedek kulübesini ve saha dizilişini belirlersin. Her oyuncunun doğal olarak ustalaştığı mevkiler vardır; bir futbolcuyu alışık olmadığı bir bölgede görevlendirebilirsin ancak mevki uyumu düştükçe sahadaki karar kalitesi ve verimi de azalır."
+       },
+       {
+        "kind": "note",
+        "text": "Kaydettiğin kadro ve taktik sonraki maçlarda da geçerlidir. Her maçtan önce sıfırdan kurman gerekmez; yalnız rakibe ve yorgunluğa göre dokunuş yapman yeterlidir."
+       }
+      ]
+     },
+     {
+      "id": "taktik",
+      "title": "Taktik",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Oyun anlayışını takım mentalitesi, pas tarzı, tempo, savunma hattı yüksekliği, pres şiddeti ve oyun genişliği gibi tercihlerle şekillendirirsin. Her rakibe karşı kazandıran tek bir şablon yoktur: topa hükmeden bir oyun güçlü ve teknik bir orta saha isterken, hızlı geçiş oyunu savunma arkasına koşu atabilen çevik kanatlar ve forvetlerle sonuç verir."
+       }
+      ]
+     },
+     {
+      "id": "gorevler-ve-duran-toplar",
+      "title": "Görevler ve duran toplar",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Takım Düzeni bölümünde saha içi liderliği üstlenecek kaptanı, penaltıcıyı, serbest vuruşçuyu ve korner kullanan uzmanları seçersin. Görev verdiğin oyuncu maç anında sahadaysa duran topun başına o geçer; kenardaysa takım sahadaki en yüksek duran top becerisine sahip oyuncuyu otomatik seçer. Kaleci duran top görevlerini üstlenemez."
+       }
+      ]
+     },
+     {
+      "id": "maca-hazirlik",
+      "title": "Maça hazırlık",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Maça Hazırlık ekranı sıradaki karşılaşmanın komuta masasıdır: rakip istihbaratı, kendi taktik tahtan, maç kadron, soyunma odası konuşman ve kulübe değişiklik planın burada birleşir. Rakibin son maçlardaki dizilişini, oyun tarzını ve en tehlikeli silahlarını görmek için gözlemcinden maç öncesi rakip raporu isteyebilirsin."
+       }
+      ]
+     },
+     {
+      "id": "soyunma-odasi-ve-kulube-hamleleri",
+      "title": "Soyunma odası ve kulübe hamleleri",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Maç öncesinde ve devre arasında soyunma odasında oyuncularına yapacağın konuşma takımın sahaya hangi zihniyetle çıkacağını belirler. Favori olduğun bir iç saha maçında özgüven aşılamak, zorlu bir deplasmanda ise baskıyı azaltıp odaklanmayı artırmak oyuncularının sahadaki direncine doğrudan yansır. Ayrıca kulübe ekranından maç içi oyuncu değişikliği planını önceden kurgulayabilir ya da canlı maç odasında oyunun gidişatına göre anlık müdahale edebilirsin."
+       }
+      ]
+     },
+     {
+      "id": "basin-toplantisi",
+      "title": "Basın toplantısı",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Maçtan önce ve sonra basın mensupları sorularıyla seni bekler. Seçtiğin yanıtın üslubu hem kulüp gündemindeki haber başlıklarını hem de takımın ve taraftarın havasını etkiler. Basın toplantısına katılmamak da kendi başına bir mesajdır."
+       }
+      ]
+     },
+     {
+      "id": "mac-analizi-ve-istatistikler",
+      "title": "Maç analizi ve istatistikler",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Bitiş düdüğünün ardından Maç Analizi ekranında topa sahip olma oranlarını, gol beklentisini, şut bölgelerini, pas isabetini ve her oyuncunun maç notunu incelersin. Yardımcı antrenörünün maç sonu bulguları, hangi bölgede üstünlük kurduğunu ve nerede açık verdiğini net biçimde gösterir."
+       }
+      ]
+     }
+    ],
+    "where": [
+     {
+      "key": "kadro-taktik",
+      "title": "Kadro ve Taktik",
+      "path": "Takım › Kadro ve Taktik"
+     },
+     {
+      "key": "mac-hazirlik",
+      "title": "Maça Hazırlık",
+      "path": "Takım › Maça Hazırlık"
+     },
+     {
+      "key": "fikstur",
+      "title": "Fikstür",
+      "path": "Maç › Fikstür"
+     }
+    ],
+    "faq": [
+     {
+      "q": "Kadromu kaydetmeyi unutursam ne olur?",
+      "a": "Takım en son kaydettiğin kadro ve taktikle sahaya çıkar. Sakat ya da cezalı bir oyuncu varsa yardımcı antrenörün yerine o mevkiye en uygun yedek oyuncuyu yerleştirir."
+     },
+     {
+      "q": "Kondisyon neden önemli?",
+      "a": "Yorgun oyuncu maç içinde hızla güç kaybeder, ikili mücadelelerde düşer ve sakatlanmaya çok daha açık hale gelir. Hafta içi kupa veya Avrupa maçlarının olduğu yoğun dönemlerde rotasyon yapmak takımı diri tutar."
+     },
+     {
+      "q": "Takım uyumu nasıl yükselir?",
+      "a": "Aynı oyuncu grubunun resmi maçlarda birlikte süre alması ve taktik istikrar sağlanması saha içi uyumu adım adım güçlendirir."
+     }
+    ]
+   },
+   {
+    "id": "kadro-ve-kontratlar",
+    "no": 3,
+    "title": "Kadro ve Kontratlar",
+    "updated": "2026-10-18",
+    "sections": [
+     {
+      "id": "oyuncu-kart-siniflari-ve-potansiyel",
+      "title": "Oyuncu kart sınıfları ve potansiyel",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Her futbolcu oyun dünyasına adım attığında doğuştan gelen bir yetenek tavanını temsil eden kart sınıfına sahiptir: Sıradan, Profesyonel, Kaliteli, Yıldız, Dünya Yıldızı ve İkonik. Kart sınıfı oyuncunun kariyeri boyunca sabit kalır ve yalnız ulaşabileceği potansiyel üst sınırı değil, antrenmandan aldığı verimi ve maç tecrübesini ne kadar hızlı özümsediğini de belirler. Üst sınıf kartlara sahip oyuncular doğru gelişim ortamında takımın çehresini değiştiren liderlere dönüşür."
+       }
+      ]
+     },
+     {
+      "id": "nitelikler-ve-mevki-uyumu",
+      "title": "Nitelikler ve mevki uyumu",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Saha oyuncuları teknik, zihinsel ve fiziksel başlıklar altındaki niteliklerle; kaleciler ise refleks, bire bir, hava hakimiyeti ve alan kontrolü gibi kaleciliğe özgü niteliklerle tanımlanır. Her mevki bu nitelikleri farklı ağırlıklarla tartar: bir stoperde markaj, top kapma, pozisyon alma ve güç belirleyiciyken, bir santrforda bitiricilik, soğukkanlılık ve topsuz alan koşuları öne çıkar. Oyuncunun genel gücü kendi doğal mevkisindeki ustalığını yansıtır."
+       }
+      ]
+     },
+     {
+      "id": "kontrat-nedir",
+      "title": "Kontrat nedir",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Her oyuncu kulübüne resmi bir kontratla bağlıdır. Kontrat oyuncunun düzenli maaşını ve kulüpte hangi sezon sonuna kadar forma giyeceğini belirler. Maaşlar her dönem kulübün kasasından ödenir; kadro kalitesi ve genişliği arttıkça maaş bütçesinin üzerindeki yük de büyür."
+       }
+      ]
+     },
+     {
+      "id": "yenileme-masasi",
+      "title": "Yenileme masası",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Kontratını uzatmak istediğin oyuncuyla yenileme masasına oturursun. Masada karşında oyuncunun temsilcisi, yanında ise kulübünün futbol direktörü yer alır. Başlangıç beklentisi oyuncunun mevcut kazancından, güncel piyasa değerinden ve takımdaki konumundan doğar; ortak bir noktada buluştuğunda kontrat uzatılır. Gelişim gösteren ya da takımın yükünü çeken bir oyuncu elindekinden daha düşük bir teklife kolay kolay razı olmaz."
+       },
+       {
+        "kind": "note",
+        "text": "Kulüpten ayrılmak isteyen bir oyuncu, huzursuzluğunun kaynağı maaşı ya da kontrat süresiyle ilgiliyse yine masaya oturur. Ancak forma şansı bulamadığı için mutsuzsa önce sahada güven görmek isteyebilir."
+       }
+      ]
+     },
+     {
+      "id": "kontrati-biten-oyuncu",
+      "title": "Kontratı biten oyuncu",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Kontratı zamanında uzatılmayan oyuncu, sözleşmesinin son sezonu tamamlandığında serbest kalır ve bedelsiz olarak kulüpten ayrılır. Değerli bir oyuncuna harcadığın emeğin karşılığını korumak istiyorsan son sezonu beklemeden kararını vermelisin: sözleşmesini yenile, bonservisiyle sat ya da planlı biçimde yolları ayır."
+       }
+      ]
+     },
+     {
+      "id": "serbest-birakmak",
+      "title": "Serbest bırakmak",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Kadrona katkı vermeyen oyuncuları sözleşmesi bitmeden de kulüpten gönderebilirsin. Erken fesih işleminin kulüp kasasına bir tazminat bedeli olur; ödenecek tutarı onay vermeden önce ekranda açıkça görürsün."
+       }
+      ]
+     },
+     {
+      "id": "kadro-siniri",
+      "title": "Kadro sınırı",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Her kulübün sağlıklı biçimde yarışabilmesi için kadronun bir alt sınırı ve bir üst sınırı vardır. Oyuncu sayısı alt sınıra indiğinde maç güvenliği gereği yeni bir satış ya da fesih yapamazsın; önce kadroya takviye yapman gerekir. Üst sınıra ulaştığında ise yeni bir transferi tamamlamadan önce mevcut kadrodan yer açmalısın."
+       }
+      ]
+     },
+     {
+      "id": "takimdaki-rolu",
+      "title": "Takımdaki rolü",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Oyuncu profilindeki rol rozeti, futbolcunun sezon boyunca sahada gerçekte ne kadar süre aldığını anlatır: ilk on birin vazgeçilmezi mi, düzenli rotasyon oyuncusu mu, yoksa kulübede sırasını bekleyen bir yedek mi. Rol rozeti kağıt üstündeki genel güçten değil, doğrudan resmi maçlarda alınan dakikalardan hesaplanır ve oyuncunun kontrat beklentisini de etkiler."
+       }
+      ]
+     },
+     {
+      "id": "moral-kondisyon-ve-sakatliklar",
+      "title": "Moral, kondisyon ve sakatlıklar",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Düzenli forma giymek, kazanılan maçlar ve adil bir kontrat oyuncunun moralini yüksek tutar; uzun süre kulübede unutulmak veya üst üste alınan yenilgiler ise morali aşındırır. Aşırı yorgunlukla maça çıkmak ya da ağır antrenman yükü altında kalmak sakatlık riskini artırır. Sakatlanan oyuncu iyileşene kadar maç kadrosuna alınamaz; Sağlık Merkezi ve sağlık ekibin iyileşme sürecini hızlandırır."
+       }
+      ]
+     }
+    ],
+    "where": [
+     {
+      "key": "kadro",
+      "title": "Kadro Listesi",
+      "path": "Takım › Kadro Listesi"
+     },
+     {
+      "key": "finans",
+      "title": "Maaş yükü",
+      "path": "Yönetim › Mali Durum"
+     }
+    ],
+    "faq": [
+     {
+      "q": "Oyuncum neden yenilemeyi reddetti?",
+      "a": "Oyuncu kulüpte mutsuzsa ve derdi para değilse masaya oturmayabilir. Ona daha çok süre vermek ya da durumunun düzelmesini beklemek kapıyı yeniden açabilir."
+     },
+     {
+      "q": "Kontratı biten oyuncuyu geri alabilir miyim?",
+      "a": "Kulüpten ayrılan oyuncu artık senin oyuncun değildir. Onu yeniden istiyorsan diğer oyuncular gibi ona da teklif vermen gerekir."
+     },
+     {
+      "q": "Oyuncumun kart sınıfı antrenmanla yükselir mi?",
+      "a": "Hayır. Kart sınıfı oyuncunun doğuştan gelen yetenek imzasıdır ve sabit kalır; ancak antrenman ve maç tecrübesiyle oyuncunun nitelikleri ve genel gücü potansiyel tavanına doğru yükselir."
+     }
+    ]
+   },
+   {
+    "id": "transfer-ve-pazar",
+    "no": 4,
+    "title": "Transfer ve Pazar",
+    "updated": "2026-10-18",
+    "sections": [
+     {
+      "id": "transfer-donemleri",
+      "title": "Transfer dönemleri",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Resmi transfer tahtası sezon başındaki yaz döneminde ve sezon ortasındaki kış döneminde açılır. Transfer dönemi kapalıyken de dünya haritasında oyuncu keşfedebilir, gözlemci raporları toplayabilir, adayları takip listene ekleyebilir ve bir sonraki dönemin bütçe planını hazırlayabilirsin."
+       }
+      ]
+     },
+     {
+      "id": "teklif-ver",
+      "title": "Teklif ver",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Beğendiğin bir futbolcuyu hangi ekranda incelersen incele aynı teklif düğmesiyle harekete geçersin. Oyuncu aktif bir satış ilanındaysa canlı müzayedeye katılırsın; ilanda değilse ama bir kulübün kontratlı oyuncusuysa futbol direktörün karşı kulüple pazarlık masası kurar; kulüpsüz serbest bir oyuncuysa doğrudan kendisi ve temsilcisiyle masaya oturursun. Hangi transfer akışının devreye gireceğini oyuncunun mevcut durumu belirler."
+       }
+      ]
+     },
+     {
+      "id": "muzayede",
+      "title": "Müzayede",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Transfer pazarındaki açık ilanlara dünyadaki tüm kulüpler teklif verebilir. Müzayede süresi sona erdiğinde en yüksek geçerli teklifi veren kulüp oyuncuyu kadrosuna katar. İlanda hemen al bedeli tanımlanmışsa açık artırmanın bitmesini beklemeden o bedeli ödeyerek transferi anında tamamlayabilirsin."
+       }
+      ]
+     },
+     {
+      "id": "pazarlik",
+      "title": "Pazarlık",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Bir kulübün sözleşmeli oyuncusu için masaya oturduğunda önce kulübüyle bonservis bedeli, ardından oyuncu ve temsilcisiyle maaş koşulları görüşülür. Karşı kulübün oyuncuyu kadrosunda ne kadar vazgeçilmez gördüğü, sözleşmesinin bitimine kalan süre, oyuncunun kart sınıfı ve piyasa değeri bonservis beklentisini şekillendirir. Kadrosunun omurgasını oluşturan kilit yıldızları bazı kulüpler hiçbir bedelle bırakmak istemeyebilir."
+       }
+      ]
+     },
+     {
+      "id": "futbol-direktoru-ve-menajer-komisyonu",
+      "title": "Futbol direktörü ve menajer komisyonu",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Pazarlık ve kontrat görüşmelerinde futbol direktörün sürecin teknik rehberliğini üstlenir; karşı tarafın beklenti aralığını ve anlaşma ihtimalini masada sana aktarır. Transfer tamamlandığında bonservis ve oyuncu maaşının yanında oyuncunun temsilcisine ödenen komisyon da toplam maliyetin bir parçasıdır."
+       }
+      ]
+     },
+     {
+      "id": "butce-ayrilmasi-ve-maas-dengesi",
+      "title": "Bütçe ayrılması ve maaş dengesi",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Açık bir müzayedeye verdiğin teklif ya da masada bekleyen resmi bir bonservis önerisi sonuçlanana kadar kulüp kasanda o işlem için ayrılmış durur. Böylece aynı anda birden fazla hedefle ilgilenirken kasanda olmayan parayı harcama riskine girmezsin. Transferin onaylanması için hem kasandaki kullanılabilir nakdin bonservise yetmesi hem de maaş bütçenin yeni oyuncunun kontratını taşıyabilmesi gerekir."
+       }
+      ]
+     },
+     {
+      "id": "oyuncu-satmak",
+      "title": "Oyuncu satmak",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Kadronuzda düşünmediğin ya da değerini bulduğuna inandığın oyuncunu pazarda satış ilanına çıkarabilir veya diğer kulüplerden gelen doğrudan bonservis tekliflerini Görüşmeler ekranında değerlendirebilirsin. Satış tamamlandığında bonservis geliri kulübün kasasına eklenir ve maaş bütçende yeni hamleler için alan açılır."
+       }
+      ]
+     },
+     {
+      "id": "takip-listesi",
+      "title": "Takip listesi",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Gözlemlediğin, ilgilendiğin ve teklif verdiğin tüm futbolcular Takip Listesi sekmesinde bir araya gelir. Uzun süre işlem yapmadığın sıradan kayıtlar zamanla listeden düşer; kaçırmak istemediğin hedefleri sabitlersen dönem boyunca gözünün önünde kalırlar."
+       }
+      ]
+     }
+    ],
+    "where": [
+     {
+      "key": "pazar",
+      "title": "Transfer Pazarı",
+      "path": "Transfer › Transfer Pazarı"
+     },
+     {
+      "key": "gorusmeler",
+      "title": "Görüşmeler",
+      "path": "Transfer › Görüşmeler"
+     },
+     {
+      "key": "oyuncu-ara",
+      "title": "Oyuncu Ara",
+      "path": "Transfer › Oyuncu Ara"
+     }
+    ],
+    "faq": [
+     {
+      "q": "Teklifim neden reddedildi?",
+      "a": "Önerdiğin bedel satıcı kulübün beklentisinin altında kalmış, maaş bütçen oyuncunun talebini karşılamıyor ya da kulübü oyuncuyu satılık görmüyor olabilir. Ret bildirimi sana tam olarak hangi gerekçeyle kapının kapandığını söyler."
+     },
+     {
+      "q": "Verdiğim teklifin parası nereye gider?",
+      "a": "Teklif açık kaldığı sürece ilgili tutar kasanda bu işlem için ayrılır ve başka bir harcamada kullanılamaz. Müzayedede geçilirsen ya da görüşme iptal olursa para anında serbest kalır."
+     },
+     {
+      "q": "Serbest oyunculara ne zaman imza attırabilirim?",
+      "a": "Kulübü olmayan serbest futbolcularla maaş bütçen ve kadro sınırın elverdiği sürece doğrudan sözleşme masasına oturabilirsin."
+     }
+    ]
+   },
+   {
+    "id": "antrenman-ve-gelisim",
+    "no": 5,
+    "title": "Antrenman ve Gelişim",
+    "updated": "2026-10-18",
+    "sections": [
+     {
+      "id": "haftalik-program",
+      "title": "Haftalık program",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Oyunda her gerçek gün sezon takviminde bir çalışma dönemine karşılık gelir. Program ekranında her seans için çalışma türünü kendin seçebilir ya da oyun tarzına uygun hazır şablonlardan birini uygulayabilirsin. Kurduğun program sen değiştirene kadar kendiliğinden devam eder; hiçbir tercih yapmazsan yardımcı antrenörün dengeli bir çalışma planı yürüterek takımı sahipsiz bırakmaz."
+       }
+      ]
+     },
+     {
+      "id": "seanslar-sirayla-oynar",
+      "title": "Seanslar sırayla oynar",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Antrenman seansları gün içinde belirlenen sırayla uygulanır. Tamamlanmış ya da o an sahada oynanan seans geriye dönük değiştirilemez; sıradaki seansları ise istediğin zaman güncelleyebilirsin. Çalışmalar tamamlandığında takımın gelişim ve kondisyon değişimini gösteren kapsamlı antrenman raporunu incelersin."
+       }
+      ]
+     },
+     {
+      "id": "saha-calismalari-ve-bireysel-odak",
+      "title": "Saha çalışmaları ve bireysel odak",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Takım antrenmanlarında Fiziksel, Teknik, Taktik, Hücum, Savunma, Çift Kale ve Rejenerasyon seansları farklı nitelik gruplarını çalıştırır. Takım seansları sürerken aynı anda Bireysel Çalışma kartından seçtiğin oyunculara özel nitelik odaklı antrenman verebilirsin. Böylece takım genel oyun planını çalışırken, genç bir kanat oyuncun hızını ya da stoperin markaj becerisini paralel olarak geliştirir."
+       }
+      ]
+     },
+     {
+      "id": "yuk-ve-kondisyon",
+      "title": "Yük ve kondisyon",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Her antrenman seansı oyuncuların üzerinde belirli bir fiziksel yük bırakır. Ağır çalışma daha çok geliştirir ama kondisyondan götürür; üst üste ağır fiziksel ve çift kale yüklemeleri yapmak kısa vadeli yorgunluğu biriktirir. Aşırı yük altındaki oyuncunun hem antrenman verimi düşer hem de sakatlanma tehlikesi artar. Buna karşılık takımı tamamen antrenmansız bırakmak da oyuncuların maç ritmini ve fiziksel keskinliğini köreltir."
+       },
+       {
+        "kind": "p",
+        "text": "Yoğun maç trafiğinde araya Rejenerasyon seansları koymak yorgunluk yükünü artırmadan kondisyonu tazeler. Ayrıca dinlenen oyuncular doğal günlük toparlanma süreciyle güç toplar; çok yorgun bir vücut ilk dinlenme günlerinde daha hızlı toparlanırken tam kondisyona yaklaşmak dikkatli yük yönetimi ister."
+       }
+      ]
+     },
+     {
+      "id": "kim-ne-kadar-gelisir",
+      "title": "Kim ne kadar gelişir",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Bir futbolcunun antrenmandan aldığı gelişim payını yaşı, mevcut gücü ile potansiyel tavanı arasındaki açıklık, doğuş kart sınıfı, morali ve kondisyonu birlikte belirler. Genç yetenekler ve potansiyel tavanı yüksek kart sınıfları bilgiyi hızla emer; oyuncu kendi tavanına yaklaştıkça her yeni gelişim adımı daha fazla emek ister. Kulübün Antrenman Tesisi seviyesi ve teknik kadrodaki antrenörlerin uzmanlığı tüm takımın çalışma kalitesini çarpan etkisiyle büyütür."
+       },
+       {
+        "kind": "note",
+        "text": "Gelişim hızını, tesis katkısını ve oyuncuların nitelik artışlarını hafta raporunda ve Takım Raporu ekranında net olarak takip edersin."
+       }
+      ]
+     },
+     {
+      "id": "yaslanma-ve-tecrube",
+      "title": "Yaşlanma ve tecrübe",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Futbolcular kariyerleri boyunca gençlik gelişim evresinden olgunluk zirvesine, ardından deneyim platosuna ve kariyer sonbaharına doğru ilerler. İlerleyen yaşlarda hız ve çeviklik gibi fiziksel nitelikler doğal olarak gerilerken, soğukkanlılık ve pozisyon alma gibi zihinsel nitelikler dirençli kalır. Resmi maçlarda alınan süre ve oynanan kupanın zorluk derecesi oyuncuya Tecrübe kazandırır; kıta kupası ve kupa maçları sıradan karşılaşmalara göre daha yüksek tecrübe biriktirir. Tecrübeli oyuncular kritik anlarda panik yapmaz ve gençlere saha içinde rehberlik eder."
+       }
+      ]
+     },
+     {
+      "id": "altyapidan-gelenler",
+      "title": "Altyapıdan gelenler",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Altyapı akademisindeki gençleri günlük olarak tek tek yönetmezsin; akademin arka planda geleceğin oyuncularını yetiştirir. Sezon sonunda akademiden A takım kadrosuna yükselmeye hazır genç yetenekler çıkar ve bu mezuniyeti resmi bir kulüp duyurusuyla öğrenirsin. Akademi tesisinin seviyesi ve gençlik burslarına yaptığın yatırım, A takıma katılacak gençlerin kalitesini ve potansiyelini doğrudan belirler."
+       }
+      ]
+     }
+    ],
+    "where": [
+     {
+      "key": "antrenman",
+      "title": "Antrenman",
+      "path": "Takım › Antrenman"
+     },
+     {
+      "key": "tesis-antrenman",
+      "title": "Antrenman Tesisi",
+      "path": "Yönetim › Antrenman Tesisi"
+     },
+     {
+      "key": "altyapi",
+      "title": "Akademi",
+      "path": "Yönetim › Akademi"
+     }
+    ],
+    "faq": [
+     {
+      "q": "Program seçmezsem ne olur?",
+      "a": "Yardımcı antrenörün dengeli bir program uygular. Takım hiçbir gün boş kalmaz."
+     },
+     {
+      "q": "Genç oyuncum neden gelişmiyor?",
+      "a": "Gelişim antrenmandan, maçta aldığı süreden ve tesislerinden beslenir. Hiç oynamayan ya da sürekli ağır yük altında kalan genç beklenen hızda gelişmez."
+     },
+     {
+      "q": "Rejenerasyon seansı ne işe yarar?",
+      "a": "Oyuncuların üzerindeki fiziksel yükü artırmadan kondisyonlarını toparlar ve yoğun maç dönemlerinde sakatlık riskini düşürür."
+     }
+    ]
+   },
+   {
+    "id": "gozlemciler",
+    "no": 6,
+    "title": "Gözlemciler",
+    "updated": "2026-10-18",
+    "sections": [
+     {
+      "id": "bilgi-neden-bulanik",
+      "title": "Bilgi neden bulanık",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Futbol dünyasında kendi kadron dışındaki bir oyuncunun gerçek kalitesi ilk bakışta tüm çıplaklığıyla görünmez. Henüz yakından tanımadığın bir futbolcunun genel gücü, potansiyel tavanı ve nitelikleri bulanık bir tahmin aralığı olarak yansır. Gözlemcilerin oyuncuyu izledikçe bilgi sisi dağılır, aralık daralır ve gerçek profil ortaya çıkar. Kendi kulübündeki oyuncuların tüm verilerini ise her zaman tam netlikle görürsün."
+       }
+      ]
+     },
+     {
+      "id": "oyuncu-kesfi",
+      "title": "Oyuncu keşfi",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Oyuncu Keşfet ekranındaki dünya haritası üzerinden gözlemcilerini farklı futbol coğrafyalarına görevlendirirsin. Aradığın mevkiyi, yaş profilini ve odaklanmak istediğin bölgeyi seçtiğinde keşif görevi başlar. Görev tamamlandığında gözlemci ekibin o bölgeden keşfettiği adayların listesini ve ilk izlenim dosyalarını masana getirir."
+       }
+      ]
+     },
+     {
+      "id": "bilgi-katmanlari-ve-gozlem-raporu",
+      "title": "Bilgi katmanları ve gözlem raporu",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Keşif listesindeki ya da oyuncu arama ekranındaki bir adayı daha derinden tanımak istediğinde bireysel gözlem raporu talep edersin. Gözlem tamamlandığında açılan Gözlem Raporu; oyuncunun gerçek niteliklerini, doğuş kart sınıfını, güçlü ve zayıf yönlerini, tahmini piyasa değerini ve maaş beklentisini netleştirir. Böylece yüksek bonservis ödeyeceğin bir transferde sürpriz yaşama riskini ortadan kaldırırsın."
+       }
+      ]
+     },
+     {
+      "id": "gozlemcinin-kalitesi",
+      "title": "Gözlemcinin kalitesi",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Teknik kadrodaki gözlemcilerinin uzmanlığı ve Yönetim altındaki Gözlem Ağı tesisinin seviyesi, keşif çalışmalarının hızını, coğrafi erişimini ve gelen raporların isabet oranını belirler. Güçlü bir gözlem ağına yatırım yapan kulüpler, potansiyelli genç yıldızları rakiplerinden çok daha erken fark eder."
+       }
+      ]
+     },
+     {
+      "id": "rakibi-izle",
+      "title": "Rakibi izle",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Sıradaki resmi maçta karşılaşacağın rakibi analiz ettirmek için gözlemcini görevlendirebilirsin. Gözlemcinin kalitesine göre hazırlanan maç öncesi istihbarat raporu; rakibin sahaya çıkması beklenen dizilişini, taktik anlayışını, form durumunu ve durdurman gereken kilit oyuncularını açıkça ortaya koyar."
+       },
+       {
+        "kind": "note",
+        "text": "Rakip istihbarat raporu maçtan önce eline ulaşır ve Maça Hazırlık ekranında taktik kararlarını verirken hemen elinin altında durur."
+       }
+      ]
+     }
+    ],
+    "where": [
+     {
+      "key": "kesif",
+      "title": "Oyuncu Keşfet",
+      "path": "Transfer › Oyuncu Keşfet"
+     },
+     {
+      "key": "gozlemci-raporlari",
+      "title": "Gözlemci Raporları",
+      "path": "Transfer › Gözlemci Raporları"
+     },
+     {
+      "key": "gozlem-agi",
+      "title": "Gözlem Ağı",
+      "path": "Yönetim › Gözlem Ağı"
+     }
+    ],
+    "faq": [
+     {
+      "q": "Neden bazı oyuncuların gücünü göremiyorum?",
+      "a": "O oyuncuyu henüz yeterince tanımıyorsun. İzledikçe bilgi açılır."
+     },
+     {
+      "q": "Raporu beğendiğim oyuncuya nasıl teklif veririm?",
+      "a": "Raporun içindeki teklif düğmesiyle. Hangi ekrandan açarsan aç aynı teklif perdesi gelir."
+     },
+     {
+      "q": "Gözlem Ağı tesisini büyütmek ne kazandırır?",
+      "a": "Gözlemcilerinin dünya haritasında daha geniş bölgeleri taramasını, daha nitelikli adaylar bulmasını ve raporların daha hızlı tamamlanmasını sağlar."
+     }
+    ]
+   },
+   {
+    "id": "lig-ve-sezon",
+    "no": 7,
+    "title": "Lig ve Sezon",
+    "updated": "2026-10-18",
+    "sections": [
+     {
+      "id": "lig-piramidi",
+      "title": "Lig piramidi",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Her ülkenin lig yapısı çok kademeli bir piramit oluşturur: en tepede ülkenin en üst düzey ligi, onun altında ise sırasıyla alt lig kademeleri yer alır. Lig fikstüründe her kulüp rakipleriyle sezon boyunca hem kendi evinde hem de deplasmanda karşılaşır."
+       }
+      ]
+     },
+     {
+      "id": "puan-durumu-ve-esitlik-bozma",
+      "title": "Puan durumu ve eşitlik bozma",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Lig tablosunda galibiyet, beraberlik ve mağlubiyetlerin yanı sıra atılan ve yenilen goller ile genel averaj sıralamayı şekillendirir. Sezon boyunca Gol Krallığı ve Asist Krallığı yarışları da puan durumu ekranındaki istatistik bölümünde canlı olarak takip edilir."
+       }
+      ]
+     },
+     {
+      "id": "yukselme-ve-dusme",
+      "title": "Yükselme ve düşme",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Sezon tamamlandığında ligin zirvesindeki kulüpler üst lige yükselirken, düşme hattında kalanlar alt kademeye iner. Doğrudan yükselenlerin hemen arkasındaki kulüpler ise son bilet için play-off eleme maçlarında kozlarını paylaşır."
+       }
+      ]
+     },
+     {
+      "id": "kupalar",
+      "title": "Kupalar",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Lig maratonunun yanında ülke içindeki kulüplerin katıldığı ulusal eleme kupası heyecanı yaşanır. Kupa turları ilerledikçe alt kademe sürprizleriyle dev kulüpler karşı karşıya gelir ve kupa şampiyonu hem prestij hem de ödül geliri kazanır."
+       }
+      ]
+     },
+     {
+      "id": "avrupa-kupalari-ve-ulke-siralamasi",
+      "title": "Avrupa kupaları ve ülke sıralaması",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Üst ligi başarılı bitiren ve ulusal kupada zirveye çıkan kulüpler ertesi sezon kıta kupalarında ülkesini temsil etme hakkı kazanır. Kıta kupalarında kulüpler önce ortak lig aşamasında puan toplar; üst sıraları alanlar doğrudan son turlara yükselirken orta sıradakiler eleme baraj maçları oynar. Kıta sahnesinde alınan her galibiyet ve beraberlik hem kulübün kendi sıralama puanını hem de ülkenin genel katsayısını büyütür; ülke sıralamasında yükselen federasyonlar sonraki sezonlarda kıta kupalarına daha fazla takım gönderir."
+       }
+      ]
+     },
+     {
+      "id": "sezon-sonu",
+      "title": "Sezon sonu",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Sezonun son düdüğü çaldığında şampiyonluk ve bireysel başarı ödülleri sahiplerini bulur, emektar futbolcular yeşil sahalara veda eder, akademiden yetişen gençler A takıma adım atar ve yeni sezonun lig ile kupa fikstürü çekilir. Ardından yaz hazırlık dönemiyle yeni futbol yılı başlar."
+       }
+      ]
+     },
+     {
+      "id": "prestij",
+      "title": "Prestij",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Kulübünün prestiji kazandığın kupalarla, üst ligdeki kalıcılığınla ve kıta sahnesindeki başarılarınla adım adım yükselir. Prestiji yüksek kulüpler sponsor masasında daha güçlü teklifler alır ve transfer pazarındaki yıldız oyuncuları ikna etmekte avantaj yakalar."
+       },
+       {
+        "kind": "note",
+        "text": "Sezon takviminde yılın hangi evresinde olduğunu, yaklaşan kupa turlarını, transfer pencerelerini ve sezon sonu geçiş günlerini tek bakışta görürsün."
+       }
+      ]
+     }
+    ],
+    "where": [
+     {
+      "key": "puan-durumu",
+      "title": "Puan Durumu",
+      "path": "Maç › Puan Durumu"
+     },
+     {
+      "key": "fikstur",
+      "title": "Fikstür",
+      "path": "Maç › Fikstür"
+     },
+     {
+      "key": "kupa",
+      "title": "Kupa",
+      "path": "Maç › Kupa"
+     },
+     {
+      "key": "takvim",
+      "title": "Sezon takvimi",
+      "path": "Ana Sayfa › Takvim"
+     }
+    ],
+    "faq": [
+     {
+      "q": "Sezon ne zaman biter?",
+      "a": "Sezon yaz başında başlar ve bir sonraki yaz biter. Nerede olduğunu sezon takviminde görürsün."
+     },
+     {
+      "q": "Kupadan elenirsem ne olur?",
+      "a": "Kupa maçlarının olduğu günler takımın için dinlenme ve antrenman günü olur. Lig yarışı aynen sürer."
+     },
+     {
+      "q": "Kıta kupalarına nasıl katılırım?",
+      "a": "Ülkenin en üst ligini üst sıralarda tamamlayarak ya da ulusal kupada zafere ulaşarak bir sonraki sezon kıta kupası bileti alırsın."
+     }
+    ]
+   },
+   {
+    "id": "kulup-ve-finans",
+    "no": 8,
+    "title": "Kulüp ve Finans",
+    "updated": "2026-10-18",
+    "sections": [
+     {
+      "id": "kasa",
+      "title": "Kasa",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Kulübün nakit varlığı kasada tutulur. Maç günü hasılatları, yayın payları, sponsor ödemeleri ve bonservis satışları kasaya girerken; oyuncu ve teknik kadro maaşları, transfer ödemeleri ve tesis yatırımları kasadan çıkar. Mali Durum ekranında hem içinde bulunduğun sezonun gerçekleşen gelir-gider tablosunu hem de sezon sonu tahmini bilançoyu yan yana görerek bütçeni güvenle yönetirsin."
+       }
+      ]
+     },
+     {
+      "id": "gelirler",
+      "title": "Gelirler",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Kulübün başlıca gelir kaynakları iç saha bilet ve kombine satışları, loca ve ürün gelirleri, naklen yayın havuzu, kupa ödülleri, sponsorluk anlaşmaları ve oyuncu satışlarıdır. Stadyum ekranından belirlediğin bilet fiyatı politikası tribün doluluğunu doğrudan etkiler: yerel ekonomiye ve taraftarın alım gücüne göre aşırı pahalı biletler tribünleri boş bırakırken, dengeli fiyatlandırma hem stadyumu doldurur hem de maç günü gelirini ve iç saha atmosferini zirveye taşır."
+       }
+      ]
+     },
+     {
+      "id": "maaslar",
+      "title": "Maaşlar",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Futbolcu ve teknik kadro maaşları düzenli aralıklarla kulüp kasasından ödenir. Yeni bir oyuncuya imza attırırken yalnız bonservis bedelini değil, sözleşme boyunca yaratacağı maaş yükünü de hesaba katmalısın: maaş bütçesini aşan bir teklifle transfer tamamlanamaz."
+       }
+      ]
+     },
+     {
+      "id": "sponsorlar",
+      "title": "Sponsorlar",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Forma göğüs reklamı, stadyum isim hakkı ve sportif malzeme kategorilerinde farklı markalar kulübüne sponsorluk teklifleri sunar. Kimi teklif yüksek peşin ödeme verirken kimi sezon içine yayılan düzenli gelir sağlar. Süresi içinde seçim yapmazsan kulüp yönetimi gelir kaybı yaşanmaması için en avantajlı teklifi senin adına onaylar. Anlaşma süresi tamamlandığında kulübünün yeni prestijine uygun taze teklifler masaya gelir."
+       }
+      ]
+     },
+     {
+      "id": "stadyum-ve-tesisler",
+      "title": "Stadyum ve tesisler",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Stadyum, Antrenman Tesisi, Sağlık Merkezi, Altyapı Akademisi ve Gözlem Ağı kulübün geleceğini inşa eden kalıcı yatırımlardır. Bir tesisi üst kademeye taşımak nakit bütçe ve inşaat süresi gerektirir; geliştirme sürerken mevcut tesis hizmet vermeye devam eder. Tesislerin tam verimle çalışması için düzenli bakım giderleri karşılanır; bakımı aksayan ya da yıpranan tesislerin sağladığı katkı zayıflar."
+       }
+      ]
+     },
+     {
+      "id": "saglik-merkezi-ve-sakatlik-donusu",
+      "title": "Sağlık merkezi ve sakatlık dönüşü",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Sağlık Merkezi tesisinin kalitesi ve sağlık ekibinin uzmanlığı, sakatlanan oyuncuların sahalara ne kadar çabuk döneceğini belirler. Gelişmiş bir sağlık altyapısı yoğun fikstür dönemlerinde kadro derinliğini korumanın en güçlü sigortasıdır."
+       }
+      ]
+     },
+     {
+      "id": "taraftarlar",
+      "title": "Taraftarlar",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Taraftar kitlen kulübün başarılarıyla, yıldız transferleriyle ve iç sahada sergilediğin hücum futboluyla büyür. Sadık ve coşkulu bir taraftar topluluğu hem maç günü gişe ve ürün gelirlerini sırtlar hem de iç saha maçlarında rakip üzerinde baskı kurar."
+       }
+      ]
+     }
+    ],
+    "where": [
+     {
+      "key": "finans",
+      "title": "Mali Durum",
+      "path": "Yönetim › Mali Durum"
+     },
+     {
+      "key": "sponsorluklar",
+      "title": "Sponsorluklar",
+      "path": "Yönetim › Sponsorluklar"
+     },
+     {
+      "key": "stadyum",
+      "title": "Stadyum",
+      "path": "Yönetim › Stadyum"
+     },
+     {
+      "key": "taraftarlar",
+      "title": "Taraftarlar",
+      "path": "Yönetim › Taraftarlar"
+     }
+    ],
+    "faq": [
+     {
+      "q": "Kasam neden azalıyor?",
+      "a": "Maaşlar ve bakım giderleri düzenli ödenir; bilet, yayın ve ödül gelirleri ise maç günlerinde ya da dönem sonlarında kasaya girer. Mali Durum ekranı paranın nereden gelip nereye gittiğini kalem kalem gösterir."
+     },
+     {
+      "q": "Sponsor teklifini kaçırırsam ne olur?",
+      "a": "Kulüp sponsorsuz kalmaz. Süre dolduğunda yönetim bekleyen teklifler arasından en iyisini kabul eder."
+     },
+     {
+      "q": "Bilet fiyatını çok yükseltirsem ne olur?",
+      "a": "Taraftarın alım gücünü aşan bilet fiyatları tribün doluluğunu düşürür; hem toplam gişe gelirin hem de iç saha taraftar desteğin azalabilir."
+     }
+    ]
+   },
+   {
+    "id": "menajer-profili",
+    "no": 9,
+    "title": "Menajer Profili",
+    "updated": "2026-10-18",
+    "sections": [
+     {
+      "id": "menajer-kartin",
+      "title": "Menajer kartın",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Menajer profilin futbol dünyasındaki kişisel kimliğindir: adın, avatarın, uyruğun, lisans basamağın, kazandığın kupalar ve çalıştırdığın kulüplerin geçmişi burada yaşar. Diğer menajerler seni bu kartla tanır; kariyerin boyunca hangi kulübe gidersen git profilin ve başarıların seninle gelir."
+       }
+      ]
+     },
+     {
+      "id": "ekol-ve-karakter",
+      "title": "Ekol ve karakter",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Kariyerine başlarken bir menajerlik ekolü ve bir iletişim karakteri seçersin. Ekolün; taktik kurgu, genç oyuncu yetiştirme, kondisyon disiplini veya transfer pazarlığı gibi alanların hangisinde doğal bir yatkınlığa sahip olduğunu yansıtır. Karakterin ise soyunma odasında oyuncularınla ve basın toplantılarında medyayla kurduğun iletişimin tonunu belirler."
+       }
+      ]
+     },
+     {
+      "id": "menajer-puani",
+      "title": "Menajer puanı",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Menajer puanın sahadaki ve yönetim masasındaki becerinin dengeli ölçüsüdür. Performans karnen; maç sonuçlarını kapsayan Başarı, rakiplere karşı kurduğun üstünlüğü ölçen Oyun Aklı, antrenman ve hazırlık disiplinini yansıtan Çalışkanlık, kadro uyumu ve rotasyonu değerlendiren Kadro Yönetimi ile alım-satım ve maaş dengesini tartan Transfer Başarısı başlıklarından beslenir. Puanın zaman içinde yumuşak biçimde güncellenir; böylece şanssız kaybedilen tek bir maç kariyer puanını bir anda yıkmaz."
+       }
+      ]
+     },
+     {
+      "id": "lisans",
+      "title": "Lisans",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Lisansın menajerlik merdivenindeki resmi yetkinlik basamağındır. Kariyerine Aday lisansıyla başlarsın; tamamladığın resmi maç sayısı ve menajer puanın gerekli olgunluğa ulaştığında bir üst lisansın sınavına katılabilirsin. Sınav harcı kulübün kasasından değil, doğrudan kendi kişisel menajer cüzdanından karşılanır. Üst düzey lisanslar daha yüksek itibarlı kulüplerin ve özel dünyaların kapısını açar."
+       },
+       {
+        "kind": "note",
+        "text": "Lisans basamakları sırasıyla Aday, C, B, A, Pro, Sezono A ve Sezono Pro'dur."
+       }
+      ]
+     },
+     {
+      "id": "sozlesme-masasi-ve-yonetim-guveni",
+      "title": "Sözleşme masası ve yönetim güveni",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Kulüp yönetimi sezon başında senden ligin ve kadronun gücüne uygun bir hedef bekler. Menajer Sözleşme Masası ekranında mevcut kontratını, yönetim kurulunun sana duyduğu güveni ve sezon beklentisini takip edersin. Hedefleri yakaladığında yönetim sözleşmeni uzatmak isterken, beklentilerin çok uzağında kalmak koltuk güvenliğini sarsabilir. Aynı ekrandan açık iş ilanlarını inceleyebilir veya kariyerine yeni bir kulüpte yön verebilirsin."
+       }
+      ]
+     },
+     {
+      "id": "sohret",
+      "title": "Şöhret",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Şöhretin futbol dünyasındaki tanınırlığındır. Kazandığın şampiyonluklar, kupa zaferleri ve istikrarlı sezonlar şöhretini büyütür. Menajer Sıralaması ekranında hem kendi ülkendeki hem de dünyadaki diğer menajerler arasındaki yerini görürsün."
+       }
+      ]
+     }
+    ],
+    "where": [
+     {
+      "key": "menajer",
+      "title": "Menajer Profili",
+      "path": "Menajer Profili"
+     }
+    ],
+    "faq": [
+     {
+      "q": "Lisans sınavına ne zaman girebilirim?",
+      "a": "Menajer profilinde sıradaki lisansın şartlarını görürsün. Şartlar tamamlandığında sınava girebilirsin."
+     },
+     {
+      "q": "Menajer cüzdanı ile kulübün kasası aynı şey mi?",
+      "a": "Hayır. Kasa kulübündür ve kulübün işleri için harcanır. Cüzdan senindir; kulüp değiştirsen de seninle gelir."
+     },
+     {
+      "q": "Tek bir yenilgi menajer puanımı düşürür mü?",
+      "a": "Hayır. Menajer puanın uzun vadeli karne bileşenlerinin dengeli ortalamasıyla hareket eder; anlık dalgalanmalar yerine istikrarlı performans belirleyicidir."
+     }
+    ]
+   },
+   {
+    "id": "sikca-sorulanlar",
+    "no": 10,
+    "title": "Sıkça Sorulanlar",
+    "updated": "2026-10-18",
+    "sections": [
+     {
+      "id": "her-gun-oyuna-girmem-gerekir-mi",
+      "title": "Her gün oyuna girmem gerekir mi?",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Hayır. Takvim sen yokken de akar; kadron, taktiğin ve antrenman programın kayıtlı kaldıkça takım senin planınla oynar ve çalışır. Yine de bekleyen kararlar ofiste birikir; kulübüne düzenli uğrayan menajer transfer fırsatlarını, kondisyon değişimlerini ve rakip zaaflarını daha erken yakalar."
+       }
+      ]
+     },
+     {
+      "id": "kagit-ustunde-guclu-kadrom-neden-mac-kaybetti",
+      "title": "Kağıt üstünde güçlü kadrom neden maç kaybetti?",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Futbolda sonuç yalnız genel güç ortalamasıyla belirlenmez. Yorgun sahaya çıkan oyuncular, yeni transferler nedeniyle henüz oturmamış takım uyumu, doğal mevkisi dışında oynatılan futbolcular veya rakibin oyun tarzına ters düşen bir taktik anlayış kağıt üstünde favori olan takımın puan kaybetmesine yol açabilir. Maç Analizi ekranı nerede zorlandığını ayrıntısıyla gösterir."
+       }
+      ]
+     },
+     {
+      "id": "sakat-oyuncum-ne-zaman-doner",
+      "title": "Sakat oyuncum ne zaman döner?",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Sakatlığın ne kadar süreceğini oyuncu profilinde, kadro listesinde ve Sağlık Merkezi ekranında görürsün. Sağlık merkezinin seviyesi ve sağlık ekibinin kalitesi iyileşme sürecini hızlandırır."
+       }
+      ]
+     },
+     {
+      "id": "agir-antrenman-neden-sakatlik-cikardi",
+      "title": "Ağır antrenman neden sakatlık çıkardı?",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Dinlenme ve rejenerasyon seansları eklemeden üst üste yüksek şiddetli antrenmanlar uygulamak oyuncuların kısa vadeli yorgunluk yükünü artırır. Haftalık programda yoğun çalışmalarla toparlanma seanslarını dengelemek hem gelişim verimini korur hem de sakatlıkları önler."
+       }
+      ]
+     },
+     {
+      "id": "oyuncularimin-gercek-gucunu-neden-goremiyorum",
+      "title": "Oyuncularımın gerçek gücünü neden göremiyorum?",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Kendi kulübündeki oyuncuların tüm niteliklerini ve kart sınıflarını her zaman açıkça görürsün. Başka kulüplerin oyuncularını ise tanıdıkça keşfedersin; gözlemcilerini görevlendirerek bulanık güç aralıklarını netleştirebilirsin."
+       }
+      ]
+     },
+     {
+      "id": "teklif-verdigimde-butcem-neden-azaldi",
+      "title": "Teklif verdiğimde bütçem neden azaldı?",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Müzayedede verdiğin açık teklifler ve pazarlık masasında bekleyen bonservis önerileri sonuçlanana kadar kasanda o işlem için ayrılır. Teklifin geçilirse ya da görüşme kapanırsa ayrılan tutar anında yeniden kullanılabilir hale gelir."
+       }
+      ]
+     },
+     {
+      "id": "dili-nasil-degistiririm",
+      "title": "Dili nasıl değiştiririm?",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Ayarlar ekranındaki dil satırından istediğin dili seçebilirsin. Seçtiğin dil oyunun bütün ekranlarına ve menülerine anında uygulanır."
+       }
+      ]
+     },
+     {
+      "id": "hesabimi-silersem-ne-olur",
+      "title": "Hesabımı silersem ne olur?",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Hesabını Ayarlar ekranından istediğin zaman silebilirsin. Silme işlemi kalıcıdır ve geri alınamaz; yönettiğin kulüp oyunun yönetimine devredilir."
+       }
+      ]
+     }
+    ],
+    "where": [],
+    "faq": []
+   },
+   {
+    "id": "topluluk-kurallari",
+    "no": 11,
+    "title": "Topluluk Kuralları",
+    "updated": "2026-10-18",
+    "sections": [
+     {
+      "id": "saygi",
+      "title": "Saygı",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "SEZONO'da sahaya çıkan herkes aynı futbol tutkusunu paylaşan bir menajerdir. Diğer menajerlere, onların kulüplerine ve oyuncularına her zaman sportmenlik ve saygıyla yaklaş. Hakaret, aşağılama, nefret söylemi, ayrımcılık, taciz ve tehdit oyunun hiçbir alanında kabul edilmez."
+       }
+      ]
+     },
+     {
+      "id": "adlar",
+      "title": "Adlar",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Menajer adın, kulübünün adı ve stadyumunun adı tüm oyun dünyasına açık biçimde görünür. Küfür, argo, hakaret, siyasi ya da uygunsuz ifadeler içeren veya başka bir menajeri ya da resmi yöneticiyi taklit eden adlar kullanılamaz."
+       }
+      ]
+     },
+     {
+      "id": "topluluk-forumu-ve-yapici-paylasim",
+      "title": "Topluluk forumu ve yapıcı paylaşım",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Topluluk forumundaki taktik odaları, kulüp vitrinleri ve ülke panoları bilgi paylaşımı ve tatlı rekabet içindir. Konu başlıklarına uygun yazmak, tekrarlayan istenmeyen mesajlardan kaçınmak ve tartışmaları futbol çerçevesinde tutmak topluluk kültürünün temelidir. Kural dışı bir paylaşımla karşılaştığında tartışmaya girmek yerine bildirim aracını kullanmalısın."
+       }
+      ]
+     },
+     {
+      "id": "kisisel-bilgi",
+      "title": "Kişisel bilgi",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Kendinin ya da başka bir kullanıcının telefon numarasını, açık adresini, e-posta bilgisini veya özel yazışmalarını herkese açık alanlarda paylaşma. Hesap erişimini hiçbir koşulda başkasıyla paylaşma; her menajer kendi hesabının güvenliğinden sorumludur."
+       }
+      ]
+     },
+     {
+      "id": "hile-ve-coklu-hesap",
+      "title": "Hile ve çoklu hesap",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Her oyuncunun yalnız tek bir menajer hesabı bulunabilir. Birden fazla hesap açarak kulüpler arasında gerçek değerinin dışında bedellerle oyuncu veya nakit aktarmak, anlaşmalı maçlarla lig sıralamasını etkilemek, oyunun teknik işleyişini suistimal etmek ya da otomatik yazılımlarla haksız üstünlük sağlamak kesin olarak yasaktır."
+       }
+      ]
+     },
+     {
+      "id": "yaptirimlar",
+      "title": "Yaptırımlar",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Topluluk ve adil oyun kurallarını ihlal eden menajerlerin uygunsuz içerikleri kaldırılır, kulüp veya menajer adları sıfırlanabilir, forum yazma yetkileri kısıtlanabilir ya da hesapları kalıcı olarak kapatılabilir. Açık hile ve ağır ihlallerde ön uyarı beklenmeksizin işlem uygulanır."
+       }
+      ]
+     }
+    ],
+    "where": [],
+    "faq": []
+   },
+   {
+    "id": "yasal-metinler",
+    "no": 12,
+    "title": "Yasal Metinler",
+    "updated": "2026-10-18",
+    "sections": [
+     {
+      "id": "kullanim-kosullari",
+      "title": "Kullanım Koşulları",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Kullanım Koşulları, SEZONO dünyasında yer alırken senin ve oyun yönetiminin karşılıklı hak, yetki ve sorumluluklarını düzenler. Hesap oluşturup oyuna adım attığında bu ilkeleri kabul etmiş sayılırsın."
+       }
+      ]
+     },
+     {
+      "id": "gizlilik-politikasi",
+      "title": "Gizlilik Politikası",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Gizlilik Politikası; hesabını oluştururken ve oyunu kullanırken hangi verilerin işlendiğini, bu bilgilerin oyun deneyimini yürütmek ve güvenliği sağlamak amacıyla nasıl kullanıldığını ve kişisel verilerinin nasıl korunduğunu şeffaf biçimde açıklar."
+       }
+      ]
+     },
+     {
+      "id": "sanal-ogeler-ve-kulup-yonetimi",
+      "title": "Sanal öğeler ve kulüp yönetimi",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Oyun içinde yer alan kulüp kasası bakiyeleri, menajer cüzdanı, lisanslar, kupalar ve görsel özelleştirmeler yalnız SEZONO deneyiminin bir parçası olan sanal unsurlardır. Bu öğeler oyun dışında gerçek para karşılığında devredilemez, satılamaz veya ticari işleme konu edilemez."
+       }
+      ]
+     },
+     {
+      "id": "yas-siniri",
+      "title": "Yaş sınırı",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "SEZONO'da hesap açabilmek ve topluluk özelliklerini kullanabilmek için yasal yaş sınırının üzerinde olmak gerekir. Kayıt aşamasında doğum tarihi doğrulaması bu yasal yükümlülüğü yerine getirmek için istenir."
+       }
+      ]
+     },
+     {
+      "id": "hesabini-silmek",
+      "title": "Hesabını silmek",
+      "blocks": [
+       {
+        "kind": "p",
+        "text": "Hesabını ve ilişkili kişisel verilerini Ayarlar ekranındaki hesap silme adımı üzerinden dilediğin an kalıcı olarak silebilirsin. Silme işlemi tamamlandığında geri dönüşü yoktur."
+       }
+      ]
+     }
+    ],
+    "where": [
+     {
+      "key": "yasal-kosullar",
+      "title": "Kullanım Koşulları",
+      "path": "Yasal Metinler"
+     },
+     {
+      "key": "yasal-gizlilik",
+      "title": "Gizlilik Politikası",
+      "path": "Yasal Metinler"
+     },
+     {
+      "key": "ayarlar",
+      "title": "Ayarlar",
+      "path": "Ayarlar"
+     }
+    ],
+    "faq": []
+   }
+  ]
+ }
+}
