@@ -3,6 +3,21 @@
 | Dosya | Kullanım |
 |---|---|
 | `mac-topu.webp` | MAÇ sekmesinin vurgulu topu (192×192, şeffaf) |
+| `ikon-ana-sayfa.webp` | Ana Sayfa sekmesi (256×256 alfa, ~11 KB) |
+| `ikon-takim.webp` | Takım sekmesi |
+| `ikon-transfer.webp` | Transfer sekmesi |
+| `ikon-yonetim.webp` | Yönetim sekmesi |
+
+**Dört sekme ikonu (2026-10-21, İskender):** Gemini'nin tek stilli 3B seti;
+eski lucide çizgi / çift tonlu SVG ikonların yerine geçti. 2026-10-22'den beri
+ÇERÇEVESİZ (`AnaSayfaIkon`, 36 dp kutu, ≈ 28 dp çizim; rozet kalktı). 3B görsel
+tek durumlu → pasif sekme %80 opaklık + %80 doygunluk (rozetle %55/%60'tı), aktif
+tam renk. ⚠️ `ikon-ana-sayfa`, `ikon-takim`, `ikon-yonetim` lacivert ağırlıklı
+(piksellerin %51–62'si koyu): `chromeBottom` üstünde siluet kenarı kontrastı
+pasifte 2,5–3,0:1 — açık tonlu / konturu GÖMÜLÜ yeni varlık beklenir (kontur kodla
+çizilmez). Kod:
+`lib/core/ui/cosmos_bottom_nav.dart` (`_tabAssets`); bekçi:
+`test/alt_nav_ana_sayfa_ikonu_test.dart`.
 
 **Top nereden geliyor:** İskender'in Midjourney karesi (modern panelli top,
 turkuaz dikişler) + `assets/brand/sezono_mark.png` bindirmesi. İmza kompoziti

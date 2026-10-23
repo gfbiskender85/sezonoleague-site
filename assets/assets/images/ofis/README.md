@@ -2,31 +2,45 @@
 
 | Dosya | Ne | Ölçü |
 |---|---|---|
-| `mac_ev.webp` | Ev sahibi — TEPEDEN görünen stadyum halkası + çim | 106×114 (38 dp @3x) |
-| `mac_deplasman.webp` | Deplasman — mavi cam uçak | 114×114 (38 dp @3x) |
-| `gosterge_deger.webp` | Piyasa değeri — yeşil jeton yığını + yükseliş oku | 86×102 (34 dp @3x) |
-| `gosterge_taraftar.webp` | Taraftar — mavi üç figür | 139×102 (34 dp @3x) |
-| `gosterge_prestij.webp` | Prestij — altın taç | 115×102 (34 dp @3x) |
+| `mac_ev.webp` | Ev sahibi — altın çerçeveli stadyum, yeşil saha | 256×256 |
+| `mac_deplasman.webp` | Deplasman — beyaz/turkuaz uçak | 256×256 |
+| `gosterge_deger.webp` | Piyasa değeri — altın jeton yığını + yeşil yükseliş oku | 256×256 |
+| `gosterge_taraftar.webp` | Taraftar — turkuaz/beyaz atkı açan eller | 256×256 |
+| `gosterge_prestij.webp` | Prestij — altın taç, turkuaz taş | 256×256 |
 
-2026-08-29, İskender: *"rakip logosu hiç koymayalım, ana asset home ya da uçak
-görseli olsun, altında da rakip adı yazsın"* + *"ev yerine stadyum ikonu
-üretelim"*.
+⭐ **Tek stilli Tasarım-2 seti (Gemini, İskender seçimi 2026-10-21).** Yumuşak
+3B oyuncak dili, altın + turkuaz palet, yazı/logo/mor YOK. 2026-10-22'den beri
+görseller ÇERÇEVESİZ, doğrudan panelin camında çizilir (`AnaSayfaIkon`,
+`lib/core/theme/ana_sayfa_program.dart`): gösterge 32 dp, ev/deplasman telefonda
+yoğun sırada 32, masaüstünde 48. Tuvalde her yanda ~%11 şeffaf pay var → görünen
+çizim kutunun ≈ %78'i (ölçüldü). Kaynak PNG ve üretim kaydı bu depoda YOK (yalnız
+işlenmiş 256² alfa WebP).
 
 ## Kurallar
 
-1. **Şeffaf zemin ŞART** — kart yok, görsel doğrudan ekran zemininde duruyor.
+1. **Şeffaf zemin ŞART** — görsel panelin camında duruyor (2026-10-21–22 arası rozette, ondan önce
+   doğrudan ekran zemininde).
    ⚠️ Üretim aracı "transparent background" istendiğinde dama desenini
    görselin İÇİNE boyuyor (alfa üretmiyor). Doğru yol: **düz magenta**
    (`#FF00FF`) zeminde ürettirip zemini key'lemek. İlk turda bu atlandığı için
    dama deseni asset'in içine gömülmüştü.
-2. **Renk gömülü** — `ColorFilter` ile boyanmaz. Ev camgöbeği (#7DF3F0→#2FBFC4),
-   deplasman mavi (#BBD2FF→#5C79D6); palet değişirse asset yeniden üretilir.
+2. **Renk gömülü** — `ColorFilter` ile boyanmaz (altın + turkuaz palet); palet
+   değişirse asset yeniden üretilir.
 3. **38 dp'de okunmalı.** Kalabalık/ışık direği/pencere gibi detay
    İSTENMEZ — ilk denemede stadyum silüeti UFO gibi okunmuştu.
-4. Tüketici: `lib/features/ofis/widgets/ofis_v2_body.dart` → `_UpcomingCell`.
+4. Tüketici: `lib/features/ofis/widgets/ofis_v2_body.dart` (gösterge şeridi ve
+   Yaklaşan Maçlar) → `AnaSayfaIkon` (çerçevesiz, 2026-10-22).
    `cacheWidth` cihazdan türetilir, dosya boyutundan DEĞİL.
 
 ## Geçmiş Kararlar
+
+- 2026-10-22: Ortak ikon rozeti KALKTI (İskender: *«ikonların dış çevresindeki outline gibi
+  duran çerçeve kötü duruyor»*); görseller çerçevesiz. Asset'lerin kendi zemini/parıltısı yok
+  (kenar alfası 0) — çerçevesiz hâlde ek işlem gerekmedi.
+
+- 2026-10-21: Gemini'nin ilk Tasarım-2 seti (taç ayrıntılı, taraftar cam figür,
+  uçak siyah diskte — tek stil değildi) İskender'in seçtiği tek stilli setle
+  değişti; beşi de ortak ikon rozetine girdi.
 
 - 2026-08-29 (ilk tur): 3/4 açıdan **oval kâse** üretildi. İskender: *"daha iyi
   bir stadyum asseti üretebilirdin"* — 38 dp'de küvet gibi okunuyordu.
