@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>SEZONO League — Gizlilik Politikası</title>
+<link rel="canonical" href="https://sezonoleague.com/privacy/tr/">
+<meta name="theme-color" content="#050924">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<style>
+:root{
+  --night0:#050924; --night1:#081446; --chrome0:#0C1A57; --chrome1:#050B2B;
+  --cream:#F5F1E6; --t2:rgba(245,241,230,.78); --t3:rgba(245,241,230,.55);
+  --gold:#EFC987; --line:rgba(159,178,232,.20); --line2:rgba(159,178,232,.34);
+  --display:"Barlow Condensed","Arial Narrow",sans-serif;
+  --accent:Anton,"Barlow Condensed",sans-serif;
+  --body:Inter,-apple-system,"Segoe UI",Roboto,sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--night0);color:var(--cream);font:400 16px/1.65 var(--body);-webkit-font-smoothing:antialiased}
+.wrap{max-width:900px;margin:0 auto;padding-inline:20px}
+header{background:linear-gradient(168deg,var(--chrome0),var(--chrome1) 72%,var(--night0));
+  border-bottom:1px solid var(--line);padding-block:38px 30px}
+.lock{display:grid;gap:2px;font-family:var(--display);font-weight:700;letter-spacing:.13em;line-height:.95;font-size:clamp(28px,6vw,40px)}
+.lock i{font-style:normal;font-family:var(--accent);font-weight:400;display:inline-block;font-size:.816em;line-height:1;
+  vertical-align:baseline;margin:0 .09em;transform:rotate(-7deg);transform-origin:50% 50%}
+.lock .l1{color:var(--cream)} .lock .l1 i{color:var(--gold)}
+.lock .l2{color:var(--gold)} .lock .l2 i{color:var(--cream)}
+.eyebrow{font-family:var(--display);font-weight:600;letter-spacing:.24em;text-transform:uppercase;font-size:12px;color:rgba(159,178,232,.9);margin:0 0 14px}
+h1{font-family:var(--display);font-weight:700;letter-spacing:.05em;text-transform:uppercase;font-size:clamp(26px,5vw,38px);margin:22px 0 8px}
+.lede{color:var(--t2);max-width:62ch;margin:0}
+section{padding-block:34px;border-bottom:1px solid var(--line)}
+h2{font-family:var(--display);font-weight:700;letter-spacing:.07em;text-transform:uppercase;font-size:22px;margin:0 0 14px}
+h3{font-family:var(--display);font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:14px;color:var(--gold);margin:22px 0 6px}
+p{margin:0 0 12px;color:var(--t2)} p.tight{margin-bottom:6px}
+dl.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1px;background:var(--line);
+  border:1px solid var(--line);border-radius:12px;overflow:hidden;margin:0}
+.facts div{background:rgba(8,20,70,.55);padding:13px 15px}
+.facts dt{font-family:var(--display);letter-spacing:.16em;text-transform:uppercase;font-size:11px;color:var(--t3)}
+.facts dd{margin:5px 0 0;font-size:15.5px}
+.shots{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin-top:6px}
+.shots a{display:block;border:1px solid var(--line2);border-radius:10px;overflow:hidden;background:#08123a}
+.shots img{display:block;width:100%;height:auto}
+.shots span{display:block;font-family:var(--display);letter-spacing:.12em;text-transform:uppercase;font-size:11px;color:var(--t3);padding:7px 9px}
+.dl{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+.dl a{font-family:var(--display);letter-spacing:.09em;text-transform:uppercase;font-size:13px;color:var(--cream);
+  border:1px solid var(--line2);border-radius:9px;padding:9px 14px;text-decoration:none}
+.dl a:hover{border-color:var(--gold);color:var(--gold)}
+video{width:100%;max-width:300px;border-radius:12px;border:1px solid var(--line2);display:block}
+ul{margin:0 0 12px;padding-left:20px;color:var(--t2)} li{margin-bottom:6px}
+blockquote{margin:0;padding:12px 16px;border-left:2px solid var(--gold);background:rgba(239,201,135,.06);
+  border-radius:0 8px 8px 0;color:var(--cream)}
+a{color:var(--gold)}
+footer{padding-block:26px 46px;color:var(--t3);font-size:14px}
+footer a{color:var(--t2)}
+@media(max-width:600px){ .shots{grid-template-columns:repeat(auto-fill,minmax(120px,1fr))} }
+
+.legal{padding-block:28px 64px} .legal h1{font-size:clamp(26px,5vw,36px)} .legal h2{margin-top:2em}
+.legal table{border-collapse:collapse;width:100%;display:block;overflow-x:auto}
+.legal td,.legal th{border:1px solid var(--line2);padding:6px 10px;text-align:left;vertical-align:top}
+.legal a{color:var(--gold)} .alt{float:right;font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap legal">
+<p><a href="/">← SEZONO League</a> <a class="alt" href="/privacy/">English</a></p>
+<h1>Sezono Gizlilik Politikası ve KVKK Aydınlatma Metni</h1>
+<p><strong>Sürüm:</strong> 2026-09-24 · <strong>Yürürlük tarihi:</strong> 24 Eylül 2026</p>
+<p>Sezono'yu oynarken bize bazı bilgilerini emanet ediyorsun. Bu metin, hangi
+bilgileri neden aldığımızı, kimlerle paylaştığımızı, ne kadar sakladığımızı ve
+bunlar üzerinde hangi haklara sahip olduğunu anlatır. Hukuk dilinden
+kaçınmadan ama anlaşılır yazmaya çalıştık.</p>
+<p>Bu metin aynı zamanda 6698 sayılı Kişisel Verilerin Korunması Kanunu'nun
+("<strong>KVKK</strong>") 10. maddesi uyarınca <strong>aydınlatma metni</strong>dir ve Avrupa Birliği
+Genel Veri Koruma Tüzüğü'nün ("<strong>GDPR</strong>") 13–14. maddeleri uyarınca
+bilgilendirmedir.</p>
+<hr />
+<h2>1. Veri sorumlusu kim</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Veri sorumlusu</td>
+<td><strong>İskender Kalkan</strong></td>
+</tr>
+<tr>
+<td>Veri talepleri ve iletişim</td>
+<td>gfbiskender85@gmail.com</td>
+</tr>
+</tbody>
+</table>
+<p>Bu metinde "<strong>biz</strong>" yukarıdaki veri sorumlusunu, "<strong>sen</strong>" Sezono'da hesabı
+olan gerçek kişiyi ifade eder.</p>
+<p>Sezono'yu tek başına yürüten bir gerçek kişiyiz; bu yüzden bize ulaşmanın tek
+ve doğrudan yolu yukarıdaki e-posta adresidir. Türkiye'de, Avrupa Birliği'nde
+ya da başka bir ülkede yaşıyor ol, §11'deki haklarını bu adrese yazarak
+kullanırsın.</p>
+<hr />
+<h2>2. Bu metin neyi kapsar</h2>
+<p>Sezono League mobil oyununu, oyunun sunucularını ve oyunla ilgili e-postaları
+kapsar. Tek bir ortak oyun dünyası vardır; kulübün, maçların ve sıralaman bu
+dünyada diğer oyuncularla birlikte yaşar.</p>
+<p>Uygulama mağazalarının (Apple App Store, Google Play) kendi veri işlemeleri bu
+metnin kapsamı dışındadır; onlar kendi gizlilik politikalarına tabidir.</p>
+<hr />
+<h2>3. Hangi verileri işliyoruz</h2>
+<h3>3.1 Hesap ve kimlik</h3>
+<table>
+<thead>
+<tr>
+<th>Veri</th>
+<th>Nereden gelir</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E-posta adresi</td>
+<td>Kayıt formu veya Apple/Google ile giriş</td>
+</tr>
+<tr>
+<td>Kullanıcı adı</td>
+<td>Kayıt formu; vermezsen e-postandan türetilir</td>
+</tr>
+<tr>
+<td>Parola <strong>özeti</strong> (bcrypt)</td>
+<td>Kayıt formu — düz parolan hiçbir zaman saklanmaz</td>
+</tr>
+<tr>
+<td>Doğum tarihi</td>
+<td>Kayıt formu — yalnızca yaş kapısı için (§10)</td>
+</tr>
+<tr>
+<td>Apple / Google kullanıcı kimliği (<code>sub</code>)</td>
+<td>Apple veya Google ile giriş yaptıysan</td>
+</tr>
+<tr>
+<td>E-posta doğrulandı mı</td>
+<td>Sistem</td>
+</tr>
+<tr>
+<td>Arayüz dili</td>
+<td>Ayarlardan seçtiğin dil</td>
+</tr>
+</tbody>
+</table>
+<p>Apple ile girişte "E-postamı gizle"yi seçersen bize gerçek adresin değil,
+Apple'ın ürettiği yönlendirme adresi ulaşır.</p>
+<h3>3.2 Oyun verisi</h3>
+<p>Kulübün, menajer profilin (oyundaki adın, portren, karakterin, yeteneklerin),
+kadron, transferlerin, maçların, mali işlemlerin, antrenmanların, gözlem
+raporların, başarımların ve sıralaman. Bunlar oyunun kendisidir; hesabına
+bağlıdır.</p>
+<p>Bir kısmı <strong>diğer oyunculara açıktır</strong>: kulübünün adı ve görünümü, menajer
+adın, sıralamalardaki yerin, maç sonuçların, transfer hareketlerin ve oyun içi
+haber akışında çıkan haberler.</p>
+<h3>3.3 Cihaz ve bildirim</h3>
+<table>
+<thead>
+<tr>
+<th>Veri</th>
+<th>Neden</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bildirim jetonu (Firebase Cloud Messaging)</td>
+<td>Push bildirimi gönderebilmek için</td>
+</tr>
+<tr>
+<td>Platform (iOS / Android)</td>
+<td>Bildirimi doğru biçimde göndermek için</td>
+</tr>
+<tr>
+<td>Uygulama sürümü</td>
+<td>Hata ayıklama, uyumluluk</td>
+</tr>
+<tr>
+<td>Cihazın saat dilimi farkı</td>
+<td>Gece saatlerinde bildirim göndermemek için</td>
+</tr>
+<tr>
+<td>Bildirim tercihlerin</td>
+<td>Hangi tür bildirimleri istediğin</td>
+</tr>
+</tbody>
+</table>
+<h3>3.4 Bağlantı ve güvenlik</h3>
+<p>Sunucularımıza gelen her istek gibi senin isteğin de <strong>IP adresi</strong> taşır. IP
+adresini, kötüye kullanımı sınırlamak (aynı adresten dakikada onlarca giriş
+denemesi gibi) için <strong>anlık olarak</strong> kullanırız; normal oyuncu hesaplarında IP
+adresini veritabanımıza yazmayız. Barındırma sağlayıcımızın sunucu kayıtlarında
+teknik olarak görünür (§8).</p>
+<p>Oturumların için kısa ömürlü bir erişim anahtarı ve veritabanında <strong>özeti</strong>
+tutulan bir yenileme anahtarı oluşur.</p>
+<h3>3.5 Satın alma</h3>
+<p>Kart bilgilerini <strong>görmüyoruz, almıyoruz, saklamıyoruz</strong>. Ödeme tamamen Apple
+App Store üzerinden geçer. Bizde kalan:</p>
+<ul>
+<li>hangi ürünü aldığın (ürün kimliği),</li>
+<li>Apple'ın verdiği <strong>işlem kimliği</strong> (<code>originalTransactionId</code>),</li>
+<li>aboneliğin hangi tarihe kadar geçerli olduğu,</li>
+<li>Apple'ın gönderdiği abonelik olay bildirimleri (yenileme, iptal, iade).</li>
+</ul>
+<h3>3.6 Destek ve iletişim</h3>
+<p>Bize e-posta yazarsan, yazdıkların ve adresin bize ulaşır. Şifre sıfırlama ve
+e-posta doğrulama için gönderdiğimiz tek kullanımlık kodun <strong>özeti</strong>
+saklanır; kodun kendisi saklanmaz.</p>
+<h3>3.7 Onay kayıtları</h3>
+<p>Bu metnin ve Kullanım Koşulları'nın hangi sürümünü ne zaman onayladığını
+kaydederiz: hesabın, metin türü, metin sürümü, onay zamanı. Bunu yasal ispat
+yükümlülüğümüz için tutarız.</p>
+<h3>3.8 Bekleme listesi (oyun dışı)</h3>
+<p>Oyun yayımlanmadan önce web sitemizden haber listesine veya kapalı teste
+kaydolduysan: e-posta adresin, tercih ettiğin dil, kaydın geldiği kanal, teste
+katılmak isteyip istemediğin ve cihaz tercihin. Her duyuru e-postasında
+listeden çıkma bağlantısı bulunur.</p>
+<h3>3.9 İşlemediğimiz veriler</h3>
+<p>Şunları <strong>toplamıyoruz</strong>: gerçek adın ve soyadın, telefon numaran, adresin,
+konum verin, rehberin, fotoğrafların, reklam tanımlayıcın (IDFA / GAID) ve
+cihazlar arası takip verisi. Oyunda <strong>analitik veya çökme raporlama SDK'sı
+yoktur</strong>. Uygulamada <strong>oyuncular arası serbest mesajlaşma yoktur</strong>.</p>
+<hr />
+<h2>4. Neden işliyoruz ve hangi hukuki sebeple</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Amaç</th>
+<th>Kullanılan veri</th>
+<th>KVKK m. 5 sebebi</th>
+<th>GDPR m. 6 sebebi</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Hesabını açmak ve seni tanımak</td>
+<td>3.1</td>
+<td>Sözleşmenin kurulması/ifası</td>
+<td>Sözleşme (6/1-b)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Oyunu sunmak: kulübün, maçlar, sezonun işlemesi</td>
+<td>3.1, 3.2</td>
+<td>Sözleşmenin ifası</td>
+<td>Sözleşme (6/1-b)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Oturum güvenliği, parola sıfırlama, e-posta doğrulama</td>
+<td>3.1, 3.4, 3.6</td>
+<td>Sözleşmenin ifası; meşru menfaat</td>
+<td>Sözleşme (6/1-b); meşru menfaat (6/1-f)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Hile, çoklu hesap ve kötüye kullanımla mücadele</td>
+<td>3.2, 3.3, 3.4</td>
+<td>Meşru menfaat</td>
+<td>Meşru menfaat (6/1-f) — adil oyun</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Oyun içi olaylar için push bildirimi</td>
+<td>3.3</td>
+<td>Açık rıza (cihaz izni)</td>
+<td>Rıza (6/1-a)</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Satın almayı doğrulamak, aboneliği yürütmek</td>
+<td>3.5</td>
+<td>Sözleşmenin ifası; hukuki yükümlülük</td>
+<td>Sözleşme (6/1-b); hukuki yükümlülük (6/1-c)</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Destek taleplerini yanıtlamak</td>
+<td>3.6</td>
+<td>Sözleşmenin ifası; meşru menfaat</td>
+<td>Sözleşme (6/1-b); meşru menfaat (6/1-f)</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Yaş kapısını uygulamak, çocukları korumak</td>
+<td>Doğum tarihi</td>
+<td>Hukuki yükümlülük; meşru menfaat</td>
+<td>Hukuki yükümlülük (6/1-c); meşru menfaat (6/1-f)</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Onayları ispat etmek</td>
+<td>3.7</td>
+<td>Hukuki yükümlülük</td>
+<td>Hukuki yükümlülük (6/1-c)</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Yasal yükümlülükler (vergi, resmi talepler)</td>
+<td>3.1, 3.5</td>
+<td>Hukuki yükümlülük</td>
+<td>Hukuki yükümlülük (6/1-c)</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Duyuru e-postaları (bekleme listesi)</td>
+<td>3.8</td>
+<td>Açık rıza</td>
+<td>Rıza (6/1-a)</td>
+</tr>
+<tr>
+<td>12</td>
+<td>İzlemeyi seçtiğin ödüllü reklamın ödülünü doğrulamak</td>
+<td>Hesap kimliğin, tek kullanımlık doğrulama numarası</td>
+<td>Sözleşmenin ifası</td>
+<td>Sözleşme (6/1-b)</td>
+</tr>
+</tbody>
+</table>
+<p>Meşru menfaate dayandığımız yerlerde (4, 3, 7), menfaatimizi senin hak ve
+özgürlüklerinle tarttık: adil bir lig ortamı ve çalışan bir hesap güvenliği
+olmadan oyunun kendisi anlamsız hale gelir; bunun için kullandığımız veri
+oyunun zaten ürettiği veridir.</p>
+<p><strong>Pazarlama.</strong> Oyun içinde reklam amaçlı e-posta göndermiyoruz. İleride
+gönderirsek ayrıca ve açıkça iznini isteriz; izni her zaman geri alabilirsin.</p>
+<hr />
+<h2>5. Verilerini kimler alıyor</h2>
+<p>Verilerini satmıyoruz. Aşağıdaki hizmet sağlayıcıları, yalnızca bizim adımıza
+ve talimatımızla, görevleri için gereken kadar veri işler:</p>
+<table>
+<thead>
+<tr>
+<th>Alıcı</th>
+<th>Ne alır</th>
+<th>Ne için</th>
+<th>Nerede</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Railway</strong> (barındırma + veritabanı)</td>
+<td>Tüm oyun ve hesap verisi</td>
+<td>Sunucu ve veritabanı altyapısı</td>
+<td>ABD (San Francisco, Kaliforniya)</td>
+</tr>
+<tr>
+<td><strong>Resend</strong> (e-posta)</td>
+<td>E-posta adresin, doğrulama/sıfırlama kodu, e-posta metni</td>
+<td>Doğrulama ve şifre sıfırlama e-postaları</td>
+<td>ABD / AB</td>
+</tr>
+<tr>
+<td><strong>Google — Firebase Cloud Messaging</strong></td>
+<td>Bildirim jetonun, bildirimin başlığı ve metni</td>
+<td>Push bildirimi iletimi</td>
+<td>ABD</td>
+</tr>
+<tr>
+<td><strong>Apple</strong> — Sign in with Apple</td>
+<td>Apple'ın sana verdiği kullanıcı kimliği</td>
+<td>Apple ile giriş doğrulaması</td>
+<td>ABD</td>
+</tr>
+<tr>
+<td><strong>Apple</strong> — App Store</td>
+<td>İşlem kimliği, ürün kimliği</td>
+<td>Satın alma doğrulaması, abonelik olayları</td>
+<td>ABD</td>
+</tr>
+<tr>
+<td><strong>Google</strong> — Google ile giriş</td>
+<td>Google'ın sana verdiği kullanıcı kimliği</td>
+<td>Google ile giriş doğrulaması</td>
+<td>ABD</td>
+</tr>
+<tr>
+<td><strong>Google AdMob</strong></td>
+<td>Reklam gösterimine ilişkin teknik veri, ödülün eşleşmesi için tek kullanımlık numara ve hesap kimliğin</td>
+<td>Yalnızca <strong>izlemeyi seçtiğin</strong> ödüllü reklamlar ve ödülün doğrulanması</td>
+<td>ABD</td>
+</tr>
+</tbody>
+</table>
+<p>Ayrıca sistem arızalarında ekibimize uyarı gönderen bir bildirim servisi
+(ntfy.sh) kullanırız; bu uyarılar <strong>teknik durum mesajlarıdır</strong>, oyuncu kişisel
+verisi içermez.</p>
+<p>Bunların dışında verilerini yalnızca şu hallerde paylaşırız: yasal bir
+yükümlülük veya yetkili makam talebi; hukuki bir hakkın tesisi/korunması;
+şirket devri veya birleşmesi (bu durumda önceden bilgilendirilirsin).</p>
+<p><strong>Kullanmadığımız şeyler:</strong> üçüncü taraf analitik, çökme raporlama, reklam
+kimliğine dayalı hedefleme, veri simsarları, sosyal medya piksel/SDK'ları.</p>
+<hr />
+<h2>6. Reklamlar</h2>
+<p>Oyunda, <strong>izlemeyi kendin seçtiğinde</strong> kulüp bütçene gelir getiren kısa sponsor
+videoları sunulabilir. Bu reklamlar Google AdMob üzerinden gelir ve şu şekilde
+çalışır:</p>
+<ul>
+<li>Reklamlar <strong>kişiselleştirilmez</strong> — ilgi alanına göre hedefleme yapılmaz.</li>
+<li>Senden <strong>takip izni (ATT) istemeyiz</strong>; reklam tanımlayıcın (IDFA/GAID) bizim
+  tarafımızdan kullanılmaz.</li>
+<li>Ödülün gerçekten hak edildiğini doğrulamak için AdMob'un imzalı bildirimini
+  alırız; bu bildirimde hesabını eşleştiren bir kimlik ve tek kullanımlık bir
+  doğrulama numarası bulunur.</li>
+<li>Reklam izlemek tamamen gönüllüdür ve oyunun hiçbir bölümünü kapatmaz.</li>
+</ul>
+<p>AdMob'un kendi veri işlemesi Google'ın gizlilik politikasına tabidir.</p>
+<hr />
+<h2>7. Yurt dışına aktarım</h2>
+<p>Sezono'nun sunucuları ve veritabanı <strong>Amerika Birleşik Devletleri'nde</strong>
+çalışır: Railway altyapısında, San Francisco (Kaliforniya) bölgesinde. Diğer
+hizmet sağlayıcılarımızın da büyük bölümü ABD'dedir. Yani hesabına ve kulübüne
+ait verilerin tamamı Türkiye dışına ve Avrupa Ekonomik Alanı dışına aktarılır.</p>
+<ul>
+<li><strong>KVKK yönünden:</strong> aktarım, KVKK m. 9 uyarınca, yurt dışındaki hizmet
+  sağlayıcılarıyla akdedilen ve Kurul'un yayımladığı standart sözleşme
+  hükümlerini içeren veri işleme sözleşmelerine dayanır.</li>
+<li><strong>GDPR yönünden:</strong> AEA dışına aktarımlar, sağlayıcıların veri işleme
+  eklerinde yer alan Avrupa Komisyonu <strong>Standart Sözleşme Hükümleri</strong>ne (SCC)
+  dayanır; Railway, Apple ve Google için bu ekler geçerlidir.</li>
+</ul>
+<p>Dayandığımız aktarım belgelerinin bir kopyasını gfbiskender85@gmail.com
+adresinden isteyebilirsin.</p>
+<hr />
+<h2>8. Ne kadar süreyle saklıyoruz</h2>
+<table>
+<thead>
+<tr>
+<th>Veri</th>
+<th>Süre</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hesap ve oyun verisi</td>
+<td>Hesabın açık olduğu sürece</td>
+</tr>
+<tr>
+<td>Uzun süre girilmeyen hesaplar</td>
+<td>Hesabını silene kadar saklanır; pasiflik nedeniyle kendiliğinden silme uygulamıyoruz</td>
+</tr>
+<tr>
+<td>Oturum yenileme anahtarları</td>
+<td>60 gün; çıkış yaptığında veya hesap silindiğinde derhal iptal</td>
+</tr>
+<tr>
+<td>E-posta doğrulama / şifre sıfırlama kodu (özet)</td>
+<td>15 dakika geçerlilik; kullanıldıktan sonra kısa sürede silinir</td>
+</tr>
+<tr>
+<td>Bildirim jetonu</td>
+<td>Cihaz kaydını sildiğin veya çıkış yaptığın ana kadar</td>
+</tr>
+<tr>
+<td>Oyun içi bildirimler ve görev kartları</td>
+<td>Kısa süre sonra otomatik silinir (oyun takvimine göre yaklaşık 1–2 oyun haftası)</td>
+</tr>
+<tr>
+<td>Satın alma kaydı (işlem kimliği, ürün, dönem)</td>
+<td>Vergi ve ticari defter mevzuatının gerektirdiği süre (Türkiye'de kural olarak 10 yıl) — hesabın silinse de <strong>kimliğinden koparılarak</strong> saklanır</td>
+</tr>
+<tr>
+<td>Onay kayıtları</td>
+<td>Hesabın silinse de <strong>kimliğinden koparılarak</strong> saklanır (ispat yükü)</td>
+</tr>
+<tr>
+<td>Destek yazışmaları</td>
+<td>Talebin kapanmasından sonra 2 yıl</td>
+</tr>
+<tr>
+<td>Bekleme listesi kaydı</td>
+<td>Listeden çıkana veya oyun yayımlandıktan sonraki duyuru dönemi bitene kadar</td>
+</tr>
+<tr>
+<td>Sunucu erişim kayıtları</td>
+<td>Barındırma sağlayıcımız Railway'in kendi saklama politikasına tabidir; bu kayıtların ayrı bir kopyasını biz tutmayız</td>
+</tr>
+</tbody>
+</table>
+<p>Süre dolduğunda veriyi sileriz veya geri döndürülemez şekilde
+anonimleştiririz.</p>
+<hr />
+<h2>9. Hesabını sildiğinde ne oluyor</h2>
+<p>Hesabını istediğin zaman uygulama içinden silebilirsin: <strong>Ayarlar → Hesabımı
+Sil</strong>. Yanlışlıkla silmeyi önlemek için kulübünün adını yazmanı isteriz. Silme
+<strong>anında ve kalıcıdır</strong>; bekleme süresi veya geri alma penceresi yoktur.</p>
+<p><strong>Silinenler:</strong> e-posta adresin, kullanıcı adın, parola özetin, Apple/Google
+bağlantın, doğum tarihin, oturumların, bildirimlerin ve bildirim jetonların,
+menajer profilin, gözlem ve scout notların, ustalık kayıtların, maaş geçmişin,
+kulüp koltuğun, reklam ödülü kayıtların ve kullanıcı hesabı satırın.</p>
+<p><strong>Kalanlar — ve nedeni:</strong></p>
+<ol>
+<li><strong>Kulübün silinmez.</strong> Kulübün canlı bir ligde oynuyor: fikstür, puan
+   durumu, diğer menajerlerin ona karşı aldığı sonuçlar buna bağlı. Kulübü
+   silmek diğer oyuncuların oyununu bozar. Bunun yerine kulüp <strong>yapay zekâ
+   yönetimine devredilir</strong> ve seninle bağlantısı kesilir.</li>
+<li><strong>Oyun dünyasının kayıtları kalır:</strong> maç sonuçları, transferler, kupalar.
+   Bunlar artık sana bağlı değildir.</li>
+<li><strong>Satın alma kaydın kimliğinden koparılarak saklanır</strong> — muhasebe
+   yükümlülüğü ve Apple ile eşleşmenin bozulmaması için.</li>
+<li><strong>Onay kaydın kimliğinden koparılarak saklanır</strong> — yasal metinleri
+   onayladığını ispat yükü bizdedir.</li>
+</ol>
+<p>Hesabını silmek, Apple'daki <strong>aboneliğini iptal etmez</strong>. Aboneliği Apple
+hesabının abonelik ayarlarından ayrıca iptal etmen gerekir.</p>
+<hr />
+<h2>10. Çocuklar ve yaş sınırı</h2>
+<p>Sezono <strong>13 yaşından küçüklere yönelik değildir</strong>. Kayıt sırasında doğum
+tarihini sorarız ve <strong>13 yaşından küçükse hesap açılmaz</strong> — ne e-posta ile
+kayıtta ne de Apple/Google ile girişte.</p>
+<p>13 yaşından küçük birinin yaşını yanlış beyan ederek hesap açtığını öğrenirsek
+hesabı kapatır ve kişisel verilerini sileriz. Çocuğunun Sezono'da hesabı
+olduğunu düşünen veli gfbiskender85@gmail.com adresine yazarak silme
+talep edebilir.</p>
+<p>Bulunduğun ülke çevrimiçi hizmetler için daha yüksek bir yaş sınırı veya veli
+onayı öngörüyorsa (AB'de bu yaş üye devlete göre 13–16 arasında değişir), ona
+da uyulması gerekir.</p>
+<hr />
+<h2>11. Haklarınız ve nasıl kullanacağınız</h2>
+<p>KVKK m. 11 ve GDPR m. 15–22 uyarınca:</p>
+<ol>
+<li>Kişisel verinin işlenip işlenmediğini <strong>öğrenme</strong>, işleniyorsa bilgi ve
+   <strong>kopya</strong> isteme (erişim hakkı)</li>
+<li>İşlenme amacını ve amaca uygun kullanılıp kullanılmadığını öğrenme</li>
+<li>Yurt içinde/dışında aktarıldığı üçüncü kişileri bilme</li>
+<li>Eksik veya yanlış verinin <strong>düzeltilmesini</strong> isteme</li>
+<li>Verinin <strong>silinmesini</strong> isteme (unutulma hakkı)</li>
+<li>Düzeltme/silme işlemlerinin aktarılan üçüncü kişilere <strong>bildirilmesini</strong>
+   isteme</li>
+<li>İşlemenin <strong>kısıtlanmasını</strong> isteme (GDPR)</li>
+<li>Verini yapılandırılmış, yaygın kullanılan bir biçimde alma ve başka bir
+   sorumluya aktarma — <strong>taşınabilirlik</strong> (GDPR)</li>
+<li>Meşru menfaate dayanan işlemeye <strong>itiraz</strong> etme (GDPR m. 21)</li>
+<li>Rızaya dayanan işlemelerde <strong>rızanı geri alma</strong> (geri alma, öncesini
+    etkilemez)</li>
+<li>Yalnızca otomatik işlemeyle aleyhine sonuç doğan bir karara itiraz etme</li>
+<li>Hukuka aykırı işleme nedeniyle zarara uğradıysan <strong>tazminat</strong> isteme</li>
+</ol>
+<p><strong>Bazı hakları doğrudan uygulamadan kullanabilirsin:</strong> hesabını silmek
+(Ayarlar → Hesabımı Sil), bildirim tercihlerini değiştirmek, arayüz dilini
+değiştirmek.</p>
+<p><strong>Diğer talepler için:</strong> gfbiskender85@gmail.com adresine yaz. KVKK m. 13
+kapsamındaki resmî başvurunu da bu adrese iletebilirsin.</p>
+<p>Taleplere <strong>en geç 30 gün</strong> içinde yanıt veririz (GDPR kapsamında kural olarak
+1 ay; karmaşık taleplerde 2 ay uzatma bildirimiyle). Başvurular kural olarak
+ücretsizdir.</p>
+<p><strong>Şikâyet hakkı.</strong> Yanıtımızı yetersiz bulursan Türkiye'de <strong>Kişisel Verileri
+Koruma Kurulu</strong>'na (kvkk.gov.tr), AB/AEA'da ise bulunduğun ülkenin <strong>veri
+koruma otoritesine</strong> şikâyette bulunabilirsin.</p>
+<hr />
+<h2>12. Güvenlik</h2>
+<ul>
+<li>Parolan <strong>bcrypt</strong> ile geri döndürülemez şekilde özetlenir; düz metin parola
+  hiçbir yerde saklanmaz veya loglanmaz.</li>
+<li>Tüm bağlantılar <strong>TLS</strong> ile şifrelenir.</li>
+<li>Oturumlar kısa ömürlü anahtarla yürür; yenileme anahtarlarının yalnızca
+  özeti saklanır ve çıkışta/hesap silmede iptal edilir.</li>
+<li>Giriş ve kayıt uçlarında hız sınırlama ile kaba kuvvet denemeleri engellenir.</li>
+<li>E-posta kodları tek kullanımlıktır, 15 dakika geçerlidir ve yalnızca özetleri
+  saklanır.</li>
+<li>Yönetim paneline erişim ayrı kimlik doğrulama ve iki adımlı doğrulama ile
+  korunur; yönetici işlemleri kayıt altına alınır.</li>
+<li>Veritabanı yedekleri barındırma sağlayıcımız üzerinden düzenli alınır.</li>
+</ul>
+<p>Hiçbir sistem %100 güvenli değildir. Kişisel verilerini etkileyen bir ihlal
+olursa, mevzuatın öngördüğü süre içinde (KVKK'da en kısa sürede ve kural olarak
+72 saat içinde Kurul'a; GDPR m. 33'te 72 saat içinde otoriteye) bildirim yapar,
+yüksek risk varsa seni de bilgilendiririz.</p>
+<hr />
+<h2>13. Bu metin değişirse</h2>
+<p>Bu metni güncelleyebiliriz. Esaslı bir değişiklikte, yürürlüğe girmeden <strong>en az
+30 gün önce</strong> uygulama içinde ve e-postayla bildiririz.</p>
+<p>Her sürümün bir numarası vardır (bu metin: <strong>2026-09-24</strong>). Sürüm
+yükseldiğinde oyuna devam edebilmen için <strong>yeni sürümü onaylaman</strong> istenir;
+hangi sürümü ne zaman onayladığın kayıt altına alınır. Eski onay kayıtların
+denetim izi olarak korunur.</p>
+<hr />
+<h2>14. İletişim</h2>
+<p>Kişisel veri talepleri, bu metinle ilgili sorular ve oyun desteği için tek bir
+adres var:</p>
+<p><strong>gfbiskender85@gmail.com</strong></p>
+<p>Nerede yaşıyor olursan ol, §11'deki haklarını bu adrese yazarak kullanırsın.</p>
+</div>
+</body>
+</html>
