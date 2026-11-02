@@ -1,0 +1,381 @@
+{
+ "version": 1,
+ "plate": {
+  "width": 3072,
+  "height": 1728,
+  "note": "Transfer Odası Konsept T1B (16:9 3072x1728)"
+ },
+ "zoom": {
+  "min": 1.0,
+  "max": 2.2
+ },
+ "yawDegrees": 35,
+ "opening": {
+  "x": 0.56,
+  "y": 0.5,
+  "zoom": 1.0
+ },
+ "zoomTargets": [
+  {
+   "id": "pazar",
+   "x": 0.5,
+   "y": 0.42,
+   "zoom": 1.8
+  },
+  {
+   "id": "harita",
+   "x": 0.24,
+   "y": 0.42,
+   "zoom": 1.9
+  },
+  {
+   "id": "muzakere",
+   "x": 0.82,
+   "y": 0.48,
+   "zoom": 1.8
+  }
+ ],
+ "objects": [
+  {
+   "id": "pazar",
+   "route": "/transfer/pazar?kind=listed",
+   "z": 4,
+   "priority": 2,
+   "polygon": [
+    [
+     0.319,
+     0.228
+    ],
+    [
+     0.482,
+     0.228
+    ],
+    [
+     0.482,
+     0.448
+    ],
+    [
+     0.319,
+     0.448
+    ]
+   ],
+   "machine": {
+    "kind": "tv",
+    "duration": 0.6,
+    "route": 0.5
+   }
+  },
+  {
+   "id": "muzakere",
+   "route": "/transfer/gorusmeler",
+   "z": 3,
+   "priority": 2,
+   "polygon": [
+    [
+     0.675,
+     0.245
+    ],
+    [
+     0.815,
+     0.235
+    ],
+    [
+     0.815,
+     0.655
+    ],
+    [
+     0.675,
+     0.635
+    ]
+   ],
+   "machine": {
+    "kind": "door",
+    "duration": 0.65,
+    "route": 0.55
+   }
+  },
+  {
+   "id": "harita",
+   "route": "/transfer/kesif",
+   "z": 3,
+   "priority": 1,
+   "polygon": [
+    [
+     0.137,
+     0.216
+    ],
+    [
+     0.295,
+     0.216
+    ],
+    [
+     0.295,
+     0.462
+    ],
+    [
+     0.137,
+     0.462
+    ]
+   ],
+   "machine": {
+    "kind": "board",
+    "duration": 0.55,
+    "route": 0.45
+   }
+  },
+  {
+   "id": "dosyalar",
+   "route": "/gozlemci-raporlari",
+   "z": 5,
+   "priority": 1,
+   "polygon": [
+    [
+     0.159,
+     0.497
+    ],
+    [
+     0.247,
+     0.497
+    ],
+    [
+     0.247,
+     0.625
+    ],
+    [
+     0.159,
+     0.625
+    ]
+   ],
+   "machine": {
+    "kind": "folder",
+    "duration": 0.5,
+    "route": 0.4
+   }
+  },
+  {
+   "id": "kursu",
+   "route": "/transfer/gecmis",
+   "z": 5,
+   "priority": 1,
+   "polygon": [
+    [
+     0.478,
+     0.47
+    ],
+    [
+     0.575,
+     0.465
+    ],
+    [
+     0.585,
+     0.535
+    ],
+    [
+     0.49,
+     0.545
+    ]
+   ],
+   "machine": {
+    "kind": "book",
+    "duration": 0.5,
+    "route": 0.4
+   }
+  }
+ ],
+ "slots": {
+  "trophies": [],
+  "photos": [],
+  "personal": [],
+  "deskAccessories": []
+ },
+ "tiers": {
+  "4": {
+   "palette": {
+    "wall": "#d8cdb8",
+    "floor": "#b79868",
+    "desk": "#4a2a1c",
+    "accent": "#2a3f8f",
+    "sky": "#8fb7d8"
+   },
+   "layers": [
+    {
+     "id": "oda",
+     "depth": 2,
+     "parallax": 1.0,
+     "kind": "tiles",
+     "variant": "day",
+     "role": "plate",
+     "tiles": {
+      "cols": 3,
+      "rows": 2,
+      "size": 1024,
+      "pattern": "transfer_oda_gunduz_c{c}r{r}.webp",
+      "thumb": "transfer_oda_gunduz_kucuk.webp"
+     }
+    },
+    {
+     "id": "oda",
+     "depth": 2,
+     "parallax": 1.0,
+     "kind": "tiles",
+     "variant": "night",
+     "tiles": {
+      "cols": 3,
+      "rows": 2,
+      "size": 1024,
+      "pattern": "transfer_oda_gece_c{c}r{r}.webp",
+      "thumb": "transfer_oda_gece_kucuk.webp"
+     }
+    },
+    {
+     "id": "nabiz",
+     "depth": 8,
+     "parallax": 1.0,
+     "kind": "code",
+     "variant": "day"
+    }
+   ]
+  },
+  "3": {
+   "palette": {
+    "wall": "#d8cdb8",
+    "floor": "#b79868",
+    "desk": "#4a2a1c",
+    "accent": "#2a3f8f",
+    "sky": "#8fb7d8"
+   },
+   "layers": [
+    {
+     "id": "oda",
+     "depth": 2,
+     "parallax": 1.0,
+     "kind": "tiles",
+     "variant": "day",
+     "role": "plate",
+     "tiles": {
+      "cols": 3,
+      "rows": 2,
+      "size": 1024,
+      "pattern": "transfer_oda_gunduz_c{c}r{r}.webp",
+      "thumb": "transfer_oda_gunduz_kucuk.webp"
+     }
+    },
+    {
+     "id": "oda",
+     "depth": 2,
+     "parallax": 1.0,
+     "kind": "tiles",
+     "variant": "night",
+     "tiles": {
+      "cols": 3,
+      "rows": 2,
+      "size": 1024,
+      "pattern": "transfer_oda_gece_c{c}r{r}.webp",
+      "thumb": "transfer_oda_gece_kucuk.webp"
+     }
+    },
+    {
+     "id": "nabiz",
+     "depth": 8,
+     "parallax": 1.0,
+     "kind": "code",
+     "variant": "day"
+    }
+   ]
+  },
+  "2": {
+   "palette": {
+    "wall": "#d8cdb8",
+    "floor": "#b79868",
+    "desk": "#4a2a1c",
+    "accent": "#2a3f8f",
+    "sky": "#8fb7d8"
+   },
+   "layers": [
+    {
+     "id": "oda",
+     "depth": 2,
+     "parallax": 1.0,
+     "kind": "tiles",
+     "variant": "day",
+     "role": "plate",
+     "tiles": {
+      "cols": 3,
+      "rows": 2,
+      "size": 1024,
+      "pattern": "transfer_oda_gunduz_c{c}r{r}.webp",
+      "thumb": "transfer_oda_gunduz_kucuk.webp"
+     }
+    },
+    {
+     "id": "oda",
+     "depth": 2,
+     "parallax": 1.0,
+     "kind": "tiles",
+     "variant": "night",
+     "tiles": {
+      "cols": 3,
+      "rows": 2,
+      "size": 1024,
+      "pattern": "transfer_oda_gece_c{c}r{r}.webp",
+      "thumb": "transfer_oda_gece_kucuk.webp"
+     }
+    },
+    {
+     "id": "nabiz",
+     "depth": 8,
+     "parallax": 1.0,
+     "kind": "code",
+     "variant": "day"
+    }
+   ]
+  },
+  "1": {
+   "palette": {
+    "wall": "#d8cdb8",
+    "floor": "#b79868",
+    "desk": "#4a2a1c",
+    "accent": "#2a3f8f",
+    "sky": "#8fb7d8"
+   },
+   "layers": [
+    {
+     "id": "oda",
+     "depth": 2,
+     "parallax": 1.0,
+     "kind": "tiles",
+     "variant": "day",
+     "role": "plate",
+     "tiles": {
+      "cols": 3,
+      "rows": 2,
+      "size": 1024,
+      "pattern": "transfer_oda_gunduz_c{c}r{r}.webp",
+      "thumb": "transfer_oda_gunduz_kucuk.webp"
+     }
+    },
+    {
+     "id": "oda",
+     "depth": 2,
+     "parallax": 1.0,
+     "kind": "tiles",
+     "variant": "night",
+     "tiles": {
+      "cols": 3,
+      "rows": 2,
+      "size": 1024,
+      "pattern": "transfer_oda_gece_c{c}r{r}.webp",
+      "thumb": "transfer_oda_gece_kucuk.webp"
+     }
+    },
+    {
+     "id": "nabiz",
+     "depth": 8,
+     "parallax": 1.0,
+     "kind": "code",
+     "variant": "day"
+    }
+   ]
+  }
+ }
+}
