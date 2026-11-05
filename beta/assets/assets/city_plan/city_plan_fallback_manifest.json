@@ -1,0 +1,23 @@
+{
+  "planVersion": "2.0.0",
+  "plans": {
+    "kasaba": {
+      "cityId": "XX:~genel-kasaba",
+      "planHash": "0a273883",
+      "rawBytes": 134708,
+      "gzipBytes": 25513
+    },
+    "sehir": {
+      "cityId": "XX:~genel-sehir",
+      "planHash": "88d52b12",
+      "rawBytes": 288096,
+      "gzipBytes": 52169
+    },
+    "buyuksehir": {
+      "cityId": "XX:~genel-buyuksehir",
+      "planHash": "46a81f80",
+      "rawBytes": 642838,
+      "gzipBytes": 106516
+    }
+  }
+}

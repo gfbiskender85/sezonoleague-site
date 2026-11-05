@@ -44,6 +44,15 @@ Kural belgesi: `docs/rules/HIS_TITRESIM_SES.md`.
   için ayrı ElevenLabs kartları; şimdiki vuruşlar arayüz/maç kaynaklarından
   ödünç). Eski 3,5 sn'lik C3 + B1 kurgusu emekli (B1 ışık vuruşları artık
   kullanılmıyor).
+- **Açılış v3 (2026-11-03, 12,0 sn + kısa 3,0 sn):** onaylı v3 panosunun ses vuruşları tablosu birebir
+  (`tool/audio/build_acilis_v3.py`; kaynaklar `~/Downloads/ACILIS_V3_GORSELLER/ses/`, 8 yeni SFX ElevenLabs/Magnafic):
+  şalter «klak» + uğultu 0,40 · sodyum cızırtısı 0,88 · GAMES tıkları 1,55+ (D8 `ui_kaydirici`) · whoosh 2,60 ·
+  şehir gecesi fonu 3,0–6,3 · dört kule gongu 3,6 / 4,0 / 4,4 / 4,8 (eski `acilis.m4a` 1,40–1,77 dilimi) ·
+  tribün uğultusu 5,0–6,4 (`fon_tribun_cosku`) · projektör dalgası 6,25 · top sekmeleri 7,30 / 7,52 · düdük 7,75
+  (`an_baslama`) · şut 7,85 (eski kurgu 3,55–4,18 dilimi) · tribün patlaması 8,50 · motif 8,55 (`motif`) · altı harf
+  darbesi 9,30+0,09·i · glint çınlaması 10,50 (`ui_perde`) · sönüş 11,6–12,0. −16 LUFS, limiter 0,85, AAC 56 kbps
+  (bütçe). Kısa hâl: gong 0,25 · motif 0,45 · darbeler 0,90+ · çınlama 2,00 · sönüş. Ham WAV arşivi Desktop'ta
+  iCloud'da bulutta kaldığı için kaynak olarak paketteki m4a'lar kullanıldı. v2 geçici kurgusu EMEKLİ.
 - **Fon:** 60 sn → 56 sn kesintisiz döngü (son 4 sn ile ilk 4 sn eşit güçlü
   çapraz geçiş — döngü noktasında örnek düzeyinde süreklilik). Ofis −30 LUFS,
   maç günü −28 LUFS; uygulamada ayrıca kanal sesi 0,35. Stereo **64 kbps**
@@ -76,10 +85,7 @@ Kural belgesi: `docs/rules/HIS_TITRESIM_SES.md`.
 | `ui_onay.m4a` | D2_confirm.wav | 0,30 | mono | — | −20,0 | −8,1 | 64 | 3,1 |
 | `ui_uyari.m4a` | D3_warn.wav | 0,51 | mono | −31,2 | −20,0 | −7,5 | 64 | 4,4 |
 | `ui_kart.m4a` | D4_kart.wav | 0,49 | mono | −21,2 | −20,0 | −3,0 | 64 | 5,1 |
-| `ui_perde.m4a` | D5a_perde_ac.wav | 0,51 | mono | −28,8 | −20,0 | −7,6 | 64 | 4,9 |
 | `ui_para.m4a` | D6_para.wav | 0,91 | mono | −24,4 | −22,6 | −3,0 | 64 | 8,5 |
-| `ui_bildirim_yedek.m4a` | D7_bildirim.wav | 0,86 | mono | −25,3 | −20,0 | −8,7 | 64 | 6,0 |
-| `ui_kaydirici.m4a` | D8_kaydirici.wav | 0,09 | mono | — | −26,0 | −8,0 | 64 | 1,5 |
 | `an_cekic.m4a` | E2_cekic.wav | 1,04 | mono | −20,1 | −8,4 | −4,3 | 64 | 8,9 |
 | `an_baslama.m4a` | E3a_baslama.wav | 2,02 | stereo | −16,1 | −22,0 | −12,3 | 96 | 23,9 |
 | `an_devre.m4a` | E3b_devre.wav | 2,02 | stereo | −16,0 | −21,5 | −12,7 | 96 | 24,3 |
@@ -89,14 +95,12 @@ Kural belgesi: `docs/rules/HIS_TITRESIM_SES.md`.
 | `an_kart.m4a` | E5_kart.wav | 2,02 | stereo | −16,1 | −19,1 | −9,0 | 96 | 26,8 |
 | `an_antrenman_basla.m4a` | E6a_antr_basla.wav | 2,67 | mono | −16,0 | −15,4 | −7,4 | 64 | 20,7 |
 | `an_antrenman_bitti.m4a` | E6b_antr_bitti.wav | 2,02 | stereo | −16,2 | −21,8 | −11,6 | 96 | 25,9 |
-| `an_seviye.m4a` | E8_seviye.wav | 2,02 | mono | −16,0 | −15,5 | −3,9 | 64 | 16,0 |
 | `an_kotu_haber.m4a` | E9_kotu_haber.wav | 3,00 | mono | −16,0 | −14,2 | −5,1 | 64 | 22,8 |
 | `an_imza.m4a` | E1_imza.wav | 0,91 | mono | −17,1 | −17,9 | −3,3 | 64 | 8,7 |
-| `motif.m4a` | Golden_Bright… 36,0–40,0 sn | 4,02 | stereo | −16,0 | −18,6 | −5,6 | 96 | 47,6 |
 | `bildirim.m4a` | Golden_Bright… 36,00–36,47 sn + yankı | 0,84 | stereo | −18,0 | −19,5 | −8,9 | 96 | 10,1 |
-| `acilis_kisa.m4a` | D2 vuruş 0,40–1,20 sn @0,08 + Golden_Bright… 36,00–36,47 sn + yankı @0,30 | 1,51 | stereo | −16,0 | −18,1 | −6,3 | 96 | 14,1 |
+| `acilis_kisa.m4a` | v3 kısa kurgu: gong @0,25 + motif @0,45 (2,4 sn) + 6 harf darbesi @0,90+ + çınlama @2,00 | 3,00 | stereo | −16,0 | — | −6,0 | 48 | 17,8 |
 | `toren.m4a` | Golden_Bright… 36,0–43,0 sn | 7,01 | stereo | −16,1 | −18,6 | −5,6 | 96 | 82,5 |
-| `acilis.m4a` | acilis_v2_A.wav (pano A kurgusu, GEÇİCİ) 0–5,3 sn, son 0,4 sn sönüş | 5,32 | stereo | −16,1 | −19,2 | −3,5 | 96 | 73,6 |
+| `acilis.m4a` | v3 kurgusu (`tool/audio/build_acilis_v3.py`): 8 yeni SFX + gong/şut dilimi + motif + tribün, 0–12,0 sn, son 0,4 sn sönüş | 12,00 | stereo | −16,0 | — | −1,5 | 56 | 84,4 |
 | `fon_ofis.m4a` | C1a ofis pad −30 + C1c atmosfer −34 (döngü) | 56,01 | stereo | −29,7 | −32,0 | −15,4 | 64 | 456,9 |
 | `fon_macgunu.m4a` | C2a_macgunu.wav (döngü) | 56,01 | stereo | −28,2 | −30,1 | −9,0 | 64 | 459,7 |
 | `fon_tribun_sakin.m4a` | C3a_tribun_sakin.wav (döngü) | 27,00 | stereo | −26,3 | −26,8 | −7,7 | 64 | 221,3 |
@@ -163,3 +167,13 @@ B1 açılış ışıkları · C1 atmosfer katmanı.
 | Dosya | Durum |
 |---|---|
 | `Legacy_of_the_Club_2026-10-04T205508.wav` (60 sn müzik) | pakete girmedi; nerede/ne zaman çalacağı İskender'in kararı (fon müzik değil atmosferdir — kural 8) |
+
+## Katalog ve ölü varlık (2026-11-05, D-236 U5)
+
+`tool/audio/katalog.json` — dosya → kanal → kullanım yeri (paketlenmez). Bekçi `test/ses_katalog_test.dart`:
+katalogda olmayan dosya pakette olamaz, katalogdaki dosya diskte olmalı, kod kanalı katalogla aynı, toplam boyut tavanı
+yalnız düşer. Yeni ses eklemek = dosya + katalog satırı + (varsa) cue.
+
+Silinen ölü varlıklar (hiçbir cue'ya bağlı değildi): `ui_perde`, `ui_kaydirici`, `ui_bildirim_yedek`, `motif`, `an_seviye`
+(−76 KB). `acilis_v3` kurgusunun YENİDEN üretimi `ui_perde`/`ui_kaydirici`/`motif` m4a'larını kaynak ister — git geçmişinden
+(`git show origin/main~:assets/audio/...` öncesi) alınır; paketteki `acilis*.m4a` zaten bitmiş çıktıdır.

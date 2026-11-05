@@ -1,0 +1,453 @@
+{
+  "version": 1,
+  "_doc": "KULÜP DÜNYASI — tesis KATALOĞU (sprite, bant, hotspot, rota, pano yüzü). Tesisin ızgara YERİ ve şehir dokusu CityPlan'dan gelir (docs/rules/KULUP_KAMPUSU_FE.md kural 17-26; plan şeması city/city_plan.dart). `grid` değerleri yedek konumdur: plan farklı yer verirse plan kazanır. Birim dp (zoom 1,0). Izgara noktası (c,r) → x=(c−r)·64, y=(c+r)·32. F1 (2026-10-27): 56×56 plaka, dünya kutusu plaka + sprite payı.",
+  "tile": [128, 64],
+  "grid": [56, 56],
+  "world": {
+    "left": -3750,
+    "top": -430,
+    "right": 3750,
+    "bottom": 3730
+  },
+  "camera": {
+    "center": [40, 8.5],
+    "zoom": 0.55,
+    "introFrom": 0.42,
+    "minZoom": 0.4,
+    "maxZoom": 1.6,
+    "doubleTapZoom": 1.0
+  },
+  "textures": {
+    "grass": "doku_cim.webp",
+    "asphalt": "doku_asfalt.webp",
+    "pavement": "doku_kaldirim.webp",
+    "water": "doku_su.webp"
+  },
+  "facilities": [
+    {
+      "id": "stadium",
+      "facilityType": "STADIUM",
+      "route": "/yonetim/stadyum",
+      "grid": [38.3, 2.7],
+      "footprint": 4,
+      "height": 200,
+      "placeholder": {
+        "kind": "stadium",
+        "accent": "#C9AEFF"
+      },
+      "sprite": {
+        "size": [512, 512],
+        "pivot": [0.5, 1.0]
+      },
+      "bands": {
+        "1": "stadyum_l1.webp",
+        "4": "stadyum_l4.webp",
+        "7": "stadyum_l7.webp",
+        "10": "stadyum_l10.webp"
+      },
+      "bandHeights": [0.4, 0.65, 0.85, 1.0],
+      "construction": "insaat_overlay_l.webp",
+      "locked": "taslak_kilitli_m.webp",
+      "focusZoom": 1.0,
+      "labelAnchor": {
+        "1": [0.516, 0.479],
+        "4": [0.52, 0.408],
+        "7": [0.452, 0.378],
+        "10": [0.513, 0.352]
+      },
+      "hotspot": [
+        [-256.0, -186.0],
+        [-255.5, -126.0],
+        [-6.5, 0.0],
+        [255.5, -126.5],
+        [255.5, -186.5],
+        [215.0, -201.5],
+        [213.5, -250.0],
+        [197.5, -268.0],
+        [72.5, -309.5],
+        [-37.0, -311.0],
+        [-29.0, -329.0],
+        [-48.5, -326.0],
+        [-43.0, -309.0],
+        [-77.5, -302.5],
+        [-71.5, -320.5],
+        [-87.0, -315.0],
+        [-84.5, -299.0],
+        [-111.5, -291.5],
+        [-104.0, -309.5],
+        [-120.0, -303.5],
+        [-118.0, -287.5],
+        [-145.5, -279.0],
+        [-137.0, -297.0],
+        [-154.0, -291.0],
+        [-151.5, -275.5],
+        [-176.5, -266.0],
+        [-181.0, -271.0],
+        [-172.0, -282.5],
+        [-183.5, -278.0],
+        [-184.0, -264.0],
+        [-215.0, -239.0],
+        [-217.5, -200.5]
+      ]
+    },
+    {
+      "id": "clubhouse",
+      "route": "/yonetim/kunye",
+      "grid": [35.4, 9.6],
+      "footprint": 3,
+      "height": 120,
+      "placeholder": {
+        "kind": "clubhouse",
+        "accent": "#C8CDD8"
+      },
+      "sprite": {
+        "size": [384, 384],
+        "pivot": [0.5, 1.0]
+      },
+      "bands": {
+        "0": "kulup_binasi.webp"
+      },
+      "crest": {
+        "at": [0.354, 0.513],
+        "size": 34
+      },
+      "locked": "taslak_kilitli_m.webp",
+      "focusZoom": 1.2,
+      "labelAnchor": [0.489, 0.09],
+      "hotspot": [
+        [-62.5, -344.0],
+        [-91.0, -317.5],
+        [-81.5, -307.0],
+        [-82.0, -293.5],
+        [-123.0, -272.5],
+        [-119.0, -155.5],
+        [-125.0, -149.0],
+        [-119.0, -126.5],
+        [-187.5, -92.5],
+        [-6.0, 0.0],
+        [6.0, 0.0],
+        [187.0, -92.5],
+        [132.0, -118.5],
+        [123.0, -129.5],
+        [123.0, -244.5],
+        [129.5, -253.0],
+        [106.5, -264.0],
+        [108.0, -276.0],
+        [83.5, -288.5],
+        [80.5, -320.5],
+        [27.0, -346.5],
+        [-5.0, -331.5],
+        [-33.5, -345.0]
+      ]
+    },
+    {
+      "id": "training",
+      "facilityType": "TRAINING",
+      "route": "/yonetim/antrenman",
+      "grid": [9.7, 2.6],
+      "footprint": 3,
+      "height": 100,
+      "placeholder": {
+        "kind": "pitches",
+        "accent": "#7DF3F0"
+      },
+      "sprite": {
+        "size": [384, 384],
+        "pivot": [0.5, 1.0]
+      },
+      "bands": {
+        "1": "antrenman_l1.webp",
+        "3": "antrenman_l3.webp",
+        "5": "antrenman_l5.webp"
+      },
+      "construction": "insaat_overlay_m.webp",
+      "locked": "taslak_kilitli_m.webp",
+      "focusZoom": 1.2,
+      "tesis": {
+        "plot": [11, 7],
+        "levels": {
+          "1": {"size": [4, 3], "fence": false, "floor": "gravel", "modules": [["saha_kuru_yarim", 0, 1, 0], ["antrenman_baraka", 3, 0, 0]], "lights": [[3.0, 3.0]]},
+          "2": {"size": [5, 4], "fence": true, "modules": [["antrenman_soyunma", 3, 0, 0], ["saha_cim_tam", 0, 1, 0]], "paths": [[3, 1, 2, 3], [0, 3, 3, 1]], "lights": [[3.0, 4.0], [0.0, 4.0]]},
+          "3": {"size": [7, 5], "fence": true, "modules": [["antrenman_soyunma", 0, 0, 0], ["depo_kucuk", 5, 0, 0], ["saha_cim_tam", 0, 1, 0], ["saha_cim_tam", 3, 1, 0], ["saha_kaleci_yarim", 0, 3, 0]], "paths": [[2, 3, 5, 2], [6, 1, 1, 2]], "lights": [[3.0, 3.0], [6.0, 3.0], [2.0, 5.0], [7.0, 5.0]], "trees": [["agac_cam", 3.0, 4.5, 0.7], ["agac_mese", 6.2, 4.6, 0.7]]},
+          "4": {"size": [9, 6], "fence": true, "modules": [["antrenman_soyunma", 0, 0, 0], ["depo_kucuk", 7, 0, 0], ["saha_cim_tam", 0, 1, 0], ["saha_cim_tam", 3, 1, 0], ["saha_cim_tam", 6, 1, 0], ["antrenman_kondisyon", 0, 3, 0], ["saha_kaleci_yarim", 2, 3, 0], ["saha_duran_top", 4, 3, 0]], "paths": [[2, 4, 7, 2], [6, 3, 3, 1]], "lights": [[3.0, 3.0], [6.0, 3.0], [9.0, 3.0], [2.0, 6.0], [5.0, 6.0], [9.0, 6.0]], "trees": [["agac_cam", 3.0, 5.7, 0.7], ["agac_yuvarlak", 6.5, 5.7, 0.7], ["agac_mese", 8.2, 4.8, 0.7]]},
+          "5": {"size": [11, 7], "fence": true, "modules": [["antrenman_ana_bina", 0, 0, 0], ["antrenman_kondisyon", 3, 0, 0], ["kubbe_sisme", 5, 0, 0], ["depo_kucuk", 8, 0, 1], ["otopark_zemin", 9, 0, 0], ["saha_cim_tam", 0, 3, 0], ["saha_cim_tam", 3, 3, 0], ["saha_sentetik_tam", 6, 3, 0], ["saha_duran_top", 9, 3, 0], ["saha_kaleci_yarim", 9, 4, 0]], "paths": [[0, 2, 11, 1], [0, 5, 11, 2]], "lights": [[3.0, 3.0], [6.0, 3.0], [9.0, 3.0], [3.0, 5.0], [6.0, 5.0], [9.0, 5.0], [2.0, 7.0], [8.0, 7.0]], "trees": [["agac_cam", 1.0, 6.6, 0.8], ["agac_mese", 2.4, 6.0, 0.7], ["agac_cam", 4.5, 6.7, 0.8], ["agac_yuvarlak", 6.0, 6.2, 0.7], ["agac_kavak", 7.5, 6.7, 0.8], ["agac_cam", 10.0, 6.7, 0.8]]}
+        }
+      },
+      "labelAnchor": {
+        "1": [0.502, 0.488],
+        "3": [0.49, 0.422],
+        "5": [0.49, 0.422]
+      },
+      "hotspot": [
+        [-192.0, -126.0],
+        [-191.5, -117.5],
+        [-129.0, -96.5],
+        [-128.0, -85.0],
+        [-121.5, -93.5],
+        [-98.0, -86.0],
+        [-98.0, -78.5],
+        [-123.0, -70.0],
+        [-128.0, -74.0],
+        [-134.5, -66.0],
+        [-6.5, 0.0],
+        [6.0, 0.0],
+        [140.0, -69.0],
+        [127.0, -74.5],
+        [129.0, -88.5],
+        [191.5, -110.5],
+        [191.5, -128.0],
+        [156.5, -147.5],
+        [115.0, -163.0],
+        [77.0, -168.0],
+        [76.5, -185.5],
+        [47.5, -199.5],
+        [47.0, -209.5],
+        [-4.5, -218.5],
+        [-178.5, -156.0],
+        [-175.0, -133.5]
+      ]
+    },
+    {
+      "id": "academy",
+      "facilityType": "ACADEMY",
+      "route": "/yonetim/altyapi",
+      "grid": [9.7, 15.2],
+      "footprint": 3,
+      "height": 80,
+      "placeholder": {
+        "kind": "academy",
+        "accent": "#7BE6A0"
+      },
+      "sprite": {
+        "size": [384, 384],
+        "pivot": [0.5, 1.0]
+      },
+      "bands": {
+        "1": "akademi_l1.webp",
+        "3": "akademi_l3.webp",
+        "5": "akademi_l5.webp"
+      },
+      "construction": "insaat_overlay_m.webp",
+      "locked": "taslak_kilitli_m.webp",
+      "focusZoom": 1.2,
+      "tesis": {
+        "plot": [10, 7],
+        "levels": {
+          "1": {"size": [4, 3], "fence": false, "floor": "gravel", "modules": [["akademi_saha_toprak", 0, 1, 0], ["akademi_ev", 3, 0, 0]]},
+          "2": {"size": [5, 4], "fence": true, "modules": [["akademi_okul", 3, 0, 0], ["akademi_saha_mini", 0, 1, 0]], "paths": [[0, 2, 5, 2], [2, 1, 3, 1]], "lights": [[2.0, 4.0]]},
+          "3": {"size": [7, 5], "fence": true, "modules": [["akademi_okul", 0, 0, 0], ["saha_cim_tam", 0, 1, 0], ["akademi_saha_mini", 3, 1, 0]], "paths": [[0, 3, 7, 2], [5, 1, 2, 2]], "lights": [[3.0, 3.0], [7.0, 3.0]], "trees": [["agac_cam", 6.2, 2.0, 0.7], ["agac_mese", 1.5, 4.6, 0.7]]},
+          "4": {"size": [8, 6], "fence": true, "modules": [["akademi_okul", 0, 0, 0], ["akademi_yurt", 6, 0, 0], ["saha_cim_tam", 0, 1, 0], ["akademi_saha_mini", 3, 1, 0], ["akademi_saha_mini", 3, 3, 0], ["otopark_zemin", 6, 2, 0]], "paths": [[0, 3, 3, 3], [5, 1, 1, 5], [3, 4, 5, 2]], "lights": [[3.0, 3.0], [8.0, 2.0], [3.0, 4.0], [6.0, 4.0]], "trees": [["agac_cam", 1.0, 5.5, 0.7], ["agac_yuvarlak", 2.2, 5.8, 0.7], ["agac_mese", 7.4, 5.6, 0.7]]},
+          "5": {"size": [10, 7], "fence": true, "modules": [["akademi_okul", 0, 0, 0], ["akademi_yurt", 2, 0, 0], ["akademi_yurt", 9, 0, 1], ["saha_cim_tam", 0, 1, 0], ["saha_cim_tam", 3, 1, 0], ["akademi_saha_mini", 6, 1, 0], ["akademi_saha_mini", 6, 3, 0], ["saha_kaleci_yarim", 0, 3, 0], ["otopark_zemin", 8, 3, 0]], "paths": [[0, 4, 8, 3], [2, 3, 4, 1]], "lights": [[3.0, 3.0], [6.0, 3.0], [2.0, 4.0], [8.0, 3.0], [2.0, 7.0], [8.0, 7.0]], "trees": [["agac_cam", 1.0, 6.6, 0.8], ["agac_mese", 2.5, 5.8, 0.7], ["agac_yuvarlak", 4.5, 6.6, 0.8], ["agac_cam", 6.5, 6.0, 0.7], ["agac_kavak", 7.8, 6.7, 0.8], ["agac_cam", 9.5, 6.7, 0.8]]}
+        }
+      },
+      "labelAnchor": {
+        "1": [0.517, 0.342],
+        "3": [0.467, 0.359],
+        "5": [0.466, 0.354]
+      },
+      "hotspot": [
+        [-192.0, -154.5],
+        [-191.5, -94.0],
+        [-6.5, 0.0],
+        [6.0, 0.0],
+        [191.5, -94.5],
+        [191.0, -146.5],
+        [51.0, -195.0],
+        [51.5, -224.0],
+        [-4.5, -244.5],
+        [-168.5, -190.5],
+        [-176.5, -183.0],
+        [-170.5, -162.5]
+      ]
+    },
+    {
+      "id": "medical",
+      "facilityType": "MEDICAL",
+      "route": "/yonetim/saglik",
+      "grid": [13.7, 6.4],
+      "footprint": 2,
+      "height": 80,
+      "placeholder": {
+        "kind": "medical",
+        "accent": "#3DD957"
+      },
+      "sprite": {
+        "size": [256, 256],
+        "pivot": [0.5, 1.0]
+      },
+      "bands": {
+        "1": "saglik_l1.webp",
+        "3": "saglik_l3.webp",
+        "5": "saglik_l5.webp"
+      },
+      "construction": "insaat_overlay_s.webp",
+      "locked": "taslak_kilitli_s.webp",
+      "focusZoom": 1.4,
+      "labelAnchor": {
+        "1": [0.522, 0.281],
+        "3": [0.497, 0.17],
+        "5": [0.497, 0.084]
+      },
+      "hotspot": [
+        [-0.5, -231.5],
+        [-64.5, -200.0],
+        [-67.0, -167.0],
+        [-113.5, -141.0],
+        [-114.0, -69.0],
+        [-127.0, -62.0],
+        [-6.0, 0.0],
+        [5.5, 0.0],
+        [126.5, -62.0],
+        [113.5, -69.5],
+        [113.0, -108.5],
+        [79.5, -126.5],
+        [79.5, -170.5],
+        [66.5, -178.0],
+        [64.0, -199.5]
+      ]
+    },
+    {
+      "id": "scout",
+      "facilityType": "SCOUT",
+      "route": "/yonetim/gozlem-agi",
+      "grid": [22.25, 31.4],
+      "footprint": 2,
+      "height": 110,
+      "placeholder": {
+        "kind": "tower",
+        "accent": "#FF9F5A"
+      },
+      "sprite": {
+        "size": [256, 256],
+        "pivot": [0.5, 1.0]
+      },
+      "bands": {
+        "1": "gozlem_l1.webp",
+        "3": "gozlem_l3.webp",
+        "5": "gozlem_l5.webp"
+      },
+      "construction": "insaat_overlay_s.webp",
+      "locked": "taslak_kilitli_s.webp",
+      "focusZoom": 1.4,
+      "labelAnchor": {
+        "1": [0.51, 0.498],
+        "3": [0.607, 0.211],
+        "5": [0.608, 0.143]
+      },
+      "hotspot": [
+        [42.5, -222.5],
+        [40.0, -211.5],
+        [22.5, -216.0],
+        [0.5, -193.0],
+        [3.5, -185.5],
+        [-1.0, -177.0],
+        [0.5, -162.5],
+        [10.0, -156.5],
+        [9.5, -117.0],
+        [-28.0, -120.5],
+        [-84.5, -95.5],
+        [-87.0, -80.0],
+        [-83.0, -67.0],
+        [-56.0, -55.0],
+        [-45.5, -58.0],
+        [-25.5, -48.5],
+        [-24.5, -41.5],
+        [2.5, -29.5],
+        [45.5, -45.5],
+        [74.5, -62.0],
+        [75.5, -84.5],
+        [44.5, -106.0],
+        [44.5, -156.5],
+        [54.0, -162.0],
+        [55.5, -177.0],
+        [51.0, -182.5],
+        [54.0, -193.5],
+        [47.0, -197.5],
+        [47.5, -206.5],
+        [42.5, -210.0]
+      ]
+    },
+    {
+      "id": "finance",
+      "route": "/yonetim/finans",
+      "grid": [39.4, 17.1],
+      "footprint": 2,
+      "height": 240,
+      "placeholder": {
+        "kind": "finance",
+        "accent": "#E0A93B"
+      },
+      "sprite": {
+        "size": [256, 384],
+        "pivot": [0.5, 1.0]
+      },
+      "bands": {
+        "0": "finans_kulesi.webp"
+      },
+      "locked": "taslak_kilitli_s.webp",
+      "focusZoom": 1.2
+    },
+    {
+      "id": "sponsors",
+      "route": "/yonetim/sponsorluklar",
+      "grid": [41.9, 9.6],
+      "footprint": 3,
+      "height": 70,
+      "placeholder": {
+        "kind": "plaza",
+        "accent": "#C9AEFF"
+      },
+      "sprite": {
+        "size": [384, 384],
+        "pivot": [0.5, 1.0]
+      },
+      "bands": {
+        "0": "sponsor_meydani.webp"
+      },
+      "locked": "taslak_kilitli_m.webp",
+      "focusZoom": 1.1,
+      "boards": [
+        {
+          "tone": "dark",
+          "quad": [[0.0684, 0.5482], [0.1706, 0.5033], [0.1706, 0.6361], [0.0684, 0.6719]]
+        },
+        {
+          "tone": "dark",
+          "quad": [[0.2116, 0.3906], [0.319, 0.3451], [0.319, 0.5566], [0.2116, 0.5957]]
+        },
+        {
+          "tone": "dark",
+          "quad": [[0.3646, 0.4232], [0.4674, 0.3763], [0.4674, 0.5111], [0.3646, 0.5501]]
+        },
+        {
+          "tone": "light",
+          "quad": [[0.5208, 0.3939], [0.6328, 0.4375], [0.6328, 0.5632], [0.5208, 0.5221]]
+        },
+        {
+          "tone": "light",
+          "quad": [[0.8216, 0.5195], [0.9297, 0.5632], [0.9297, 0.6901], [0.8216, 0.6478]]
+        }
+      ]
+    },
+    {
+      "id": "staff",
+      "route": "/yonetim/personel",
+      "grid": [13.7, 3.0],
+      "footprint": 2,
+      "height": 130,
+      "placeholder": {
+        "kind": "office",
+        "accent": "#FFB070"
+      },
+      "sprite": {
+        "size": [256, 256],
+        "pivot": [0.5, 1.0]
+      },
+      "bands": {
+        "0": "teknik_kadro.webp"
+      },
+      "locked": "taslak_kilitli_s.webp",
+      "focusZoom": 1.4
+    }
+  ]
+}

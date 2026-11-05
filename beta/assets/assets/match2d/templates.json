@@ -1,0 +1,7763 @@
+{
+ "version": 1,
+ "note": "ÜRETİLMİŞ DOSYA — elle düzenleme yerine tool/match2d_templates_gen.py. Sözleşme: docs/rules/MAC_2D_GOSTERIM_FE.md",
+ "base": {
+  "KL": [
+   0.5,
+   0.04
+  ],
+  "STP.L": [
+   0.38,
+   0.2
+  ],
+  "STP.R": [
+   0.62,
+   0.2
+  ],
+  "BEK.L": [
+   0.12,
+   0.28
+  ],
+  "BEK.R": [
+   0.88,
+   0.28
+  ],
+  "DOS": [
+   0.5,
+   0.4
+  ],
+  "OS.L": [
+   0.33,
+   0.52
+  ],
+  "OS.R": [
+   0.67,
+   0.52
+  ],
+  "OOS": [
+   0.5,
+   0.62
+  ],
+  "KNT.L": [
+   0.15,
+   0.78
+  ],
+  "KNT.R": [
+   0.85,
+   0.78
+  ],
+  "SNT": [
+   0.5,
+   0.84
+  ]
+ },
+ "scenes": [
+  {
+   "id": "baslama_santra",
+   "version": 1,
+   "group": "iskelet",
+   "trigger": {
+    "kind": [
+     "ko"
+    ],
+    "start": [
+     "SANTRA"
+    ],
+    "action": [
+     "KICK_OFF"
+    ]
+   },
+   "durMs": 3200,
+   "camera": {
+    "focus": "ball",
+    "zoom": 1.0,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": false
+   },
+   "tracks": [
+    {
+     "who": "SNT",
+     "from": [
+      0.52,
+      0.5
+     ],
+     "to": [
+      0.5,
+      0.5
+     ],
+     "t": [
+      0,
+      500
+     ],
+     "ease": "io",
+     "style": "walk"
+    },
+    {
+     "who": "OOS",
+     "from": [
+      0.46,
+      0.48
+     ],
+     "to": [
+      0.47,
+      0.49
+     ],
+     "t": [
+      0,
+      500
+     ],
+     "ease": "io",
+     "style": "walk"
+    },
+    {
+     "who": "OOS",
+     "from": "@",
+     "to": [
+      0.42,
+      0.44
+     ],
+     "t": [
+      1300,
+      2200
+     ],
+     "ease": "io",
+     "style": "jog"
+    },
+    {
+     "who": "DOS",
+     "from": "@",
+     "to": [
+      0.48,
+      0.42
+     ],
+     "t": [
+      1400,
+      2400
+     ],
+     "ease": "io",
+     "style": "jog"
+    },
+    {
+     "who": "SNT",
+     "from": "@",
+     "to": [
+      0.55,
+      0.6
+     ],
+     "t": [
+      1500,
+      3000
+     ],
+     "ease": "io",
+     "style": "run"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": [
+      0.5,
+      0.5
+     ],
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 1200,
+     "p": [
+      0.5,
+      0.5
+     ],
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 1600,
+     "p": [
+      0.47,
+      0.48
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 2600,
+     "p": [
+      0.48,
+      0.41
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    }
+   ],
+   "fx": [
+    {
+     "t": 0,
+     "name": "whistle_ring",
+     "at": [
+      0.5,
+      0.5
+     ],
+     "durMs": 800
+    },
+    {
+     "t": 1200,
+     "name": "kickoff_ring",
+     "at": [
+      0.5,
+      0.5
+     ],
+     "durMs": 900
+    }
+   ],
+   "labels": [
+    {
+     "who": "SNT",
+     "t": [
+      0,
+      1500
+     ]
+    }
+   ],
+   "sync": {
+    "peak": 1200,
+    "result": 1400
+   }
+  },
+  {
+   "id": "devre_dudugu",
+   "version": 1,
+   "group": "iskelet",
+   "trigger": {
+    "kind": [
+     "half"
+    ],
+    "pattern": [
+     "DEVRE"
+    ]
+   },
+   "durMs": 3400,
+   "camera": {
+    "focus": [
+     0.5,
+     0.5
+    ],
+    "zoom": 1.0,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": true
+   },
+   "tracks": [
+    {
+     "who": "SNT",
+     "from": "@",
+     "to": [
+      0.03,
+      0.52
+     ],
+     "t": [
+      600,
+      3400
+     ],
+     "ease": "io",
+     "style": "walk"
+    },
+    {
+     "who": "OOS",
+     "from": "@",
+     "to": [
+      0.03,
+      0.47
+     ],
+     "t": [
+      700,
+      3400
+     ],
+     "ease": "io",
+     "style": "walk"
+    },
+    {
+     "who": "opp:SNT",
+     "from": "@",
+     "to": [
+      0.03,
+      0.56
+     ],
+     "t": [
+      600,
+      3400
+     ],
+     "ease": "io",
+     "style": "walk"
+    },
+    {
+     "who": "referee",
+     "from": "@",
+     "to": [
+      0.5,
+      0.5
+     ],
+     "t": [
+      0,
+      600
+     ],
+     "ease": "io",
+     "style": "jog"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": "ball",
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 3400,
+     "p": "ball",
+     "z": 0,
+     "path": "STATIC"
+    }
+   ],
+   "fx": [
+    {
+     "t": 0,
+     "name": "whistle_ring",
+     "at": "referee",
+     "durMs": 800
+    },
+    {
+     "t": 900,
+     "name": "whistle_ring",
+     "at": "referee",
+     "durMs": 800
+    },
+    {
+     "t": 400,
+     "name": "crowd_dim",
+     "at": [
+      0.5,
+      0.5
+     ],
+     "durMs": 3000
+    }
+   ],
+   "labels": [],
+   "sync": {
+    "peak": 0,
+    "result": 0
+   }
+  },
+  {
+   "id": "ikinci_yari_baslama",
+   "version": 1,
+   "group": "iskelet",
+   "trigger": {
+    "kind": [
+     "ko"
+    ],
+    "start": [
+     "SANTRA"
+    ],
+    "action": [
+     "KICK_OFF"
+    ],
+    "half": [
+     2
+    ]
+   },
+   "durMs": 3200,
+   "camera": {
+    "focus": "ball",
+    "zoom": 1.0,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": false
+   },
+   "tracks": [
+    {
+     "who": "SNT",
+     "from": [
+      0.52,
+      0.5
+     ],
+     "to": [
+      0.5,
+      0.5
+     ],
+     "t": [
+      0,
+      500
+     ],
+     "ease": "io",
+     "style": "walk"
+    },
+    {
+     "who": "OOS",
+     "from": [
+      0.46,
+      0.48
+     ],
+     "to": [
+      0.47,
+      0.49
+     ],
+     "t": [
+      0,
+      500
+     ],
+     "ease": "io",
+     "style": "walk"
+    },
+    {
+     "who": "OOS",
+     "from": "@",
+     "to": [
+      0.42,
+      0.44
+     ],
+     "t": [
+      1300,
+      2200
+     ],
+     "ease": "io",
+     "style": "jog"
+    },
+    {
+     "who": "DOS",
+     "from": "@",
+     "to": [
+      0.48,
+      0.42
+     ],
+     "t": [
+      1400,
+      2400
+     ],
+     "ease": "io",
+     "style": "jog"
+    },
+    {
+     "who": "SNT",
+     "from": "@",
+     "to": [
+      0.55,
+      0.6
+     ],
+     "t": [
+      1500,
+      3000
+     ],
+     "ease": "io",
+     "style": "run"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": [
+      0.5,
+      0.5
+     ],
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 1200,
+     "p": [
+      0.5,
+      0.5
+     ],
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 1600,
+     "p": [
+      0.47,
+      0.48
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 2600,
+     "p": [
+      0.48,
+      0.41
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    }
+   ],
+   "fx": [
+    {
+     "t": 0,
+     "name": "whistle_ring",
+     "at": [
+      0.5,
+      0.5
+     ],
+     "durMs": 800
+    },
+    {
+     "t": 1200,
+     "name": "kickoff_ring",
+     "at": [
+      0.5,
+      0.5
+     ],
+     "durMs": 900
+    }
+   ],
+   "labels": [
+    {
+     "who": "SNT",
+     "t": [
+      0,
+      1500
+     ]
+    }
+   ],
+   "sync": {
+    "peak": 1200,
+    "result": 1400
+   }
+  },
+  {
+   "id": "mac_sonu",
+   "version": 1,
+   "group": "iskelet",
+   "trigger": {
+    "kind": [
+     "ft"
+    ],
+    "pattern": [
+     "MAC_SONU"
+    ]
+   },
+   "durMs": 6000,
+   "camera": {
+    "focus": [
+     0.5,
+     0.5
+    ],
+    "zoom": 1.0,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": true
+   },
+   "tracks": [
+    {
+     "who": "SNT",
+     "from": "@",
+     "to": [
+      0.48,
+      0.52
+     ],
+     "t": [
+      500,
+      4000
+     ],
+     "ease": "io",
+     "style": "walk"
+    },
+    {
+     "who": "OOS",
+     "from": "@",
+     "to": [
+      0.52,
+      0.48
+     ],
+     "t": [
+      600,
+      4200
+     ],
+     "ease": "io",
+     "style": "walk"
+    },
+    {
+     "who": "opp:SNT",
+     "from": "@",
+     "to": [
+      0.46,
+      0.47
+     ],
+     "t": [
+      500,
+      4100
+     ],
+     "ease": "io",
+     "style": "walk"
+    },
+    {
+     "who": "opp:OOS",
+     "from": "@",
+     "to": [
+      0.54,
+      0.53
+     ],
+     "t": [
+      700,
+      4300
+     ],
+     "ease": "io",
+     "style": "walk"
+    },
+    {
+     "who": "referee",
+     "from": "@",
+     "to": [
+      0.5,
+      0.5
+     ],
+     "t": [
+      0,
+      800
+     ],
+     "ease": "io",
+     "style": "jog"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": "ball",
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 6000,
+     "p": "ball",
+     "z": 0,
+     "path": "STATIC"
+    }
+   ],
+   "fx": [
+    {
+     "t": 0,
+     "name": "whistle_ring",
+     "at": "referee",
+     "durMs": 800
+    },
+    {
+     "t": 900,
+     "name": "whistle_ring",
+     "at": "referee",
+     "durMs": 800
+    },
+    {
+     "t": 1800,
+     "name": "whistle_ring",
+     "at": "referee",
+     "durMs": 800
+    },
+    {
+     "t": 2000,
+     "name": "crowd_dim",
+     "at": [
+      0.5,
+      0.5
+     ],
+     "durMs": 4000
+    }
+   ],
+   "labels": [],
+   "sync": {
+    "peak": 0,
+    "result": 0
+   }
+  },
+  {
+   "id": "uzatma_baslama",
+   "version": 1,
+   "group": "iskelet",
+   "trigger": {
+    "kind": [
+     "ko"
+    ],
+    "start": [
+     "SANTRA"
+    ],
+    "action": [
+     "KICK_OFF"
+    ],
+    "half": [
+     2
+    ],
+    "extra": [
+     true
+    ]
+   },
+   "durMs": 3200,
+   "camera": {
+    "focus": "ball",
+    "zoom": 1.0,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": false
+   },
+   "tracks": [
+    {
+     "who": "SNT",
+     "from": [
+      0.52,
+      0.5
+     ],
+     "to": [
+      0.5,
+      0.5
+     ],
+     "t": [
+      0,
+      500
+     ],
+     "ease": "io",
+     "style": "walk"
+    },
+    {
+     "who": "OOS",
+     "from": [
+      0.46,
+      0.48
+     ],
+     "to": [
+      0.47,
+      0.49
+     ],
+     "t": [
+      0,
+      500
+     ],
+     "ease": "io",
+     "style": "walk"
+    },
+    {
+     "who": "OOS",
+     "from": "@",
+     "to": [
+      0.42,
+      0.44
+     ],
+     "t": [
+      1300,
+      2200
+     ],
+     "ease": "io",
+     "style": "jog"
+    },
+    {
+     "who": "DOS",
+     "from": "@",
+     "to": [
+      0.48,
+      0.42
+     ],
+     "t": [
+      1400,
+      2400
+     ],
+     "ease": "io",
+     "style": "jog"
+    },
+    {
+     "who": "SNT",
+     "from": "@",
+     "to": [
+      0.55,
+      0.6
+     ],
+     "t": [
+      1500,
+      3000
+     ],
+     "ease": "io",
+     "style": "run"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": [
+      0.5,
+      0.5
+     ],
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 1200,
+     "p": [
+      0.5,
+      0.5
+     ],
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 1600,
+     "p": [
+      0.47,
+      0.48
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 2600,
+     "p": [
+      0.48,
+      0.41
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    }
+   ],
+   "fx": [
+    {
+     "t": 0,
+     "name": "whistle_ring",
+     "at": [
+      0.5,
+      0.5
+     ],
+     "durMs": 800
+    },
+    {
+     "t": 1200,
+     "name": "kickoff_ring",
+     "at": [
+      0.5,
+      0.5
+     ],
+     "durMs": 900
+    }
+   ],
+   "labels": [
+    {
+     "who": "SNT",
+     "t": [
+      0,
+      1500
+     ]
+    }
+   ],
+   "sync": {
+    "peak": 1200,
+    "result": 1400
+   },
+   "chip": "extraTime"
+  },
+  {
+   "id": "penalti_serisi_giris",
+   "version": 1,
+   "group": "iskelet",
+   "trigger": {
+    "kind": [
+     "pg",
+     "pm"
+    ],
+    "first": [
+     true
+    ]
+   },
+   "durMs": 4000,
+   "camera": {
+    "focus": [
+     0.5,
+     0.75
+    ],
+    "zoom": 1.18,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": true
+   },
+   "tracks": [
+    {
+     "who": "SNT",
+     "from": "@",
+     "to": [
+      0.46,
+      0.5
+     ],
+     "t": [
+      0,
+      1800
+     ],
+     "ease": "io",
+     "style": "walk"
+    },
+    {
+     "who": "OOS",
+     "from": "@",
+     "to": [
+      0.5,
+      0.5
+     ],
+     "t": [
+      0,
+      1800
+     ],
+     "ease": "io",
+     "style": "walk"
+    },
+    {
+     "who": "opp:SNT",
+     "from": "@",
+     "to": [
+      0.54,
+      0.5
+     ],
+     "t": [
+      0,
+      1800
+     ],
+     "ease": "io",
+     "style": "walk"
+    },
+    {
+     "who": "keeper",
+     "from": "@",
+     "to": [
+      0.5,
+      0.995
+     ],
+     "t": [
+      0,
+      1500
+     ],
+     "ease": "io",
+     "style": "jog"
+    },
+    {
+     "who": "referee",
+     "from": "@",
+     "to": [
+      0.5,
+      0.89
+     ],
+     "t": [
+      500,
+      2500
+     ],
+     "ease": "io",
+     "style": "walk"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": [
+      0.5,
+      0.5
+     ],
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 2500,
+     "p": [
+      0.5,
+      0.5
+     ],
+     "z": 0,
+     "path": "STATIC"
+    }
+   ],
+   "fx": [
+    {
+     "t": 2600,
+     "name": "penalty_ring",
+     "at": [
+      0.5,
+      0.895
+     ],
+     "durMs": 1200
+    }
+   ],
+   "labels": [
+    {
+     "who": "keeper",
+     "t": [
+      1500,
+      4000
+     ]
+    }
+   ],
+   "sync": {
+    "peak": 2600,
+    "result": 2600
+   },
+   "chip": "shootout"
+  },
+  {
+   "id": "atak_sol_kanat",
+   "version": 1,
+   "group": "akis",
+   "trigger": {
+    "kind": [
+     "b"
+    ],
+    "wing": [
+     "L"
+    ],
+    "finish": [
+     "ORTA"
+    ]
+   },
+   "durMs": 2600,
+   "camera": {
+    "focus": [
+     0.25,
+     0.7
+    ],
+    "zoom": 1.18,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": true
+   },
+   "tracks": [
+    {
+     "who": "BEK.L",
+     "from": "@",
+     "to": [
+      0.13,
+      0.42
+     ],
+     "t": [
+      0,
+      900
+     ],
+     "ease": "io",
+     "style": "jog"
+    },
+    {
+     "who": "OS.L",
+     "from": "@",
+     "to": [
+      0.28,
+      0.58
+     ],
+     "t": [
+      0,
+      900
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "actor",
+     "from": "KNT.L",
+     "to": [
+      0.13,
+      0.86
+     ],
+     "t": [
+      700,
+      2300
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "SNT",
+     "from": "@",
+     "to": [
+      0.5,
+      0.88
+     ],
+     "t": [
+      900,
+      2400
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "opp:BEK.R",
+     "from": "@",
+     "to": [
+      0.16,
+      0.8
+     ],
+     "t": [
+      900,
+      2400
+     ],
+     "ease": "io",
+     "style": "press"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": [
+      0.13,
+      0.4
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 700,
+     "p": [
+      0.29,
+      0.57
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 1500,
+     "p": [
+      0.16,
+      0.74
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 2300,
+     "p": [
+      0.13,
+      0.86
+     ],
+     "z": 0,
+     "path": "DRIVEN"
+    }
+   ],
+   "fx": [
+    {
+     "t": 700,
+     "name": "pass_line",
+     "at": "ball",
+     "durMs": 600
+    },
+    {
+     "t": 1500,
+     "name": "run_line",
+     "at": "actor",
+     "durMs": 800
+    }
+   ],
+   "labels": [
+    {
+     "who": "actor",
+     "t": [
+      900,
+      2600
+     ]
+    }
+   ],
+   "sync": {
+    "peak": 1500,
+    "result": 2300
+   }
+  },
+  {
+   "id": "atak_orta",
+   "version": 1,
+   "group": "akis",
+   "trigger": {
+    "kind": [
+     "b"
+    ],
+    "wing": [
+     "C"
+    ],
+    "finish": [
+     "ORTA"
+    ]
+   },
+   "durMs": 2600,
+   "camera": {
+    "focus": [
+     0.5,
+     0.68
+    ],
+    "zoom": 1.18,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": true
+   },
+   "tracks": [
+    {
+     "who": "DOS",
+     "from": "@",
+     "to": [
+      0.5,
+      0.5
+     ],
+     "t": [
+      0,
+      800
+     ],
+     "ease": "io",
+     "style": "jog"
+    },
+    {
+     "who": "OS.L",
+     "from": "@",
+     "to": [
+      0.4,
+      0.6
+     ],
+     "t": [
+      300,
+      1200
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "actor",
+     "from": "OOS",
+     "to": [
+      0.5,
+      0.71
+     ],
+     "t": [
+      900,
+      2200
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "SNT",
+     "from": "@",
+     "to": [
+      0.55,
+      0.86
+     ],
+     "t": [
+      1200,
+      2500
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "opp:DOS",
+     "from": "@",
+     "to": [
+      0.52,
+      0.66
+     ],
+     "t": [
+      1200,
+      2400
+     ],
+     "ease": "io",
+     "style": "press"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": [
+      0.5,
+      0.47
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 600,
+     "p": [
+      0.4,
+      0.59
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 1200,
+     "p": [
+      0.5,
+      0.64
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 2200,
+     "p": [
+      0.5,
+      0.71
+     ],
+     "z": 0,
+     "path": "GROUND"
+    }
+   ],
+   "fx": [
+    {
+     "t": 600,
+     "name": "pass_line",
+     "at": "ball",
+     "durMs": 600
+    },
+    {
+     "t": 1200,
+     "name": "pass_line",
+     "at": "ball",
+     "durMs": 600
+    }
+   ],
+   "labels": [
+    {
+     "who": "actor",
+     "t": [
+      1000,
+      2600
+     ]
+    }
+   ],
+   "sync": {
+    "peak": 1200,
+    "result": 2200
+   }
+  },
+  {
+   "id": "atak_sag_kanat",
+   "version": 1,
+   "group": "akis",
+   "trigger": {
+    "kind": [
+     "b"
+    ],
+    "wing": [
+     "R"
+    ],
+    "finish": [
+     "ORTA"
+    ]
+   },
+   "durMs": 2600,
+   "camera": {
+    "focus": [
+     0.75,
+     0.7
+    ],
+    "zoom": 1.18,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": true
+   },
+   "tracks": [
+    {
+     "who": "BEK.R",
+     "from": "@",
+     "to": [
+      0.87,
+      0.42
+     ],
+     "t": [
+      0,
+      900
+     ],
+     "ease": "io",
+     "style": "jog"
+    },
+    {
+     "who": "OS.R",
+     "from": "@",
+     "to": [
+      0.72,
+      0.58
+     ],
+     "t": [
+      0,
+      900
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "actor",
+     "from": "KNT.R",
+     "to": [
+      0.87,
+      0.86
+     ],
+     "t": [
+      700,
+      2300
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "SNT",
+     "from": "@",
+     "to": [
+      0.5,
+      0.88
+     ],
+     "t": [
+      900,
+      2400
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "opp:BEK.L",
+     "from": "@",
+     "to": [
+      0.84,
+      0.8
+     ],
+     "t": [
+      900,
+      2400
+     ],
+     "ease": "io",
+     "style": "press"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": [
+      0.87,
+      0.4
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 700,
+     "p": [
+      0.71,
+      0.57
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 1500,
+     "p": [
+      0.84,
+      0.74
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 2300,
+     "p": [
+      0.87,
+      0.86
+     ],
+     "z": 0,
+     "path": "DRIVEN"
+    }
+   ],
+   "fx": [
+    {
+     "t": 700,
+     "name": "pass_line",
+     "at": "ball",
+     "durMs": 600
+    },
+    {
+     "t": 1500,
+     "name": "run_line",
+     "at": "actor",
+     "durMs": 800
+    }
+   ],
+   "labels": [
+    {
+     "who": "actor",
+     "t": [
+      900,
+      2600
+     ]
+    }
+   ],
+   "sync": {
+    "peak": 1500,
+    "result": 2300
+   }
+  },
+  {
+   "id": "kontra",
+   "version": 1,
+   "group": "akis",
+   "trigger": {
+    "kind": [
+     "b"
+    ],
+    "pattern": [
+     "KONTRA_HIZLI",
+     "KONTRA_TEK_KISI"
+    ]
+   },
+   "durMs": 2600,
+   "camera": {
+    "focus": [
+     0.5,
+     0.62
+    ],
+    "zoom": 1.0,
+    "inMs": 300,
+    "outMs": 450,
+    "hold": true
+   },
+   "tracks": [
+    {
+     "who": "DOS",
+     "from": "@",
+     "to": [
+      0.5,
+      0.44
+     ],
+     "t": [
+      0,
+      400
+     ],
+     "ease": "io",
+     "style": "press"
+    },
+    {
+     "who": "actor",
+     "from": "SNT",
+     "to": [
+      0.52,
+      0.8
+     ],
+     "t": [
+      300,
+      2400
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "KNT.L",
+     "from": "@",
+     "to": [
+      0.22,
+      0.8
+     ],
+     "t": [
+      300,
+      2400
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "KNT.R",
+     "from": "@",
+     "to": [
+      0.8,
+      0.78
+     ],
+     "t": [
+      400,
+      2500
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "opp:STP.L",
+     "from": "@",
+     "to": [
+      0.55,
+      0.86
+     ],
+     "t": [
+      600,
+      2600
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "opp:DOS",
+     "from": "@",
+     "to": [
+      0.48,
+      0.7
+     ],
+     "t": [
+      500,
+      2600
+     ],
+     "ease": "io",
+     "style": "run"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": [
+      0.48,
+      0.38
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 400,
+     "p": [
+      0.5,
+      0.44
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 1400,
+     "p": [
+      0.52,
+      0.66
+     ],
+     "z": 0,
+     "path": "DRIVEN"
+    },
+    {
+     "t": 2400,
+     "p": [
+      0.52,
+      0.8
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    }
+   ],
+   "fx": [
+    {
+     "t": 400,
+     "name": "pass_line",
+     "at": "ball",
+     "durMs": 900
+    },
+    {
+     "t": 1400,
+     "name": "run_line",
+     "at": "actor",
+     "durMs": 900
+    }
+   ],
+   "labels": [
+    {
+     "who": "actor",
+     "t": [
+      600,
+      2600
+     ]
+    }
+   ],
+   "sync": {
+    "peak": 1400,
+    "result": 2400
+   }
+  },
+  {
+   "id": "uzun_top",
+   "version": 1,
+   "group": "akis",
+   "trigger": {
+    "kind": [
+     "b"
+    ],
+    "wing": [
+     "L",
+     "C",
+     "R"
+    ],
+    "start": [
+     "KALECI_UZUN"
+    ]
+   },
+   "durMs": 2600,
+   "camera": {
+    "focus": [
+     0.5,
+     0.6
+    ],
+    "zoom": 1.0,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": true
+   },
+   "tracks": [
+    {
+     "who": "STP.L",
+     "from": "@",
+     "to": [
+      0.38,
+      0.26
+     ],
+     "t": [
+      0,
+      600
+     ],
+     "ease": "io",
+     "style": "jog"
+    },
+    {
+     "who": "actor",
+     "from": "SNT",
+     "to": [
+      0.5,
+      0.8
+     ],
+     "t": [
+      400,
+      2200
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "opp:STP.L",
+     "from": "@",
+     "to": [
+      0.53,
+      0.82
+     ],
+     "t": [
+      600,
+      2300
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "OOS",
+     "from": "@",
+     "to": [
+      0.52,
+      0.7
+     ],
+     "t": [
+      800,
+      2500
+     ],
+     "ease": "io",
+     "style": "run"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": [
+      0.38,
+      0.25
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 1900,
+     "p": [
+      0.5,
+      0.79
+     ],
+     "z": 0,
+     "path": "LOFTED",
+     "arc": 4.0
+    },
+    {
+     "t": 2600,
+     "p": [
+      0.51,
+      0.76
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    }
+   ],
+   "fx": [
+    {
+     "t": 0,
+     "name": "pass_line",
+     "at": "ball",
+     "durMs": 1900
+    }
+   ],
+   "labels": [
+    {
+     "who": "actor",
+     "t": [
+      800,
+      2600
+     ]
+    }
+   ],
+   "sync": {
+    "peak": 1900,
+    "result": 1900
+   }
+  },
+  {
+   "id": "capraz_top",
+   "version": 1,
+   "group": "akis",
+   "trigger": {
+    "kind": [
+     "b"
+    ],
+    "wing": [
+     "L",
+     "R"
+    ],
+    "start": [
+     "ORTA_SAHA"
+    ]
+   },
+   "durMs": 2600,
+   "camera": {
+    "focus": [
+     0.6,
+     0.65
+    ],
+    "zoom": 1.0,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": true
+   },
+   "tracks": [
+    {
+     "who": "OS.L",
+     "from": "@",
+     "to": [
+      0.33,
+      0.55
+     ],
+     "t": [
+      0,
+      500
+     ],
+     "ease": "io",
+     "style": "jog"
+    },
+    {
+     "who": "actor",
+     "from": "KNT.R",
+     "to": [
+      0.86,
+      0.76
+     ],
+     "t": [
+      300,
+      1900
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "opp:BEK.L",
+     "from": "@",
+     "to": [
+      0.82,
+      0.8
+     ],
+     "t": [
+      900,
+      2400
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "BEK.R",
+     "from": "@",
+     "to": [
+      0.84,
+      0.6
+     ],
+     "t": [
+      500,
+      2500
+     ],
+     "ease": "io",
+     "style": "jog"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": [
+      0.33,
+      0.55
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 1800,
+     "p": [
+      0.85,
+      0.76
+     ],
+     "z": 0,
+     "path": "LOFTED",
+     "arc": 3.5
+    },
+    {
+     "t": 2600,
+     "p": [
+      0.84,
+      0.79
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    }
+   ],
+   "fx": [
+    {
+     "t": 0,
+     "name": "pass_line",
+     "at": "ball",
+     "durMs": 1800
+    }
+   ],
+   "labels": [
+    {
+     "who": "actor",
+     "t": [
+      900,
+      2600
+     ]
+    }
+   ],
+   "sync": {
+    "peak": 1800,
+    "result": 1800
+   }
+  },
+  {
+   "id": "pas_zinciri",
+   "version": 1,
+   "group": "akis",
+   "trigger": {
+    "kind": [
+     "b"
+    ],
+    "wing": [
+     "L",
+     "C",
+     "R"
+    ],
+    "pattern": [
+     "SAKIN"
+    ]
+   },
+   "durMs": 2600,
+   "camera": {
+    "focus": "ball",
+    "zoom": 1.0,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": false
+   },
+   "tracks": [
+    {
+     "who": "STP.L",
+     "from": "@",
+     "to": [
+      0.36,
+      0.26
+     ],
+     "t": [
+      0,
+      600
+     ],
+     "ease": "io",
+     "style": "jog"
+    },
+    {
+     "who": "DOS",
+     "from": "@",
+     "to": [
+      0.48,
+      0.42
+     ],
+     "t": [
+      300,
+      900
+     ],
+     "ease": "io",
+     "style": "jog"
+    },
+    {
+     "who": "OS.R",
+     "from": "@",
+     "to": [
+      0.66,
+      0.5
+     ],
+     "t": [
+      900,
+      1500
+     ],
+     "ease": "io",
+     "style": "jog"
+    },
+    {
+     "who": "BEK.R",
+     "from": "@",
+     "to": [
+      0.86,
+      0.38
+     ],
+     "t": [
+      1300,
+      2000
+     ],
+     "ease": "io",
+     "style": "jog"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": [
+      0.36,
+      0.25
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 600,
+     "p": [
+      0.48,
+      0.41
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 1250,
+     "p": [
+      0.66,
+      0.5
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 1900,
+     "p": [
+      0.86,
+      0.38
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 2600,
+     "p": [
+      0.49,
+      0.42
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    }
+   ],
+   "fx": [],
+   "labels": [],
+   "sync": {
+    "peak": 1250,
+    "result": 1900
+   }
+  },
+  {
+   "id": "savunma_blogu",
+   "version": 1,
+   "group": "akis",
+   "trigger": {
+    "kind": [
+     "b"
+    ],
+    "wing": [
+     "L",
+     "C",
+     "R"
+    ],
+    "finish": [
+     "UZAKLASTIRMA"
+    ]
+   },
+   "durMs": 2600,
+   "camera": {
+    "focus": [
+     0.5,
+     0.3
+    ],
+    "zoom": 1.18,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": true
+   },
+   "tracks": [
+    {
+     "who": "opp:SNT",
+     "from": "@",
+     "to": [
+      0.48,
+      0.26
+     ],
+     "t": [
+      0,
+      1200
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "opp:OOS",
+     "from": "@",
+     "to": [
+      0.54,
+      0.34
+     ],
+     "t": [
+      0,
+      1100
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "STP.L",
+     "from": "@",
+     "to": [
+      0.44,
+      0.22
+     ],
+     "t": [
+      300,
+      1300
+     ],
+     "ease": "io",
+     "style": "press"
+    },
+    {
+     "who": "STP.R",
+     "from": "@",
+     "to": [
+      0.56,
+      0.22
+     ],
+     "t": [
+      300,
+      1300
+     ],
+     "ease": "io",
+     "style": "press"
+    },
+    {
+     "who": "actor",
+     "from": "STP.L",
+     "to": [
+      0.47,
+      0.24
+     ],
+     "t": [
+      900,
+      1700
+     ],
+     "ease": "io",
+     "style": "run"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": [
+      0.52,
+      0.36
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 1100,
+     "p": [
+      0.48,
+      0.25
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 1500,
+     "p": [
+      0.47,
+      0.24
+     ],
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 2600,
+     "p": [
+      0.42,
+      0.66
+     ],
+     "z": 0,
+     "path": "LOFTED",
+     "arc": 6.0
+    }
+   ],
+   "fx": [
+    {
+     "t": 1500,
+     "name": "clear_burst",
+     "at": "ball",
+     "durMs": 700
+    }
+   ],
+   "labels": [
+    {
+     "who": "actor",
+     "t": [
+      1100,
+      2600
+     ]
+    }
+   ],
+   "sync": {
+    "peak": 1500,
+    "result": 1500
+   }
+  },
+  {
+   "id": "pres_yuksek",
+   "version": 1,
+   "group": "akis",
+   "trigger": {
+    "kind": [
+     "b"
+    ],
+    "wing": [
+     "L",
+     "C",
+     "R"
+    ],
+    "start": [
+     "TOP_KAPMA"
+    ]
+   },
+   "durMs": 2600,
+   "camera": {
+    "focus": [
+     0.5,
+     0.78
+    ],
+    "zoom": 1.18,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": true
+   },
+   "tracks": [
+    {
+     "who": "actor",
+     "from": "SNT",
+     "to": [
+      0.42,
+      0.79
+     ],
+     "t": [
+      0,
+      1100
+     ],
+     "ease": "io",
+     "style": "press"
+    },
+    {
+     "who": "KNT.L",
+     "from": "@",
+     "to": [
+      0.26,
+      0.77
+     ],
+     "t": [
+      0,
+      1200
+     ],
+     "ease": "io",
+     "style": "press"
+    },
+    {
+     "who": "KNT.R",
+     "from": "@",
+     "to": [
+      0.7,
+      0.77
+     ],
+     "t": [
+      0,
+      1200
+     ],
+     "ease": "io",
+     "style": "press"
+    },
+    {
+     "who": "opp:STP.L",
+     "from": "@",
+     "to": [
+      0.44,
+      0.8
+     ],
+     "t": [
+      0,
+      900
+     ],
+     "ease": "io",
+     "style": "jog"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": [
+      0.48,
+      0.82
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 900,
+     "p": [
+      0.44,
+      0.8
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 1300,
+     "p": [
+      0.43,
+      0.79
+     ],
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 2600,
+     "p": [
+      0.48,
+      0.84
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    }
+   ],
+   "fx": [
+    {
+     "t": 1300,
+     "name": "tackle_spark",
+     "at": "ball",
+     "durMs": 500
+    }
+   ],
+   "labels": [
+    {
+     "who": "actor",
+     "t": [
+      600,
+      2600
+     ]
+    }
+   ],
+   "sync": {
+    "peak": 1300,
+    "result": 1300
+   }
+  },
+  {
+   "id": "orta_saha_mucadelesi",
+   "version": 1,
+   "group": "akis",
+   "trigger": {
+    "kind": [
+     "b"
+    ],
+    "wing": [
+     "L",
+     "C",
+     "R"
+    ],
+    "start": [
+     "IKINCI_TOP"
+    ]
+   },
+   "durMs": 2600,
+   "camera": {
+    "focus": [
+     0.5,
+     0.52
+    ],
+    "zoom": 1.35,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": true
+   },
+   "tracks": [
+    {
+     "who": "actor",
+     "from": "OS.L",
+     "to": [
+      0.49,
+      0.52
+     ],
+     "t": [
+      0,
+      700
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "opp:OS.R",
+     "from": "@",
+     "to": [
+      0.52,
+      0.53
+     ],
+     "t": [
+      0,
+      700
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "actor",
+     "from": "@",
+     "to": [
+      0.47,
+      0.55
+     ],
+     "t": [
+      1200,
+      1800
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "opp:OS.R",
+     "from": "@",
+     "to": [
+      0.5,
+      0.56
+     ],
+     "t": [
+      1200,
+      1800
+     ],
+     "ease": "io",
+     "style": "press"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": [
+      0.5,
+      0.5
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 800,
+     "p": [
+      0.51,
+      0.53
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 1500,
+     "p": [
+      0.48,
+      0.55
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 2600,
+     "p": [
+      0.46,
+      0.6
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    }
+   ],
+   "fx": [
+    {
+     "t": 800,
+     "name": "tackle_spark",
+     "at": "ball",
+     "durMs": 500
+    }
+   ],
+   "labels": [
+    {
+     "who": "actor",
+     "t": [
+      400,
+      2600
+     ]
+    }
+   ],
+   "sync": {
+    "peak": 800,
+    "result": 1500
+   }
+  },
+  {
+   "id": "hava_topu",
+   "version": 1,
+   "group": "akis",
+   "trigger": {
+    "kind": [
+     "b"
+    ],
+    "wing": [
+     "L",
+     "C",
+     "R"
+    ],
+    "start": [
+     "KALECI_ELDEN"
+    ]
+   },
+   "durMs": 2600,
+   "camera": {
+    "focus": [
+     0.5,
+     0.56
+    ],
+    "zoom": 1.35,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": true
+   },
+   "tracks": [
+    {
+     "who": "actor",
+     "from": "SNT",
+     "to": [
+      0.5,
+      0.57
+     ],
+     "t": [
+      0,
+      1400
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "opp:STP.R",
+     "from": "@",
+     "to": [
+      0.52,
+      0.58
+     ],
+     "t": [
+      0,
+      1400
+     ],
+     "ease": "io",
+     "style": "run"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": [
+      0.4,
+      0.3
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 1500,
+     "p": [
+      0.5,
+      0.57
+     ],
+     "z": 2.2,
+     "path": "LOFTED",
+     "arc": 7.0
+    },
+    {
+     "t": 2600,
+     "p": [
+      0.47,
+      0.63
+     ],
+     "z": 0,
+     "path": "LOFTED",
+     "arc": 2.0
+    }
+   ],
+   "fx": [
+    {
+     "t": 1500,
+     "name": "header_ring",
+     "at": "ball",
+     "durMs": 600
+    }
+   ],
+   "labels": [
+    {
+     "who": "actor",
+     "t": [
+      900,
+      2600
+     ]
+    }
+   ],
+   "sync": {
+    "peak": 1500,
+    "result": 1500
+   }
+  },
+  {
+   "id": "araya_girme",
+   "version": 1,
+   "group": "akis",
+   "trigger": {
+    "kind": [
+     "b"
+    ],
+    "wing": [
+     "L",
+     "C",
+     "R"
+    ],
+    "start": [
+     "ARAYA_GIRME"
+    ]
+   },
+   "durMs": 2600,
+   "camera": {
+    "focus": [
+     0.5,
+     0.42
+    ],
+    "zoom": 1.18,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": true
+   },
+   "tracks": [
+    {
+     "who": "opp:OOS",
+     "from": "@",
+     "to": [
+      0.48,
+      0.38
+     ],
+     "t": [
+      0,
+      900
+     ],
+     "ease": "io",
+     "style": "jog"
+    },
+    {
+     "who": "actor",
+     "from": "DOS",
+     "to": [
+      0.47,
+      0.44
+     ],
+     "t": [
+      300,
+      1200
+     ],
+     "ease": "io",
+     "style": "press"
+    },
+    {
+     "who": "OS.L",
+     "from": "@",
+     "to": [
+      0.32,
+      0.56
+     ],
+     "t": [
+      1000,
+      2400
+     ],
+     "ease": "io",
+     "style": "run"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": [
+      0.56,
+      0.3
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 1100,
+     "p": [
+      0.47,
+      0.43
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 2400,
+     "p": [
+      0.32,
+      0.56
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    }
+   ],
+   "fx": [
+    {
+     "t": 1100,
+     "name": "tackle_spark",
+     "at": "ball",
+     "durMs": 500
+    }
+   ],
+   "labels": [
+    {
+     "who": "actor",
+     "t": [
+      800,
+      2600
+     ]
+    }
+   ],
+   "sync": {
+    "peak": 1100,
+    "result": 1100
+   }
+  },
+  {
+   "id": "tac",
+   "version": 1,
+   "group": "akis",
+   "trigger": {
+    "kind": [
+     "b"
+    ],
+    "wing": [
+     "L",
+     "C",
+     "R"
+    ],
+    "start": [
+     "TAC"
+    ],
+    "finish": [
+     "TAC"
+    ]
+   },
+   "durMs": 2600,
+   "camera": {
+    "focus": [
+     0.12,
+     0.55
+    ],
+    "zoom": 1.18,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": true
+   },
+   "tracks": [
+    {
+     "who": "actor",
+     "from": "BEK.L",
+     "to": [
+      0.0,
+      0.55
+     ],
+     "t": [
+      0,
+      700
+     ],
+     "ease": "io",
+     "style": "walk"
+    },
+    {
+     "who": "OS.L",
+     "from": "@",
+     "to": [
+      0.14,
+      0.58
+     ],
+     "t": [
+      300,
+      1300
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "opp:BEK.R",
+     "from": "@",
+     "to": [
+      0.16,
+      0.62
+     ],
+     "t": [
+      300,
+      1300
+     ],
+     "ease": "io",
+     "style": "press"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": [
+      0.0,
+      0.55
+     ],
+     "z": 1.6,
+     "path": "STATIC"
+    },
+    {
+     "t": 1300,
+     "p": [
+      0.0,
+      0.55
+     ],
+     "z": 1.6,
+     "path": "STATIC"
+    },
+    {
+     "t": 1900,
+     "p": [
+      0.14,
+      0.58
+     ],
+     "z": 0,
+     "path": "LOFTED",
+     "arc": 1.0
+    },
+    {
+     "t": 2600,
+     "p": [
+      0.22,
+      0.62
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    }
+   ],
+   "fx": [
+    {
+     "t": 1300,
+     "name": "throw_mark",
+     "at": [
+      0.0,
+      0.55
+     ],
+     "durMs": 600
+    }
+   ],
+   "labels": [
+    {
+     "who": "actor",
+     "t": [
+      0,
+      2000
+     ]
+    }
+   ],
+   "sync": {
+    "peak": 1300,
+    "result": 1300
+   }
+  },
+  {
+   "id": "kale_vurusu",
+   "version": 1,
+   "group": "akis",
+   "trigger": {
+    "kind": [
+     "b"
+    ],
+    "wing": [
+     "L",
+     "C",
+     "R"
+    ],
+    "start": [
+     "KALECI_KISA"
+    ],
+    "finish": [
+     "AUT"
+    ]
+   },
+   "durMs": 2600,
+   "camera": {
+    "focus": [
+     0.5,
+     0.25
+    ],
+    "zoom": 1.0,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": true
+   },
+   "tracks": [
+    {
+     "who": "actor",
+     "from": "KL",
+     "to": [
+      0.47,
+      0.055
+     ],
+     "t": [
+      0,
+      600
+     ],
+     "ease": "io",
+     "style": "walk"
+    },
+    {
+     "who": "STP.L",
+     "from": "@",
+     "to": [
+      0.26,
+      0.12
+     ],
+     "t": [
+      0,
+      900
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "DOS",
+     "from": "@",
+     "to": [
+      0.48,
+      0.3
+     ],
+     "t": [
+      300,
+      1500
+     ],
+     "ease": "io",
+     "style": "jog"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": [
+      0.45,
+      0.05
+     ],
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 900,
+     "p": [
+      0.45,
+      0.05
+     ],
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 2000,
+     "p": [
+      0.26,
+      0.13
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 2600,
+     "p": [
+      0.3,
+      0.2
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    }
+   ],
+   "fx": [
+    {
+     "t": 900,
+     "name": "pass_line",
+     "at": "ball",
+     "durMs": 1100
+    }
+   ],
+   "labels": [
+    {
+     "who": "actor",
+     "t": [
+      0,
+      1800
+     ]
+    }
+   ],
+   "sync": {
+    "peak": 900,
+    "result": 900
+   }
+  },
+  {
+   "id": "sut_kurtaris",
+   "version": 1,
+   "group": "sut",
+   "trigger": {
+    "kind": [
+     "ch"
+    ],
+    "onTarget": [
+     true
+    ],
+    "finish": [
+     "KURTARIS",
+     "KALECI_CIKIP_ALDI"
+    ]
+   },
+   "durMs": 4000,
+   "camera": {
+    "focus": [
+     0.5,
+     0.88
+    ],
+    "zoom": 1.35,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": true
+   },
+   "tracks": [
+    {
+     "who": "actor",
+     "from": "SNT",
+     "to": [
+      0.46,
+      0.84
+     ],
+     "t": [
+      0,
+      1300
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "opp:STP.L",
+     "from": "@",
+     "to": [
+      0.5,
+      0.88
+     ],
+     "t": [
+      0,
+      1500
+     ],
+     "ease": "io",
+     "style": "press"
+    },
+    {
+     "who": "KNT.L",
+     "from": "@",
+     "to": [
+      0.3,
+      0.86
+     ],
+     "t": [
+      0,
+      1800
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "keeper",
+     "from": [
+      0.5,
+      0.97
+     ],
+     "to": [
+      0.4,
+      0.985
+     ],
+     "t": [
+      1800,
+      2300
+     ],
+     "ease": "io",
+     "style": "run"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": [
+      0.42,
+      0.74
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 1300,
+     "p": [
+      0.46,
+      0.83
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 1500,
+     "p": [
+      0.46,
+      0.83
+     ],
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 2200,
+     "p": [
+      0.41,
+      0.985
+     ],
+     "z": 0.6,
+     "path": "DRIVEN"
+    },
+    {
+     "t": 3200,
+     "p": [
+      0.28,
+      1.02
+     ],
+     "z": 0.3,
+     "path": "GROUND"
+    }
+   ],
+   "fx": [
+    {
+     "t": 1500,
+     "name": "shot_streak",
+     "at": "ball",
+     "durMs": 700
+    },
+    {
+     "t": 2200,
+     "name": "save_ring",
+     "at": "keeper",
+     "durMs": 900
+    }
+   ],
+   "labels": [
+    {
+     "who": "actor",
+     "t": [
+      300,
+      2400
+     ]
+    },
+    {
+     "who": "keeper",
+     "t": [
+      2000,
+      4000
+     ]
+    }
+   ],
+   "sync": {
+    "peak": 1500,
+    "result": 2200
+   },
+   "chip": "save"
+  },
+  {
+   "id": "sut_disari",
+   "version": 1,
+   "group": "sut",
+   "trigger": {
+    "kind": [
+     "ch"
+    ],
+    "onTarget": [
+     false
+    ],
+    "finish": [
+     "ISKA_YANDAN",
+     "ISKA_USTTEN"
+    ]
+   },
+   "durMs": 4000,
+   "camera": {
+    "focus": [
+     0.5,
+     0.88
+    ],
+    "zoom": 1.35,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": true
+   },
+   "tracks": [
+    {
+     "who": "actor",
+     "from": "SNT",
+     "to": [
+      0.46,
+      0.84
+     ],
+     "t": [
+      0,
+      1300
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "opp:STP.L",
+     "from": "@",
+     "to": [
+      0.5,
+      0.88
+     ],
+     "t": [
+      0,
+      1500
+     ],
+     "ease": "io",
+     "style": "press"
+    },
+    {
+     "who": "KNT.L",
+     "from": "@",
+     "to": [
+      0.3,
+      0.86
+     ],
+     "t": [
+      0,
+      1800
+     ],
+     "ease": "io",
+     "style": "run"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": [
+      0.42,
+      0.74
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 1300,
+     "p": [
+      0.46,
+      0.83
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 1500,
+     "p": [
+      0.46,
+      0.83
+     ],
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 2400,
+     "p": [
+      0.58,
+      1.04
+     ],
+     "z": 1.2,
+     "path": "DRIVEN"
+    }
+   ],
+   "fx": [
+    {
+     "t": 1500,
+     "name": "shot_streak",
+     "at": "ball",
+     "durMs": 900
+    },
+    {
+     "t": 2400,
+     "name": "miss_rays",
+     "at": [
+      0.57,
+      1.0
+     ],
+     "durMs": 900
+    }
+   ],
+   "labels": [
+    {
+     "who": "actor",
+     "t": [
+      300,
+      3000
+     ]
+    }
+   ],
+   "sync": {
+    "peak": 1500,
+    "result": 2400
+   },
+   "chip": "missed"
+  },
+  {
+   "id": "sut_blok",
+   "version": 1,
+   "group": "sut",
+   "trigger": {
+    "kind": [
+     "ch"
+    ],
+    "onTarget": [
+     false
+    ],
+    "finish": [
+     "BLOK"
+    ]
+   },
+   "durMs": 4000,
+   "camera": {
+    "focus": [
+     0.5,
+     0.84
+    ],
+    "zoom": 1.35,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": true
+   },
+   "tracks": [
+    {
+     "who": "actor",
+     "from": "SNT",
+     "to": [
+      0.46,
+      0.84
+     ],
+     "t": [
+      0,
+      1300
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "opp:STP.L",
+     "from": "@",
+     "to": [
+      0.5,
+      0.88
+     ],
+     "t": [
+      0,
+      1500
+     ],
+     "ease": "io",
+     "style": "press"
+    },
+    {
+     "who": "KNT.L",
+     "from": "@",
+     "to": [
+      0.3,
+      0.86
+     ],
+     "t": [
+      0,
+      1800
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "opp:STP.R",
+     "from": "@",
+     "to": [
+      0.48,
+      0.88
+     ],
+     "t": [
+      900,
+      1500
+     ],
+     "ease": "io",
+     "style": "press"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": [
+      0.42,
+      0.74
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 1300,
+     "p": [
+      0.46,
+      0.83
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 1500,
+     "p": [
+      0.46,
+      0.83
+     ],
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 1800,
+     "p": [
+      0.48,
+      0.875
+     ],
+     "z": 0.3,
+     "path": "DRIVEN"
+    },
+    {
+     "t": 2800,
+     "p": [
+      0.62,
+      0.8
+     ],
+     "z": 0.8,
+     "path": "LOFTED",
+     "arc": 1.5
+    }
+   ],
+   "fx": [
+    {
+     "t": 1500,
+     "name": "shot_streak",
+     "at": "ball",
+     "durMs": 400
+    },
+    {
+     "t": 1800,
+     "name": "block_ring",
+     "at": "ball",
+     "durMs": 700
+    }
+   ],
+   "labels": [
+    {
+     "who": "actor",
+     "t": [
+      300,
+      2600
+     ]
+    }
+   ],
+   "sync": {
+    "peak": 1500,
+    "result": 1800
+   }
+  },
+  {
+   "id": "sut_direk",
+   "version": 1,
+   "group": "sut",
+   "trigger": {
+    "finish": [
+     "DIREK"
+    ]
+   },
+   "durMs": 4000,
+   "camera": {
+    "focus": [
+     0.5,
+     0.9
+    ],
+    "zoom": 1.35,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": true
+   },
+   "tracks": [
+    {
+     "who": "actor",
+     "from": "SNT",
+     "to": [
+      0.46,
+      0.84
+     ],
+     "t": [
+      0,
+      1300
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "opp:STP.L",
+     "from": "@",
+     "to": [
+      0.5,
+      0.88
+     ],
+     "t": [
+      0,
+      1500
+     ],
+     "ease": "io",
+     "style": "press"
+    },
+    {
+     "who": "KNT.L",
+     "from": "@",
+     "to": [
+      0.3,
+      0.86
+     ],
+     "t": [
+      0,
+      1800
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "keeper",
+     "from": [
+      0.5,
+      0.97
+     ],
+     "to": [
+      0.47,
+      0.985
+     ],
+     "t": [
+      1700,
+      2200
+     ],
+     "ease": "io",
+     "style": "run"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": [
+      0.42,
+      0.74
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 1300,
+     "p": [
+      0.46,
+      0.83
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 1500,
+     "p": [
+      0.46,
+      0.83
+     ],
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 2200,
+     "p": [
+      0.555,
+      1.0
+     ],
+     "z": 1.0,
+     "path": "DRIVEN"
+    },
+    {
+     "t": 3000,
+     "p": [
+      0.6,
+      0.9
+     ],
+     "z": 0.4,
+     "path": "LOFTED",
+     "arc": 1.0
+    }
+   ],
+   "fx": [
+    {
+     "t": 1500,
+     "name": "shot_streak",
+     "at": "ball",
+     "durMs": 700
+    },
+    {
+     "t": 2200,
+     "name": "post_hit",
+     "at": [
+      0.555,
+      1.0
+     ],
+     "durMs": 900
+    }
+   ],
+   "labels": [
+    {
+     "who": "actor",
+     "t": [
+      300,
+      3000
+     ]
+    }
+   ],
+   "sync": {
+    "peak": 1500,
+    "result": 2200
+   },
+   "chip": "post",
+   "bind": false
+  },
+  {
+   "id": "uzak_sut",
+   "version": 1,
+   "group": "sut",
+   "trigger": {
+    "kind": [
+     "ch"
+    ],
+    "onTarget": [
+     true,
+     false
+    ],
+    "finish": [
+     "KURTARIS",
+     "ISKA_USTTEN"
+    ],
+    "pattern": [
+     "CEZA_YAYI_TOPLAMA"
+    ]
+   },
+   "durMs": 4000,
+   "camera": {
+    "focus": [
+     0.5,
+     0.82
+    ],
+    "zoom": 1.18,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": true
+   },
+   "tracks": [
+    {
+     "who": "actor",
+     "from": "OOS",
+     "to": [
+      0.5,
+      0.72
+     ],
+     "t": [
+      0,
+      1300
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "opp:DOS",
+     "from": "@",
+     "to": [
+      0.52,
+      0.76
+     ],
+     "t": [
+      0,
+      1300
+     ],
+     "ease": "io",
+     "style": "press"
+    },
+    {
+     "who": "keeper",
+     "from": [
+      0.5,
+      0.97
+     ],
+     "to": [
+      0.56,
+      0.985
+     ],
+     "t": [
+      2000,
+      2600
+     ],
+     "ease": "io",
+     "style": "run"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": [
+      0.46,
+      0.64
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 1300,
+     "p": [
+      0.5,
+      0.71
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 1500,
+     "p": [
+      0.5,
+      0.71
+     ],
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 2600,
+     "p": [
+      0.56,
+      0.99
+     ],
+     "z": 1.4,
+     "path": "DRIVEN"
+    }
+   ],
+   "fx": [
+    {
+     "t": 1500,
+     "name": "shot_streak",
+     "at": "ball",
+     "durMs": 1100
+    }
+   ],
+   "labels": [
+    {
+     "who": "actor",
+     "t": [
+      300,
+      3000
+     ]
+    }
+   ],
+   "sync": {
+    "peak": 1500,
+    "result": 2600
+   }
+  },
+  {
+   "id": "kafa_sutu",
+   "version": 1,
+   "group": "sut",
+   "trigger": {
+    "kind": [
+     "ch"
+    ],
+    "onTarget": [
+     true,
+     false
+    ],
+    "finish": [
+     "KAFA_KURTARIS"
+    ]
+   },
+   "durMs": 4000,
+   "camera": {
+    "focus": [
+     0.45,
+     0.86
+    ],
+    "zoom": 1.35,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": true
+   },
+   "tracks": [
+    {
+     "who": "KNT.L",
+     "from": "@",
+     "to": [
+      0.12,
+      0.84
+     ],
+     "t": [
+      0,
+      900
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "actor",
+     "from": "SNT",
+     "to": [
+      0.5,
+      0.92
+     ],
+     "t": [
+      400,
+      1800
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "opp:STP.L",
+     "from": "@",
+     "to": [
+      0.47,
+      0.93
+     ],
+     "t": [
+      400,
+      1800
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "keeper",
+     "from": [
+      0.5,
+      0.97
+     ],
+     "to": [
+      0.47,
+      0.985
+     ],
+     "t": [
+      2000,
+      2600
+     ],
+     "ease": "io",
+     "style": "run"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": [
+      0.1,
+      0.8
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 900,
+     "p": [
+      0.12,
+      0.84
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 1900,
+     "p": [
+      0.5,
+      0.92
+     ],
+     "z": 2.0,
+     "path": "LOFTED",
+     "arc": 4.5
+    },
+    {
+     "t": 2600,
+     "p": [
+      0.47,
+      0.99
+     ],
+     "z": 0.8,
+     "path": "DRIVEN"
+    }
+   ],
+   "fx": [
+    {
+     "t": 900,
+     "name": "pass_line",
+     "at": "ball",
+     "durMs": 1000
+    },
+    {
+     "t": 1900,
+     "name": "header_ring",
+     "at": "ball",
+     "durMs": 600
+    }
+   ],
+   "labels": [
+    {
+     "who": "actor",
+     "t": [
+      900,
+      3200
+     ]
+    }
+   ],
+   "sync": {
+    "peak": 1900,
+    "result": 2600
+   }
+  },
+  {
+   "id": "gol_acik_oyun",
+   "version": 1,
+   "group": "gol",
+   "trigger": {
+    "kind": [
+     "g"
+    ],
+    "finish": [
+     "GOL",
+     "KAFA_GOL"
+    ],
+    "action": [
+     "GOAL"
+    ]
+   },
+   "durMs": 5500,
+   "camera": {
+    "focus": [
+     0.5,
+     0.86
+    ],
+    "zoom": 1.35,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": true
+   },
+   "tracks": [
+    {
+     "who": "partner",
+     "from": "OOS",
+     "to": [
+      0.4,
+      0.74
+     ],
+     "t": [
+      0,
+      900
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "actor",
+     "from": "SNT",
+     "to": [
+      0.52,
+      0.88
+     ],
+     "t": [
+      300,
+      1800
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "opp:STP.L",
+     "from": "@",
+     "to": [
+      0.55,
+      0.9
+     ],
+     "t": [
+      400,
+      1900
+     ],
+     "ease": "io",
+     "style": "press"
+    },
+    {
+     "who": "keeper",
+     "from": [
+      0.5,
+      0.97
+     ],
+     "to": [
+      0.6,
+      0.985
+     ],
+     "t": [
+      2000,
+      2400
+     ],
+     "ease": "io",
+     "style": "run"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": [
+      0.38,
+      0.7
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 900,
+     "p": [
+      0.4,
+      0.74
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 1700,
+     "p": [
+      0.52,
+      0.87
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 1900,
+     "p": [
+      0.52,
+      0.87
+     ],
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 2300,
+     "p": [
+      0.44,
+      1.0
+     ],
+     "z": 0.7,
+     "path": "DRIVEN"
+    },
+    {
+     "t": 2700,
+     "p": [
+      0.44,
+      1.03
+     ],
+     "z": 0.2,
+     "path": "GROUND"
+    }
+   ],
+   "fx": [
+    {
+     "t": 900,
+     "name": "pass_line",
+     "at": "ball",
+     "durMs": 800
+    },
+    {
+     "t": 1900,
+     "name": "shot_streak",
+     "at": "ball",
+     "durMs": 400
+    },
+    {
+     "t": 2300,
+     "name": "goal_net",
+     "at": [
+      0.5,
+      1.0
+     ],
+     "durMs": 1400
+    },
+    {
+     "t": 2300,
+     "name": "goal_glow",
+     "at": [
+      0.5,
+      1.0
+     ],
+     "durMs": 1800
+    }
+   ],
+   "labels": [
+    {
+     "who": "partner",
+     "t": [
+      0,
+      1200
+     ]
+    },
+    {
+     "who": "actor",
+     "t": [
+      1000,
+      5500
+     ]
+    }
+   ],
+   "sync": {
+    "peak": 1900,
+    "result": 2300
+   },
+   "chip": "goal",
+   "next": "gol_sevinci"
+  },
+  {
+   "id": "gol_kontra",
+   "version": 1,
+   "group": "gol",
+   "trigger": {
+    "kind": [
+     "g"
+    ],
+    "finish": [
+     "GOL"
+    ],
+    "action": [
+     "GOAL"
+    ],
+    "pattern": [
+     "KONTRA_HIZLI",
+     "KONTRA_TEK_KISI"
+    ]
+   },
+   "durMs": 5500,
+   "camera": {
+    "focus": [
+     0.5,
+     0.8
+    ],
+    "zoom": 1.0,
+    "inMs": 300,
+    "outMs": 450,
+    "hold": true
+   },
+   "tracks": [
+    {
+     "who": "partner",
+     "from": "DOS",
+     "to": [
+      0.48,
+      0.5
+     ],
+     "t": [
+      0,
+      500
+     ],
+     "ease": "io",
+     "style": "press"
+    },
+    {
+     "who": "actor",
+     "from": "SNT",
+     "to": [
+      0.5,
+      0.86
+     ],
+     "t": [
+      200,
+      1900
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "opp:STP.L",
+     "from": "@",
+     "to": [
+      0.54,
+      0.84
+     ],
+     "t": [
+      400,
+      1900
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "keeper",
+     "from": [
+      0.5,
+      0.97
+     ],
+     "to": [
+      0.58,
+      0.985
+     ],
+     "t": [
+      2000,
+      2400
+     ],
+     "ease": "io",
+     "style": "run"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": [
+      0.48,
+      0.48
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 600,
+     "p": [
+      0.5,
+      0.6
+     ],
+     "z": 0,
+     "path": "DRIVEN"
+    },
+    {
+     "t": 1800,
+     "p": [
+      0.5,
+      0.85
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 1950,
+     "p": [
+      0.5,
+      0.85
+     ],
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 2300,
+     "p": [
+      0.43,
+      1.0
+     ],
+     "z": 0.5,
+     "path": "DRIVEN"
+    },
+    {
+     "t": 2700,
+     "p": [
+      0.43,
+      1.03
+     ],
+     "z": 0.2,
+     "path": "GROUND"
+    }
+   ],
+   "fx": [
+    {
+     "t": 600,
+     "name": "pass_line",
+     "at": "ball",
+     "durMs": 900
+    },
+    {
+     "t": 1950,
+     "name": "shot_streak",
+     "at": "ball",
+     "durMs": 400
+    },
+    {
+     "t": 2300,
+     "name": "goal_net",
+     "at": [
+      0.5,
+      1.0
+     ],
+     "durMs": 1400
+    },
+    {
+     "t": 2300,
+     "name": "goal_glow",
+     "at": [
+      0.5,
+      1.0
+     ],
+     "durMs": 1800
+    }
+   ],
+   "labels": [
+    {
+     "who": "actor",
+     "t": [
+      300,
+      5500
+     ]
+    }
+   ],
+   "sync": {
+    "peak": 1950,
+    "result": 2300
+   },
+   "chip": "goal",
+   "next": "gol_sevinci"
+  },
+  {
+   "id": "gol_duran_top",
+   "version": 1,
+   "group": "gol",
+   "trigger": {
+    "kind": [
+     "g"
+    ],
+    "afterCorner": [
+     true
+    ],
+    "finish": [
+     "GOL",
+     "KAFA_GOL"
+    ],
+    "action": [
+     "GOAL"
+    ],
+    "start": [
+     "KORNER",
+     "FRIKIK"
+    ]
+   },
+   "durMs": 5500,
+   "camera": {
+    "focus": [
+     0.5,
+     0.9
+    ],
+    "zoom": 1.35,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": true
+   },
+   "tracks": [
+    {
+     "who": "partner",
+     "from": "KNT.L",
+     "to": [
+      0.01,
+      0.995
+     ],
+     "t": [
+      0,
+      600
+     ],
+     "ease": "io",
+     "style": "walk"
+    },
+    {
+     "who": "actor",
+     "from": "STP.L",
+     "to": [
+      0.5,
+      0.93
+     ],
+     "t": [
+      300,
+      1900
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "opp:STP.L",
+     "from": "@",
+     "to": [
+      0.52,
+      0.94
+     ],
+     "t": [
+      300,
+      1900
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "keeper",
+     "from": [
+      0.5,
+      0.97
+     ],
+     "to": [
+      0.52,
+      0.985
+     ],
+     "t": [
+      2000,
+      2400
+     ],
+     "ease": "io",
+     "style": "run"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": [
+      0.01,
+      0.995
+     ],
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 700,
+     "p": [
+      0.01,
+      0.995
+     ],
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 1900,
+     "p": [
+      0.5,
+      0.93
+     ],
+     "z": 2.0,
+     "path": "LOFTED",
+     "arc": 5.0
+    },
+    {
+     "t": 2300,
+     "p": [
+      0.46,
+      1.0
+     ],
+     "z": 0.9,
+     "path": "DRIVEN"
+    },
+    {
+     "t": 2700,
+     "p": [
+      0.46,
+      1.03
+     ],
+     "z": 0.2,
+     "path": "GROUND"
+    }
+   ],
+   "fx": [
+    {
+     "t": 0,
+     "name": "corner_ring",
+     "at": [
+      0.01,
+      0.995
+     ],
+     "durMs": 1000
+    },
+    {
+     "t": 1900,
+     "name": "header_ring",
+     "at": "ball",
+     "durMs": 500
+    },
+    {
+     "t": 2300,
+     "name": "goal_net",
+     "at": [
+      0.5,
+      1.0
+     ],
+     "durMs": 1400
+    },
+    {
+     "t": 2300,
+     "name": "goal_glow",
+     "at": [
+      0.5,
+      1.0
+     ],
+     "durMs": 1800
+    }
+   ],
+   "labels": [
+    {
+     "who": "partner",
+     "t": [
+      0,
+      1200
+     ]
+    },
+    {
+     "who": "actor",
+     "t": [
+      1200,
+      5500
+     ]
+    }
+   ],
+   "sync": {
+    "peak": 1900,
+    "result": 2300
+   },
+   "chip": "goal",
+   "next": "gol_sevinci"
+  },
+  {
+   "id": "gol_penalti",
+   "version": 1,
+   "group": "gol",
+   "trigger": {
+    "kind": [
+     "g"
+    ],
+    "afterPen": [
+     true
+    ],
+    "finish": [
+     "GOL"
+    ],
+    "action": [
+     "GOAL"
+    ],
+    "start": [
+     "PENALTI"
+    ]
+   },
+   "durMs": 5500,
+   "camera": {
+    "focus": [
+     0.5,
+     0.92
+    ],
+    "zoom": 1.35,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": true
+   },
+   "tracks": [
+    {
+     "who": "actor",
+     "from": [
+      0.47,
+      0.82
+     ],
+     "to": [
+      0.5,
+      0.87
+     ],
+     "t": [
+      0,
+      900
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "referee",
+     "from": "@",
+     "to": [
+      0.4,
+      0.84
+     ],
+     "t": [
+      0,
+      600
+     ],
+     "ease": "io",
+     "style": "walk"
+    },
+    {
+     "who": "keeper",
+     "from": [
+      0.5,
+      0.995
+     ],
+     "to": [
+      0.62,
+      0.985
+     ],
+     "t": [
+      1000,
+      1500
+     ],
+     "ease": "io",
+     "style": "run"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": [
+      0.5,
+      0.895
+     ],
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 1000,
+     "p": [
+      0.5,
+      0.895
+     ],
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 1400,
+     "p": [
+      0.4,
+      1.0
+     ],
+     "z": 0.6,
+     "path": "DRIVEN"
+    },
+    {
+     "t": 1800,
+     "p": [
+      0.4,
+      1.03
+     ],
+     "z": 0.2,
+     "path": "GROUND"
+    }
+   ],
+   "fx": [
+    {
+     "t": 0,
+     "name": "penalty_ring",
+     "at": [
+      0.5,
+      0.895
+     ],
+     "durMs": 1000
+    },
+    {
+     "t": 1400,
+     "name": "goal_net",
+     "at": [
+      0.5,
+      1.0
+     ],
+     "durMs": 1400
+    },
+    {
+     "t": 1400,
+     "name": "goal_glow",
+     "at": [
+      0.5,
+      1.0
+     ],
+     "durMs": 1800
+    }
+   ],
+   "labels": [
+    {
+     "who": "actor",
+     "t": [
+      0,
+      5500
+     ]
+    },
+    {
+     "who": "keeper",
+     "t": [
+      600,
+      2000
+     ]
+    }
+   ],
+   "sync": {
+    "peak": 1000,
+    "result": 1400
+   },
+   "chip": "goal",
+   "next": "gol_sevinci"
+  },
+  {
+   "id": "gol_sevinci",
+   "version": 1,
+   "group": "gol",
+   "trigger": {
+    "action": [
+     "CELEBRATE"
+    ],
+    "pattern": [
+     "GOL_SEVINCI"
+    ]
+   },
+   "durMs": 3000,
+   "camera": {
+    "focus": "actor",
+    "zoom": 1.18,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": true
+   },
+   "tracks": [
+    {
+     "who": "actor",
+     "from": "@",
+     "to": [
+      0.08,
+      0.92
+     ],
+     "t": [
+      0,
+      1600
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "partner",
+     "from": "@",
+     "to": [
+      0.1,
+      0.9
+     ],
+     "t": [
+      400,
+      2200
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "KNT.R",
+     "from": "@",
+     "to": [
+      0.12,
+      0.93
+     ],
+     "t": [
+      600,
+      2600
+     ],
+     "ease": "io",
+     "style": "run"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": "ball",
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 3000,
+     "p": "ball",
+     "z": 0,
+     "path": "STATIC"
+    }
+   ],
+   "fx": [
+    {
+     "t": 0,
+     "name": "crowd_lift",
+     "at": [
+      0.5,
+      0.5
+     ],
+     "durMs": 1200
+    },
+    {
+     "t": 200,
+     "name": "board_flash",
+     "at": [
+      0.5,
+      0.5
+     ],
+     "durMs": 1200
+    }
+   ],
+   "labels": [
+    {
+     "who": "actor",
+     "t": [
+      0,
+      3000
+     ]
+    },
+    {
+     "who": "partner",
+     "t": [
+      500,
+      3000
+     ]
+    }
+   ],
+   "sync": {
+    "peak": 0,
+    "result": 0
+   }
+  },
+  {
+   "id": "gol_tekrar",
+   "version": 1,
+   "group": "gol",
+   "trigger": {
+    "replay": [
+     true
+    ]
+   },
+   "durMs": 2600,
+   "camera": {
+    "focus": [
+     0.5,
+     0.86
+    ],
+    "zoom": 1.18,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": true
+   },
+   "tracks": [],
+   "ball": [],
+   "fx": [
+    {
+     "t": 0,
+     "name": "replay_tag",
+     "at": [
+      0.5,
+      0.5
+     ],
+     "durMs": 2600
+    }
+   ],
+   "labels": [],
+   "sync": {
+    "peak": 0,
+    "result": 0
+   },
+   "chip": "replay"
+  },
+  {
+   "id": "korner_sol_uzun",
+   "version": 1,
+   "group": "duran",
+   "trigger": {
+    "kind": [
+     "cor"
+    ],
+    "start": [
+     "KORNER"
+    ],
+    "wing": [
+     "L"
+    ]
+   },
+   "durMs": 3000,
+   "camera": {
+    "focus": [
+     0.3,
+     0.9
+    ],
+    "zoom": 1.35,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": true
+   },
+   "tracks": [
+    {
+     "who": "actor",
+     "from": "KNT.L",
+     "to": [
+      0.01,
+      0.995
+     ],
+     "t": [
+      0,
+      900
+     ],
+     "ease": "io",
+     "style": "walk"
+    },
+    {
+     "who": "SNT",
+     "from": "@",
+     "to": [
+      0.52,
+      0.91
+     ],
+     "t": [
+      200,
+      1900
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "STP.L",
+     "from": "@",
+     "to": [
+      0.44,
+      0.93
+     ],
+     "t": [
+      200,
+      1900
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "opp:STP.L",
+     "from": "@",
+     "to": [
+      0.49,
+      0.92
+     ],
+     "t": [
+      300,
+      1900
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "opp:STP.R",
+     "from": "@",
+     "to": [
+      0.42,
+      0.94
+     ],
+     "t": [
+      300,
+      1900
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "keeper",
+     "from": "@",
+     "to": [
+      0.47,
+      0.985
+     ],
+     "t": [
+      900,
+      1900
+     ],
+     "ease": "io",
+     "style": "run"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": [
+      0.01,
+      0.995
+     ],
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 1100,
+     "p": [
+      0.01,
+      0.995
+     ],
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 2000,
+     "p": [
+      0.5,
+      0.9
+     ],
+     "z": 2.2,
+     "path": "LOFTED",
+     "arc": 5.5
+    }
+   ],
+   "fx": [
+    {
+     "t": 0,
+     "name": "corner_ring",
+     "at": [
+      0.01,
+      0.995
+     ],
+     "durMs": 1000
+    },
+    {
+     "t": 1100,
+     "name": "pass_line",
+     "at": "ball",
+     "durMs": 900
+    }
+   ],
+   "labels": [
+    {
+     "who": "actor",
+     "t": [
+      0,
+      1600
+     ]
+    }
+   ],
+   "sync": {
+    "peak": 1100,
+    "result": 2000
+   },
+   "chip": "corner"
+  },
+  {
+   "id": "korner_sag_uzun",
+   "version": 1,
+   "group": "duran",
+   "trigger": {
+    "kind": [
+     "cor"
+    ],
+    "start": [
+     "KORNER"
+    ],
+    "wing": [
+     "R"
+    ]
+   },
+   "durMs": 3000,
+   "camera": {
+    "focus": [
+     0.7,
+     0.9
+    ],
+    "zoom": 1.35,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": true
+   },
+   "tracks": [
+    {
+     "who": "actor",
+     "from": "KNT.R",
+     "to": [
+      0.99,
+      0.995
+     ],
+     "t": [
+      0,
+      900
+     ],
+     "ease": "io",
+     "style": "walk"
+    },
+    {
+     "who": "SNT",
+     "from": "@",
+     "to": [
+      0.48,
+      0.91
+     ],
+     "t": [
+      200,
+      1900
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "STP.R",
+     "from": "@",
+     "to": [
+      0.56,
+      0.93
+     ],
+     "t": [
+      200,
+      1900
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "opp:STP.R",
+     "from": "@",
+     "to": [
+      0.51,
+      0.92
+     ],
+     "t": [
+      300,
+      1900
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "opp:STP.L",
+     "from": "@",
+     "to": [
+      0.58,
+      0.94
+     ],
+     "t": [
+      300,
+      1900
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "keeper",
+     "from": "@",
+     "to": [
+      0.53,
+      0.985
+     ],
+     "t": [
+      900,
+      1900
+     ],
+     "ease": "io",
+     "style": "run"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": [
+      0.99,
+      0.995
+     ],
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 1100,
+     "p": [
+      0.99,
+      0.995
+     ],
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 2000,
+     "p": [
+      0.5,
+      0.9
+     ],
+     "z": 2.2,
+     "path": "LOFTED",
+     "arc": 5.5
+    }
+   ],
+   "fx": [
+    {
+     "t": 0,
+     "name": "corner_ring",
+     "at": [
+      0.99,
+      0.995
+     ],
+     "durMs": 1000
+    },
+    {
+     "t": 1100,
+     "name": "pass_line",
+     "at": "ball",
+     "durMs": 900
+    }
+   ],
+   "labels": [
+    {
+     "who": "actor",
+     "t": [
+      0,
+      1600
+     ]
+    }
+   ],
+   "sync": {
+    "peak": 1100,
+    "result": 2000
+   },
+   "chip": "corner"
+  },
+  {
+   "id": "korner_sol_kisa",
+   "version": 1,
+   "group": "duran",
+   "trigger": {
+    "kind": [
+     "cor"
+    ],
+    "start": [
+     "KORNER"
+    ],
+    "wing": [
+     "L"
+    ],
+    "pattern": [
+     "KORNER_KISA",
+     "KORNER_KISA_DIP"
+    ]
+   },
+   "durMs": 3000,
+   "camera": {
+    "focus": [
+     0.15,
+     0.9
+    ],
+    "zoom": 1.35,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": true
+   },
+   "tracks": [
+    {
+     "who": "actor",
+     "from": "KNT.L",
+     "to": [
+      0.01,
+      0.995
+     ],
+     "t": [
+      0,
+      700
+     ],
+     "ease": "io",
+     "style": "walk"
+    },
+    {
+     "who": "OS.L",
+     "from": "@",
+     "to": [
+      0.1,
+      0.93
+     ],
+     "t": [
+      0,
+      1000
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "opp:BEK.R",
+     "from": "@",
+     "to": [
+      0.12,
+      0.9
+     ],
+     "t": [
+      600,
+      1500
+     ],
+     "ease": "io",
+     "style": "press"
+    },
+    {
+     "who": "SNT",
+     "from": "@",
+     "to": [
+      0.5,
+      0.92
+     ],
+     "t": [
+      600,
+      2400
+     ],
+     "ease": "io",
+     "style": "run"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": [
+      0.01,
+      0.995
+     ],
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 900,
+     "p": [
+      0.01,
+      0.995
+     ],
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 1300,
+     "p": [
+      0.1,
+      0.93
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 1600,
+     "p": [
+      0.1,
+      0.93
+     ],
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 2600,
+     "p": [
+      0.5,
+      0.91
+     ],
+     "z": 1.8,
+     "path": "LOFTED",
+     "arc": 4.0
+    }
+   ],
+   "fx": [
+    {
+     "t": 0,
+     "name": "corner_ring",
+     "at": [
+      0.01,
+      0.995
+     ],
+     "durMs": 1000
+    },
+    {
+     "t": 900,
+     "name": "pass_line",
+     "at": "ball",
+     "durMs": 400
+    }
+   ],
+   "labels": [
+    {
+     "who": "actor",
+     "t": [
+      0,
+      1400
+     ]
+    }
+   ],
+   "sync": {
+    "peak": 1300,
+    "result": 2600
+   },
+   "chip": "corner"
+  },
+  {
+   "id": "korner_sag_kisa",
+   "version": 1,
+   "group": "duran",
+   "trigger": {
+    "kind": [
+     "cor"
+    ],
+    "start": [
+     "KORNER"
+    ],
+    "wing": [
+     "R"
+    ],
+    "pattern": [
+     "KORNER_KISA",
+     "KORNER_KISA_DIP"
+    ]
+   },
+   "durMs": 3000,
+   "camera": {
+    "focus": [
+     0.85,
+     0.9
+    ],
+    "zoom": 1.35,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": true
+   },
+   "tracks": [
+    {
+     "who": "actor",
+     "from": "KNT.R",
+     "to": [
+      0.99,
+      0.995
+     ],
+     "t": [
+      0,
+      700
+     ],
+     "ease": "io",
+     "style": "walk"
+    },
+    {
+     "who": "OS.R",
+     "from": "@",
+     "to": [
+      0.9,
+      0.93
+     ],
+     "t": [
+      0,
+      1000
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "opp:BEK.L",
+     "from": "@",
+     "to": [
+      0.88,
+      0.9
+     ],
+     "t": [
+      600,
+      1500
+     ],
+     "ease": "io",
+     "style": "press"
+    },
+    {
+     "who": "SNT",
+     "from": "@",
+     "to": [
+      0.5,
+      0.92
+     ],
+     "t": [
+      600,
+      2400
+     ],
+     "ease": "io",
+     "style": "run"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": [
+      0.99,
+      0.995
+     ],
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 900,
+     "p": [
+      0.99,
+      0.995
+     ],
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 1300,
+     "p": [
+      0.9,
+      0.93
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 1600,
+     "p": [
+      0.9,
+      0.93
+     ],
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 2600,
+     "p": [
+      0.5,
+      0.91
+     ],
+     "z": 1.8,
+     "path": "LOFTED",
+     "arc": 4.0
+    }
+   ],
+   "fx": [
+    {
+     "t": 0,
+     "name": "corner_ring",
+     "at": [
+      0.99,
+      0.995
+     ],
+     "durMs": 1000
+    },
+    {
+     "t": 900,
+     "name": "pass_line",
+     "at": "ball",
+     "durMs": 400
+    }
+   ],
+   "labels": [
+    {
+     "who": "actor",
+     "t": [
+      0,
+      1400
+     ]
+    }
+   ],
+   "sync": {
+    "peak": 1300,
+    "result": 2600
+   },
+   "chip": "corner"
+  },
+  {
+   "id": "faul",
+   "version": 1,
+   "group": "duran",
+   "trigger": {
+    "kind": [
+     "f"
+    ],
+    "finish": [
+     "FAUL"
+    ]
+   },
+   "durMs": 2000,
+   "camera": {
+    "focus": "ball",
+    "zoom": 1.18,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": true
+   },
+   "tracks": [
+    {
+     "who": "actor",
+     "from": "OOS",
+     "to": [
+      0.5,
+      0.58
+     ],
+     "t": [
+      0,
+      500
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "opp:DOS",
+     "from": "@",
+     "to": [
+      0.52,
+      0.59
+     ],
+     "t": [
+      0,
+      500
+     ],
+     "ease": "io",
+     "style": "press"
+    },
+    {
+     "who": "referee",
+     "from": "@",
+     "to": [
+      0.45,
+      0.56
+     ],
+     "t": [
+      300,
+      1500
+     ],
+     "ease": "io",
+     "style": "jog"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": [
+      0.49,
+      0.56
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 500,
+     "p": [
+      0.5,
+      0.58
+     ],
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 2000,
+     "p": [
+      0.5,
+      0.58
+     ],
+     "z": 0,
+     "path": "STATIC"
+    }
+   ],
+   "fx": [
+    {
+     "t": 500,
+     "name": "whistle_ring",
+     "at": "ball",
+     "durMs": 800
+    },
+    {
+     "t": 600,
+     "name": "foul_cross",
+     "at": "ball",
+     "durMs": 1200
+    }
+   ],
+   "labels": [
+    {
+     "who": "actor",
+     "t": [
+      300,
+      2000
+     ]
+    }
+   ],
+   "sync": {
+    "peak": 500,
+    "result": 600
+   },
+   "chip": "foul"
+  },
+  {
+   "id": "frikik_direkt",
+   "version": 1,
+   "group": "duran",
+   "trigger": {
+    "kind": [
+     "ch"
+    ],
+    "afterFoul": [
+     true
+    ],
+    "onTarget": [
+     true,
+     false
+    ],
+    "start": [
+     "FRIKIK"
+    ],
+    "pattern": [
+     "FRIKIK_DIREKT",
+     "FRIKIK_BARAJ_ALTI"
+    ],
+    "finish": [
+     "KURTARIS",
+     "ISKA_USTTEN",
+     "ISKA_YANDAN",
+     "BLOK",
+     "KALECI_CIKIP_ALDI"
+    ]
+   },
+   "durMs": 4000,
+   "camera": {
+    "focus": [
+     0.5,
+     0.86
+    ],
+    "zoom": 1.35,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": true
+   },
+   "tracks": [
+    {
+     "who": "actor",
+     "from": [
+      0.47,
+      0.67
+     ],
+     "to": [
+      0.5,
+      0.72
+     ],
+     "t": [
+      0,
+      1000
+     ],
+     "ease": "io",
+     "style": "walk"
+    },
+    {
+     "who": "opp:STP.L",
+     "from": "@",
+     "to": [
+      0.47,
+      0.81
+     ],
+     "t": [
+      0,
+      700
+     ],
+     "ease": "io",
+     "style": "walk"
+    },
+    {
+     "who": "opp:STP.R",
+     "from": "@",
+     "to": [
+      0.5,
+      0.81
+     ],
+     "t": [
+      0,
+      700
+     ],
+     "ease": "io",
+     "style": "walk"
+    },
+    {
+     "who": "opp:DOS",
+     "from": "@",
+     "to": [
+      0.53,
+      0.81
+     ],
+     "t": [
+      0,
+      700
+     ],
+     "ease": "io",
+     "style": "walk"
+    },
+    {
+     "who": "keeper",
+     "from": [
+      0.5,
+      0.985
+     ],
+     "to": [
+      0.56,
+      0.985
+     ],
+     "t": [
+      2100,
+      2600
+     ],
+     "ease": "io",
+     "style": "run"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": [
+      0.5,
+      0.72
+     ],
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 1600,
+     "p": [
+      0.5,
+      0.72
+     ],
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 2600,
+     "p": [
+      0.56,
+      0.99
+     ],
+     "z": 1.8,
+     "path": "LOFTED",
+     "arc": 2.6
+    }
+   ],
+   "fx": [
+    {
+     "t": 0,
+     "name": "wall_mark",
+     "at": [
+      0.5,
+      0.81
+     ],
+     "durMs": 1600
+    },
+    {
+     "t": 1600,
+     "name": "shot_streak",
+     "at": "ball",
+     "durMs": 900
+    }
+   ],
+   "labels": [
+    {
+     "who": "actor",
+     "t": [
+      0,
+      3200
+     ]
+    }
+   ],
+   "sync": {
+    "peak": 1600,
+    "result": 2600
+   },
+   "chip": "freeKick"
+  },
+  {
+   "id": "frikik_dolayli",
+   "version": 1,
+   "group": "duran",
+   "trigger": {
+    "kind": [
+     "f"
+    ],
+    "start": [
+     "FRIKIK"
+    ],
+    "pattern": [
+     "FRIKIK_HIZLI",
+     "FRIKIK_KISA_CEVIRME",
+     "FRIKIK_ORTASI",
+     "FRIKIK_UZAK_KAFA",
+     "FRIKIK_UZAK_ARKA_DIREK"
+    ]
+   },
+   "durMs": 3000,
+   "camera": {
+    "focus": [
+     0.4,
+     0.7
+    ],
+    "zoom": 1.18,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": true
+   },
+   "tracks": [
+    {
+     "who": "actor",
+     "from": [
+      0.28,
+      0.58
+     ],
+     "to": [
+      0.3,
+      0.62
+     ],
+     "t": [
+      0,
+      700
+     ],
+     "ease": "io",
+     "style": "walk"
+    },
+    {
+     "who": "OS.L",
+     "from": "@",
+     "to": [
+      0.36,
+      0.66
+     ],
+     "t": [
+      400,
+      1200
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "SNT",
+     "from": "@",
+     "to": [
+      0.52,
+      0.9
+     ],
+     "t": [
+      600,
+      2600
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "opp:STP.L",
+     "from": "@",
+     "to": [
+      0.5,
+      0.89
+     ],
+     "t": [
+      600,
+      2600
+     ],
+     "ease": "io",
+     "style": "run"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": [
+      0.3,
+      0.62
+     ],
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 900,
+     "p": [
+      0.3,
+      0.62
+     ],
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 1300,
+     "p": [
+      0.36,
+      0.66
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 2500,
+     "p": [
+      0.52,
+      0.9
+     ],
+     "z": 1.8,
+     "path": "LOFTED",
+     "arc": 4.5
+    }
+   ],
+   "fx": [
+    {
+     "t": 0,
+     "name": "free_kick_ring",
+     "at": [
+      0.3,
+      0.62
+     ],
+     "durMs": 900
+    },
+    {
+     "t": 1300,
+     "name": "pass_line",
+     "at": "ball",
+     "durMs": 1200
+    }
+   ],
+   "labels": [
+    {
+     "who": "actor",
+     "t": [
+      0,
+      1800
+     ]
+    }
+   ],
+   "sync": {
+    "peak": 1300,
+    "result": 2500
+   },
+   "chip": "freeKick"
+  },
+  {
+   "id": "ofsayt",
+   "version": 1,
+   "group": "duran",
+   "trigger": {
+    "kind": [
+     "offside"
+    ],
+    "finish": [
+     "OFSAYT"
+    ],
+    "action": [
+     "OFFSIDE"
+    ]
+   },
+   "durMs": 2000,
+   "camera": {
+    "focus": [
+     0.5,
+     0.8
+    ],
+    "zoom": 1.18,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": true
+   },
+   "tracks": [
+    {
+     "who": "actor",
+     "from": "SNT",
+     "to": [
+      0.52,
+      0.86
+     ],
+     "t": [
+      0,
+      900
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "opp:STP.L",
+     "from": "@",
+     "to": [
+      0.46,
+      0.8
+     ],
+     "t": [
+      0,
+      700
+     ],
+     "ease": "io",
+     "style": "jog"
+    },
+    {
+     "who": "opp:STP.R",
+     "from": "@",
+     "to": [
+      0.56,
+      0.8
+     ],
+     "t": [
+      0,
+      700
+     ],
+     "ease": "io",
+     "style": "jog"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": [
+      0.48,
+      0.62
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 900,
+     "p": [
+      0.52,
+      0.85
+     ],
+     "z": 0,
+     "path": "GROUND"
+    },
+    {
+     "t": 2000,
+     "p": [
+      0.52,
+      0.86
+     ],
+     "z": 0,
+     "path": "STATIC"
+    }
+   ],
+   "fx": [
+    {
+     "t": 800,
+     "name": "offside_line",
+     "at": [
+      0.5,
+      0.8
+     ],
+     "durMs": 1600
+    },
+    {
+     "t": 900,
+     "name": "flag_raise",
+     "at": [
+      1.02,
+      0.8
+     ],
+     "durMs": 1100
+    }
+   ],
+   "labels": [
+    {
+     "who": "actor",
+     "t": [
+      500,
+      2000
+     ]
+    }
+   ],
+   "sync": {
+    "peak": 800,
+    "result": 900
+   },
+   "chip": "offside"
+  },
+  {
+   "id": "penalti_karar",
+   "version": 1,
+   "group": "penalti",
+   "trigger": {
+    "kind": [
+     "pen"
+    ],
+    "start": [
+     "PENALTI"
+    ]
+   },
+   "durMs": 3500,
+   "camera": {
+    "focus": [
+     0.5,
+     0.88
+    ],
+    "zoom": 1.18,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": true
+   },
+   "tracks": [
+    {
+     "who": "referee",
+     "from": "@",
+     "to": [
+      0.5,
+      0.89
+     ],
+     "t": [
+      0,
+      1000
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "opp:STP.L",
+     "from": "@",
+     "to": [
+      0.46,
+      0.86
+     ],
+     "t": [
+      300,
+      1300
+     ],
+     "ease": "io",
+     "style": "walk"
+    },
+    {
+     "who": "actor",
+     "from": [
+      0.47,
+      0.84
+     ],
+     "to": [
+      0.5,
+      0.87
+     ],
+     "t": [
+      1200,
+      2600
+     ],
+     "ease": "io",
+     "style": "walk"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": [
+      0.49,
+      0.86
+     ],
+     "z": 0.0,
+     "path": "GROUND"
+    },
+    {
+     "t": 1400,
+     "p": [
+      0.5,
+      0.895
+     ],
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 3500,
+     "p": [
+      0.5,
+      0.895
+     ],
+     "z": 0,
+     "path": "STATIC"
+    }
+   ],
+   "fx": [
+    {
+     "t": 800,
+     "name": "whistle_ring",
+     "at": "referee",
+     "durMs": 800
+    },
+    {
+     "t": 1400,
+     "name": "penalty_ring",
+     "at": [
+      0.5,
+      0.895
+     ],
+     "durMs": 1200
+    }
+   ],
+   "labels": [
+    {
+     "who": "actor",
+     "t": [
+      1200,
+      3500
+     ]
+    }
+   ],
+   "sync": {
+    "peak": 800,
+    "result": 1400
+   },
+   "chip": "penalty"
+  },
+  {
+   "id": "penalti_gol",
+   "version": 1,
+   "group": "penalti",
+   "trigger": {
+    "kind": [
+     "g"
+    ],
+    "afterPen": [
+     true
+    ]
+   },
+   "durMs": 4000,
+   "camera": {
+    "focus": [
+     0.5,
+     0.92
+    ],
+    "zoom": 1.35,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": true
+   },
+   "tracks": [
+    {
+     "who": "actor",
+     "from": [
+      0.47,
+      0.82
+     ],
+     "to": [
+      0.5,
+      0.87
+     ],
+     "t": [
+      0,
+      900
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "referee",
+     "from": "@",
+     "to": [
+      0.4,
+      0.84
+     ],
+     "t": [
+      0,
+      600
+     ],
+     "ease": "io",
+     "style": "walk"
+    },
+    {
+     "who": "keeper",
+     "from": [
+      0.5,
+      0.995
+     ],
+     "to": [
+      0.62,
+      0.985
+     ],
+     "t": [
+      1000,
+      1500
+     ],
+     "ease": "io",
+     "style": "run"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": [
+      0.5,
+      0.895
+     ],
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 1000,
+     "p": [
+      0.5,
+      0.895
+     ],
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 1400,
+     "p": [
+      0.4,
+      1.0
+     ],
+     "z": 0.6,
+     "path": "DRIVEN"
+    },
+    {
+     "t": 1800,
+     "p": [
+      0.4,
+      1.03
+     ],
+     "z": 0.2,
+     "path": "GROUND"
+    }
+   ],
+   "fx": [
+    {
+     "t": 1400,
+     "name": "goal_net",
+     "at": [
+      0.5,
+      1.0
+     ],
+     "durMs": 1400
+    },
+    {
+     "t": 1400,
+     "name": "goal_glow",
+     "at": [
+      0.5,
+      1.0
+     ],
+     "durMs": 1800
+    },
+    {
+     "t": 1500,
+     "name": "crowd_lift",
+     "at": [
+      0.5,
+      0.5
+     ],
+     "durMs": 1200
+    }
+   ],
+   "labels": [
+    {
+     "who": "actor",
+     "t": [
+      0,
+      4000
+     ]
+    },
+    {
+     "who": "keeper",
+     "t": [
+      600,
+      2000
+     ]
+    }
+   ],
+   "sync": {
+    "peak": 1000,
+    "result": 1400
+   },
+   "chip": "goal"
+  },
+  {
+   "id": "penalti_kurtaris",
+   "version": 1,
+   "group": "penalti",
+   "trigger": {
+    "kind": [
+     "ch"
+    ],
+    "afterPen": [
+     true
+    ],
+    "onTarget": [
+     true
+    ],
+    "start": [
+     "PENALTI"
+    ],
+    "finish": [
+     "KURTARIS"
+    ]
+   },
+   "durMs": 4000,
+   "camera": {
+    "focus": [
+     0.5,
+     0.92
+    ],
+    "zoom": 1.35,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": true
+   },
+   "tracks": [
+    {
+     "who": "actor",
+     "from": [
+      0.47,
+      0.82
+     ],
+     "to": [
+      0.5,
+      0.87
+     ],
+     "t": [
+      0,
+      900
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "referee",
+     "from": "@",
+     "to": [
+      0.4,
+      0.84
+     ],
+     "t": [
+      0,
+      600
+     ],
+     "ease": "io",
+     "style": "walk"
+    },
+    {
+     "who": "keeper",
+     "from": [
+      0.5,
+      0.995
+     ],
+     "to": [
+      0.4,
+      0.985
+     ],
+     "t": [
+      1000,
+      1450
+     ],
+     "ease": "io",
+     "style": "run"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": [
+      0.5,
+      0.895
+     ],
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 1000,
+     "p": [
+      0.5,
+      0.895
+     ],
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 1400,
+     "p": [
+      0.41,
+      0.985
+     ],
+     "z": 0.5,
+     "path": "DRIVEN"
+    },
+    {
+     "t": 2200,
+     "p": [
+      0.3,
+      0.93
+     ],
+     "z": 0.3,
+     "path": "GROUND"
+    }
+   ],
+   "fx": [
+    {
+     "t": 1400,
+     "name": "save_ring",
+     "at": "keeper",
+     "durMs": 900
+    }
+   ],
+   "labels": [
+    {
+     "who": "actor",
+     "t": [
+      0,
+      2400
+     ]
+    },
+    {
+     "who": "keeper",
+     "t": [
+      1000,
+      4000
+     ]
+    }
+   ],
+   "sync": {
+    "peak": 1000,
+    "result": 1400
+   },
+   "chip": "save"
+  },
+  {
+   "id": "penalti_kacan",
+   "version": 1,
+   "group": "penalti",
+   "trigger": {
+    "kind": [
+     "ch"
+    ],
+    "afterPen": [
+     true
+    ],
+    "onTarget": [
+     false
+    ],
+    "start": [
+     "PENALTI"
+    ],
+    "finish": [
+     "ISKA_YANDAN",
+     "ISKA_USTTEN"
+    ]
+   },
+   "durMs": 4000,
+   "camera": {
+    "focus": [
+     0.5,
+     0.92
+    ],
+    "zoom": 1.35,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": true
+   },
+   "tracks": [
+    {
+     "who": "actor",
+     "from": [
+      0.47,
+      0.82
+     ],
+     "to": [
+      0.5,
+      0.87
+     ],
+     "t": [
+      0,
+      900
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "referee",
+     "from": "@",
+     "to": [
+      0.4,
+      0.84
+     ],
+     "t": [
+      0,
+      600
+     ],
+     "ease": "io",
+     "style": "walk"
+    },
+    {
+     "who": "keeper",
+     "from": [
+      0.5,
+      0.995
+     ],
+     "to": [
+      0.4,
+      0.985
+     ],
+     "t": [
+      1000,
+      1450
+     ],
+     "ease": "io",
+     "style": "run"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": [
+      0.5,
+      0.895
+     ],
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 1000,
+     "p": [
+      0.5,
+      0.895
+     ],
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 1600,
+     "p": [
+      0.62,
+      1.04
+     ],
+     "z": 2.6,
+     "path": "DRIVEN"
+    }
+   ],
+   "fx": [
+    {
+     "t": 1600,
+     "name": "miss_rays",
+     "at": [
+      0.6,
+      1.0
+     ],
+     "durMs": 900
+    }
+   ],
+   "labels": [
+    {
+     "who": "actor",
+     "t": [
+      0,
+      3000
+     ]
+    }
+   ],
+   "sync": {
+    "peak": 1000,
+    "result": 1600
+   },
+   "chip": "missed"
+  },
+  {
+   "id": "seri_penalti_gol",
+   "version": 1,
+   "group": "penalti",
+   "trigger": {
+    "kind": [
+     "pg"
+    ]
+   },
+   "durMs": 4000,
+   "camera": {
+    "focus": [
+     0.5,
+     0.92
+    ],
+    "zoom": 1.35,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": true
+   },
+   "tracks": [
+    {
+     "who": "actor",
+     "from": [
+      0.47,
+      0.82
+     ],
+     "to": [
+      0.5,
+      0.87
+     ],
+     "t": [
+      0,
+      900
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "referee",
+     "from": "@",
+     "to": [
+      0.4,
+      0.84
+     ],
+     "t": [
+      0,
+      600
+     ],
+     "ease": "io",
+     "style": "walk"
+    },
+    {
+     "who": "keeper",
+     "from": [
+      0.5,
+      0.995
+     ],
+     "to": [
+      0.38,
+      0.985
+     ],
+     "t": [
+      1000,
+      1500
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "actor",
+     "from": "@",
+     "to": [
+      0.5,
+      0.55
+     ],
+     "t": [
+      2200,
+      4000
+     ],
+     "ease": "io",
+     "style": "walk"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": [
+      0.5,
+      0.895
+     ],
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 1000,
+     "p": [
+      0.5,
+      0.895
+     ],
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 1400,
+     "p": [
+      0.6,
+      1.0
+     ],
+     "z": 0.5,
+     "path": "DRIVEN"
+    },
+    {
+     "t": 1800,
+     "p": [
+      0.6,
+      1.03
+     ],
+     "z": 0.2,
+     "path": "GROUND"
+    }
+   ],
+   "fx": [
+    {
+     "t": 0,
+     "name": "penalty_ring",
+     "at": [
+      0.5,
+      0.895
+     ],
+     "durMs": 1000
+    },
+    {
+     "t": 1400,
+     "name": "goal_net",
+     "at": [
+      0.5,
+      1.0
+     ],
+     "durMs": 1400
+    }
+   ],
+   "labels": [
+    {
+     "who": "actor",
+     "t": [
+      0,
+      4000
+     ]
+    }
+   ],
+   "sync": {
+    "peak": 1000,
+    "result": 1400
+   },
+   "chip": "shootout"
+  },
+  {
+   "id": "seri_penalti_kacan",
+   "version": 1,
+   "group": "penalti",
+   "trigger": {
+    "kind": [
+     "pm"
+    ]
+   },
+   "durMs": 4000,
+   "camera": {
+    "focus": [
+     0.5,
+     0.92
+    ],
+    "zoom": 1.35,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": true
+   },
+   "tracks": [
+    {
+     "who": "actor",
+     "from": [
+      0.47,
+      0.82
+     ],
+     "to": [
+      0.5,
+      0.87
+     ],
+     "t": [
+      0,
+      900
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "referee",
+     "from": "@",
+     "to": [
+      0.4,
+      0.84
+     ],
+     "t": [
+      0,
+      600
+     ],
+     "ease": "io",
+     "style": "walk"
+    },
+    {
+     "who": "keeper",
+     "from": [
+      0.5,
+      0.995
+     ],
+     "to": [
+      0.62,
+      0.985
+     ],
+     "t": [
+      1000,
+      1450
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "actor",
+     "from": "@",
+     "to": [
+      0.5,
+      0.55
+     ],
+     "t": [
+      2200,
+      4000
+     ],
+     "ease": "io",
+     "style": "walk"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": [
+      0.5,
+      0.895
+     ],
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 1000,
+     "p": [
+      0.5,
+      0.895
+     ],
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 1400,
+     "p": [
+      0.61,
+      0.985
+     ],
+     "z": 0.5,
+     "path": "DRIVEN"
+    },
+    {
+     "t": 2200,
+     "p": [
+      0.7,
+      0.93
+     ],
+     "z": 0.3,
+     "path": "GROUND"
+    }
+   ],
+   "fx": [
+    {
+     "t": 0,
+     "name": "penalty_ring",
+     "at": [
+      0.5,
+      0.895
+     ],
+     "durMs": 1000
+    },
+    {
+     "t": 1400,
+     "name": "save_ring",
+     "at": "keeper",
+     "durMs": 900
+    }
+   ],
+   "labels": [
+    {
+     "who": "actor",
+     "t": [
+      0,
+      3000
+     ]
+    },
+    {
+     "who": "keeper",
+     "t": [
+      1000,
+      4000
+     ]
+    }
+   ],
+   "sync": {
+    "peak": 1000,
+    "result": 1400
+   },
+   "chip": "shootout"
+  },
+  {
+   "id": "sari_kart",
+   "version": 1,
+   "group": "kart",
+   "trigger": {
+    "kind": [
+     "c"
+    ],
+    "action": [
+     "CARD"
+    ],
+    "card": [
+     "Y"
+    ]
+   },
+   "durMs": 2800,
+   "camera": {
+    "focus": "actor",
+    "zoom": 1.35,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": true
+   },
+   "tracks": [
+    {
+     "who": "referee",
+     "from": "@",
+     "to": [
+      0.47,
+      0.56
+     ],
+     "t": [
+      0,
+      900
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "actor",
+     "from": "@",
+     "to": [
+      0.5,
+      0.57
+     ],
+     "t": [
+      0,
+      600
+     ],
+     "ease": "io",
+     "style": "walk"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": "ball",
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 2800,
+     "p": "ball",
+     "z": 0,
+     "path": "STATIC"
+    }
+   ],
+   "fx": [
+    {
+     "t": 900,
+     "name": "card_yellow",
+     "at": "actor",
+     "durMs": 1400
+    },
+    {
+     "t": 700,
+     "name": "whistle_ring",
+     "at": "referee",
+     "durMs": 700
+    }
+   ],
+   "labels": [
+    {
+     "who": "actor",
+     "t": [
+      300,
+      2800
+     ]
+    }
+   ],
+   "sync": {
+    "peak": 900,
+    "result": 900
+   },
+   "chip": "yellow"
+  },
+  {
+   "id": "kirmizi_kart",
+   "version": 1,
+   "group": "kart",
+   "trigger": {
+    "kind": [
+     "r"
+    ],
+    "action": [
+     "CARD"
+    ],
+    "card": [
+     "R"
+    ]
+   },
+   "durMs": 5500,
+   "camera": {
+    "focus": "actor",
+    "zoom": 1.35,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": true
+   },
+   "tracks": [
+    {
+     "who": "referee",
+     "from": "@",
+     "to": [
+      0.47,
+      0.56
+     ],
+     "t": [
+      0,
+      900
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "actor",
+     "from": "@",
+     "to": [
+      0.5,
+      0.57
+     ],
+     "t": [
+      0,
+      600
+     ],
+     "ease": "io",
+     "style": "walk"
+    },
+    {
+     "who": "actor",
+     "from": "@",
+     "to": [
+      -0.04,
+      0.5
+     ],
+     "t": [
+      2200,
+      5200
+     ],
+     "ease": "io",
+     "style": "walk"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": "ball",
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 5500,
+     "p": "ball",
+     "z": 0,
+     "path": "STATIC"
+    }
+   ],
+   "fx": [
+    {
+     "t": 900,
+     "name": "card_red",
+     "at": "actor",
+     "durMs": 1800
+    },
+    {
+     "t": 700,
+     "name": "whistle_ring",
+     "at": "referee",
+     "durMs": 700
+    }
+   ],
+   "labels": [
+    {
+     "who": "actor",
+     "t": [
+      300,
+      5500
+     ]
+    }
+   ],
+   "sync": {
+    "peak": 900,
+    "result": 900
+   },
+   "chip": "red"
+  },
+  {
+   "id": "ikinci_sari",
+   "version": 1,
+   "group": "kart",
+   "trigger": {
+    "kind": [
+     "r"
+    ],
+    "secondYellow": [
+     true
+    ],
+    "action": [
+     "CARD"
+    ],
+    "card": [
+     "YR"
+    ]
+   },
+   "durMs": 5500,
+   "camera": {
+    "focus": "actor",
+    "zoom": 1.35,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": true
+   },
+   "tracks": [
+    {
+     "who": "referee",
+     "from": "@",
+     "to": [
+      0.47,
+      0.56
+     ],
+     "t": [
+      0,
+      900
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "actor",
+     "from": "@",
+     "to": [
+      0.5,
+      0.57
+     ],
+     "t": [
+      0,
+      600
+     ],
+     "ease": "io",
+     "style": "walk"
+    },
+    {
+     "who": "actor",
+     "from": "@",
+     "to": [
+      -0.04,
+      0.5
+     ],
+     "t": [
+      2800,
+      5400
+     ],
+     "ease": "io",
+     "style": "walk"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": "ball",
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 5500,
+     "p": "ball",
+     "z": 0,
+     "path": "STATIC"
+    }
+   ],
+   "fx": [
+    {
+     "t": 900,
+     "name": "card_yellow",
+     "at": "actor",
+     "durMs": 900
+    },
+    {
+     "t": 1800,
+     "name": "card_red",
+     "at": "actor",
+     "durMs": 1600
+    },
+    {
+     "t": 700,
+     "name": "whistle_ring",
+     "at": "referee",
+     "durMs": 700
+    }
+   ],
+   "labels": [
+    {
+     "who": "actor",
+     "t": [
+      300,
+      5500
+     ]
+    }
+   ],
+   "sync": {
+    "peak": 900,
+    "result": 1800
+   },
+   "chip": "secondYellow"
+  },
+  {
+   "id": "sakatlik",
+   "version": 1,
+   "group": "kart",
+   "trigger": {
+    "kind": [
+     "sub"
+    ],
+    "subReason": [
+     "INJURY"
+    ]
+   },
+   "durMs": 3500,
+   "camera": {
+    "focus": "actor",
+    "zoom": 1.35,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": true
+   },
+   "tracks": [
+    {
+     "who": "referee",
+     "from": "@",
+     "to": [
+      0.47,
+      0.56
+     ],
+     "t": [
+      0,
+      900
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "medic_1",
+     "from": [
+      -0.04,
+      0.48
+     ],
+     "to": [
+      0.47,
+      0.57
+     ],
+     "t": [
+      600,
+      2600
+     ],
+     "ease": "io",
+     "style": "run"
+    },
+    {
+     "who": "medic_2",
+     "from": [
+      -0.04,
+      0.52
+     ],
+     "to": [
+      0.53,
+      0.57
+     ],
+     "t": [
+      700,
+      2700
+     ],
+     "ease": "io",
+     "style": "run"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": "ball",
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 3500,
+     "p": "ball",
+     "z": 0,
+     "path": "STATIC"
+    }
+   ],
+   "fx": [
+    {
+     "t": 0,
+     "name": "injury_down",
+     "at": "actor",
+     "durMs": 3500
+    },
+    {
+     "t": 300,
+     "name": "whistle_ring",
+     "at": "referee",
+     "durMs": 700
+    },
+    {
+     "t": 900,
+     "name": "injury_cross",
+     "at": "actor",
+     "durMs": 2400
+    }
+   ],
+   "labels": [
+    {
+     "who": "actor",
+     "t": [
+      0,
+      3500
+     ]
+    }
+   ],
+   "sync": {
+    "peak": 300,
+    "result": 900
+   },
+   "chip": "injury",
+   "next": "degisiklik"
+  },
+  {
+   "id": "degisiklik",
+   "version": 1,
+   "group": "kart",
+   "trigger": {
+    "kind": [
+     "sub"
+    ],
+    "pattern": [
+     "DEGISIKLIK"
+    ]
+   },
+   "durMs": 2600,
+   "camera": {
+    "focus": [
+     0.05,
+     0.5
+    ],
+    "zoom": 1.18,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": true
+   },
+   "tracks": [
+    {
+     "who": "actor",
+     "from": "@",
+     "to": [
+      -0.04,
+      0.5
+     ],
+     "t": [
+      0,
+      2000
+     ],
+     "ease": "io",
+     "style": "walk"
+    },
+    {
+     "who": "partner",
+     "from": [
+      -0.05,
+      0.52
+     ],
+     "to": [
+      0.06,
+      0.5
+     ],
+     "t": [
+      600,
+      2600
+     ],
+     "ease": "io",
+     "style": "jog"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": "ball",
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 2600,
+     "p": "ball",
+     "z": 0,
+     "path": "STATIC"
+    }
+   ],
+   "fx": [
+    {
+     "t": 0,
+     "name": "sub_board",
+     "at": [
+      -0.03,
+      0.5
+     ],
+     "durMs": 2600
+    },
+    {
+     "t": 200,
+     "name": "sub_arrows",
+     "at": [
+      0.0,
+      0.5
+     ],
+     "durMs": 2200
+    }
+   ],
+   "labels": [
+    {
+     "who": "actor",
+     "t": [
+      0,
+      2000
+     ]
+    },
+    {
+     "who": "partner",
+     "t": [
+      900,
+      2600
+     ]
+    }
+   ],
+   "sync": {
+    "peak": 0,
+    "result": 600
+   },
+   "chip": "sub"
+  },
+  {
+   "id": "degisiklik_sakatlik",
+   "version": 1,
+   "group": "kart",
+   "trigger": {
+    "pattern": [
+     "DEGISIKLIK"
+    ],
+    "subReason": [
+     "INJURY"
+    ]
+   },
+   "durMs": 3800,
+   "camera": {
+    "focus": [
+     0.05,
+     0.5
+    ],
+    "zoom": 1.18,
+    "inMs": 450,
+    "outMs": 450,
+    "hold": true
+   },
+   "tracks": [
+    {
+     "who": "medic_1",
+     "from": [
+      0.3,
+      0.5
+     ],
+     "to": [
+      0.0,
+      0.49
+     ],
+     "t": [
+      0,
+      1400
+     ],
+     "ease": "io",
+     "style": "walk"
+    },
+    {
+     "who": "actor",
+     "from": "@",
+     "to": [
+      -0.04,
+      0.5
+     ],
+     "t": [
+      0,
+      2200
+     ],
+     "ease": "io",
+     "style": "walk"
+    },
+    {
+     "who": "partner",
+     "from": [
+      -0.05,
+      0.52
+     ],
+     "to": [
+      0.06,
+      0.5
+     ],
+     "t": [
+      1400,
+      3600
+     ],
+     "ease": "io",
+     "style": "jog"
+    }
+   ],
+   "ball": [
+    {
+     "t": 0,
+     "p": "ball",
+     "z": 0,
+     "path": "STATIC"
+    },
+    {
+     "t": 3800,
+     "p": "ball",
+     "z": 0,
+     "path": "STATIC"
+    }
+   ],
+   "fx": [
+    {
+     "t": 0,
+     "name": "injury_cross",
+     "at": "actor",
+     "durMs": 1800
+    },
+    {
+     "t": 1200,
+     "name": "sub_board",
+     "at": [
+      -0.03,
+      0.5
+     ],
+     "durMs": 2600
+    },
+    {
+     "t": 1400,
+     "name": "sub_arrows",
+     "at": [
+      0.0,
+      0.5
+     ],
+     "durMs": 2200
+    }
+   ],
+   "labels": [
+    {
+     "who": "actor",
+     "t": [
+      0,
+      2200
+     ]
+    },
+    {
+     "who": "partner",
+     "t": [
+      1600,
+      3800
+     ]
+    }
+   ],
+   "sync": {
+    "peak": 0,
+    "result": 1400
+   },
+   "chip": "sub"
+  }
+ ]
+}

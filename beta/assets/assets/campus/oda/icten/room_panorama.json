@@ -1,0 +1,2507 @@
+{
+ "_belge": "docs/rules/TAKIM_YONETICI_ODASI_FE.md kural 11/20 — ODANIN İÇİNDEN BAKIŞ, tek doğruluk kaynağı. Koordinatlar GÖRSEL koordinatı, 0..1 normalize (x genişlik, y yükseklik payı). 2026-10-29 GERÇEK dikey 9:16 kareler (1152x2048): üst düzey `stops` = O4 (4 durak, gündüz + gece); `roomTiers.O3/O2/O1` = alt kademe varyantları (kendi `stops`, `closeup`; FE tüketimi api#1703 sonrası, bugün YALNIZ VERİ). Poligon / dörtgen / çapa karelerden ızgara + bindirme ile elle ölçüldü. Dosya adı: durakN_<ad>_gunduz/gece.webp (O4), o<N>_durakN_<ad>_gunduz/gece.webp (kademeler), o2_masa_yakin_gunduz/gece.webp. O4 / O3 / O1 masa yakın plan kareleri KALDI (köşegen perspektif, dikdörtgen masa üstü yok): yakın plan yer tutucu (kod dokusu), `closeup.day/night` adları rezerve. hotspot: z büyük önde; priority çip yerleşim sırası; order semantik (kart) sırası; action=closeup masa yakın planı. surfaces.quad: sol-üst, sağ-üst, sağ-alt, sol-alt. desk: masa yuvaları/ayak izleri (yakın plan; tüm kademelerde ortak).",
+ "version": 1,
+ "tier": "O4",
+ "openStop": 0,
+ "stops": [
+  {
+   "id": "masa_cam",
+   "day": "durak1_masa_cam_gunduz.webp",
+   "night": "durak1_masa_cam_gece.webp",
+   "size": [
+    1152,
+    2048
+   ],
+   "focus": 0.5,
+   "hotspots": [
+    {
+     "id": "cam",
+     "label": "training",
+     "glyph": "cone",
+     "route": "/training",
+     "order": 3,
+     "priority": 3,
+     "z": 0,
+     "poly": [
+      [
+       0,
+       0.14
+      ],
+      [
+       0.415,
+       0.205
+      ],
+      [
+       0.415,
+       0.7
+      ],
+      [
+       0,
+       0.72
+      ]
+     ],
+     "chip": [
+      0.2,
+      0.4
+     ]
+    },
+    {
+     "id": "masa",
+     "label": "teamReport",
+     "glyph": "chart",
+     "action": "closeup",
+     "order": 5,
+     "priority": 1,
+     "z": 2,
+     "poly": [
+      [
+       0.38,
+       0.6
+      ],
+      [
+       1,
+       0.6
+      ],
+      [
+       1,
+       0.8
+      ],
+      [
+       0.94,
+       0.8
+      ],
+      [
+       0.94,
+       0.69
+      ],
+      [
+       0.38,
+       0.69
+      ]
+     ],
+     "chip": [
+      0.62,
+      0.57
+     ]
+    }
+   ],
+   "surfaces": [],
+   "glows": []
+  },
+  {
+   "id": "analiz",
+   "day": "durak2_analiz_gunduz.webp",
+   "night": "durak2_analiz_gece.webp",
+   "size": [
+    1152,
+    2048
+   ],
+   "focus": 0.5,
+   "hotspots": [
+    {
+     "id": "tv",
+     "label": "analysis",
+     "glyph": "play",
+     "route": "/takim/analizler?tab=siradaki",
+     "order": 6,
+     "priority": 1,
+     "z": 0,
+     "poly": [
+      [
+       0.143,
+       0.421
+      ],
+      [
+       0.569,
+       0.421
+      ],
+      [
+       0.569,
+       0.586
+      ],
+      [
+       0.143,
+       0.586
+      ]
+     ]
+    },
+    {
+     "id": "tahta",
+     "label": "tactics",
+     "glyph": "pitch",
+     "route": "/takim/kadro-taktik",
+     "order": 1,
+     "priority": 2,
+     "z": 0,
+     "poly": [
+      [
+       0.593,
+       0.421
+      ],
+      [
+       0.913,
+       0.421
+      ],
+      [
+       0.913,
+       0.586
+      ],
+      [
+       0.593,
+       0.586
+      ]
+     ]
+    },
+    {
+     "id": "klasor",
+     "label": "tactic",
+     "glyph": "clip",
+     "route": "/takim/kadro-taktik?sekme=taktik",
+     "order": 10,
+     "priority": 3,
+     "z": 1,
+     "poly": [
+      [
+       0,
+       0.8
+      ],
+      [
+       0.15,
+       0.8
+      ],
+      [
+       0.15,
+       0.99
+      ],
+      [
+       0,
+       0.99
+      ]
+     ],
+     "chip": [
+      0.075,
+      0.77
+     ]
+    }
+   ],
+   "surfaces": [
+    {
+     "kind": "tv",
+     "quad": [
+      [
+       0.148,
+       0.424
+      ],
+      [
+       0.564,
+       0.424
+      ],
+      [
+       0.564,
+       0.583
+      ],
+      [
+       0.148,
+       0.583
+      ]
+     ]
+    },
+    {
+     "kind": "board",
+     "quad": [
+      [
+       0.603,
+       0.427
+      ],
+      [
+       0.903,
+       0.427
+      ],
+      [
+       0.903,
+       0.58
+      ],
+      [
+       0.603,
+       0.58
+      ]
+     ]
+    }
+   ],
+   "glows": []
+  },
+  {
+   "id": "kimlik",
+   "day": "durak3_kimlik_gunduz.webp",
+   "night": "durak3_kimlik_gece.webp",
+   "size": [
+    1152,
+    2048
+   ],
+   "focus": 0.5,
+   "hotspots": [
+    {
+     "id": "forma",
+     "label": "numbers",
+     "glyph": "shirt",
+     "route": "/squad-numbers",
+     "order": 8,
+     "priority": 2,
+     "z": 0,
+     "poly": [
+      [
+       0.385,
+       0.34
+      ],
+      [
+       0.616,
+       0.34
+      ],
+      [
+       0.616,
+       0.513
+      ],
+      [
+       0.385,
+       0.513
+      ]
+     ]
+    },
+    {
+     "id": "diploma",
+     "label": "manager",
+     "glyph": "badge",
+     "route": "/manager",
+     "order": 9,
+     "priority": 1,
+     "z": 0,
+     "poly": [
+      [
+       0.642,
+       0.351
+      ],
+      [
+       0.832,
+       0.351
+      ],
+      [
+       0.832,
+       0.498
+      ],
+      [
+       0.642,
+       0.498
+      ]
+     ]
+    },
+    {
+     "id": "toplanti",
+     "label": "room",
+     "glyph": "talk",
+     "route": "/maca-hazirlik/soyunma-odasi",
+     "order": 12,
+     "priority": 3,
+     "z": 0,
+     "poly": [
+      [
+       0.868,
+       0.285
+      ],
+      [
+       1,
+       0.275
+      ],
+      [
+       1,
+       0.75
+      ],
+      [
+       0.868,
+       0.755
+      ]
+     ],
+     "chip": [
+      0.934,
+      0.62
+     ]
+    },
+    {
+     "id": "konsol",
+     "label": "organization",
+     "glyph": "book",
+     "route": "/takim/duzeni",
+     "order": 7,
+     "priority": 4,
+     "z": 1,
+     "poly": [
+      [
+       0.238,
+       0.645
+      ],
+      [
+       0.764,
+       0.645
+      ],
+      [
+       0.764,
+       0.77
+      ],
+      [
+       0.238,
+       0.77
+      ]
+     ]
+    },
+    {
+     "id": "masa",
+     "label": "teamReport",
+     "glyph": "chart",
+     "action": "closeup",
+     "order": 5,
+     "priority": 5,
+     "z": 2,
+     "poly": [
+      [
+       0,
+       0.83
+      ],
+      [
+       1,
+       0.83
+      ],
+      [
+       1,
+       1
+      ],
+      [
+       0,
+       1
+      ]
+     ],
+     "chip": [
+      0.85,
+      0.91
+     ]
+    }
+   ],
+   "surfaces": [
+    {
+     "kind": "diplomaPortrait",
+     "quad": [
+      [
+       0.6856,
+       0.364
+      ],
+      [
+       0.789,
+       0.364
+      ],
+      [
+       0.789,
+       0.438
+      ],
+      [
+       0.6856,
+       0.438
+      ]
+     ]
+    },
+    {
+     "kind": "diplomaName",
+     "quad": [
+      [
+       0.661,
+       0.445
+      ],
+      [
+       0.813,
+       0.445
+      ],
+      [
+       0.813,
+       0.464
+      ],
+      [
+       0.661,
+       0.464
+      ]
+     ]
+    },
+    {
+     "kind": "diplomaLicense",
+     "quad": [
+      [
+       0.678,
+       0.47
+      ],
+      [
+       0.7875,
+       0.47
+      ],
+      [
+       0.7875,
+       0.486
+      ],
+      [
+       0.678,
+       0.486
+      ]
+     ]
+    }
+   ],
+   "glows": []
+  },
+  {
+   "id": "giris",
+   "day": "durak4_giris_gunduz.webp",
+   "night": "durak4_giris_gece.webp",
+   "size": [
+    1152,
+    2048
+   ],
+   "focus": 0.5,
+   "hotspots": [
+    {
+     "id": "kapi",
+     "label": "match",
+     "glyph": "door",
+     "route": "/maca-hazirlik",
+     "order": 4,
+     "priority": 1,
+     "z": 0,
+     "poly": [
+      [
+       0.782,
+       0.229
+      ],
+      [
+       1,
+       0.205
+      ],
+      [
+       1,
+       0.745
+      ],
+      [
+       0.782,
+       0.745
+      ]
+     ]
+    },
+    {
+     "id": "kadro",
+     "label": "squad",
+     "glyph": "person",
+     "route": "/takim/kadro",
+     "order": 2,
+     "priority": 2,
+     "z": 0,
+     "poly": [
+      [
+       0.521,
+       0.367
+      ],
+      [
+       0.75,
+       0.367
+      ],
+      [
+       0.75,
+       0.592
+      ],
+      [
+       0.521,
+       0.592
+      ]
+     ]
+    }
+   ],
+   "surfaces": [
+    {
+     "kind": "roster",
+     "quad": [
+      [
+       0.53,
+       0.378
+      ],
+      [
+       0.739,
+       0.378
+      ],
+      [
+       0.739,
+       0.58
+      ],
+      [
+       0.53,
+       0.58
+      ]
+     ]
+    },
+    {
+     "kind": "clock",
+     "quad": [
+      [
+       0.583,
+       0.25
+      ],
+      [
+       0.682,
+       0.25
+      ],
+      [
+       0.682,
+       0.314
+      ],
+      [
+       0.583,
+       0.314
+      ]
+     ]
+    }
+   ],
+   "glows": []
+  }
+ ],
+ "desk": {
+  "slots": [
+   [
+    0.3,
+    0.3
+   ],
+   [
+    0.85,
+    0.35
+   ],
+   [
+    1.5,
+    0.3
+   ],
+   [
+    2.15,
+    0.35
+   ],
+   [
+    2.7,
+    0.35
+   ],
+   [
+    0.75,
+    0.95
+   ],
+   [
+    1.5,
+    0.8
+   ],
+   [
+    2.25,
+    0.95
+   ],
+   [
+    2.75,
+    1.2
+   ],
+   [
+    1.15,
+    1.25
+   ]
+  ],
+  "size": [
+   3.0,
+   1.5
+  ],
+  "topInset": 0.05,
+  "sheets": {
+   "A": "aksesuar_sayfa_a_o4.webp",
+   "B": "aksesuar_sayfa_b_o4.webp",
+   "C": "aksesuar_sayfa_c_o4.webp"
+  },
+  "cell": 256,
+  "cells": {
+   "fincan_dolu": [
+    "A",
+    0
+   ],
+   "fincan_bos": [
+    "A",
+    1
+   ],
+   "not_kapali_c": [
+    "A",
+    2
+   ],
+   "not_acik_c": [
+    "A",
+    3
+   ],
+   "kalem_c": [
+    "A",
+    4
+   ],
+   "telefon_c": [
+    "A",
+    5
+   ],
+   "telefon_r": [
+    "A",
+    6
+   ],
+   "lamba": [
+    "A",
+    7
+   ],
+   "not_kapali_r": [
+    "B",
+    0
+   ],
+   "not_acik_r": [
+    "B",
+    1
+   ],
+   "kalem_r": [
+    "B",
+    2
+   ],
+   "gozluk": [
+    "B",
+    3
+   ],
+   "duduk": [
+    "B",
+    4
+   ],
+   "madalya_kutusu": [
+    "B",
+    5
+   ],
+   "kagit_destesi_c": [
+    "B",
+    6
+   ],
+   "kupa": [
+    "B",
+    7
+   ],
+   "laptop_kapali_c": [
+    "C",
+    0
+   ],
+   "laptop_kapali_r": [
+    "C",
+    1
+   ],
+   "laptop_acik_c": [
+    "C",
+    2
+   ],
+   "laptop_acik_r": [
+    "C",
+    3
+   ],
+   "tablet_c": [
+    "C",
+    4
+   ],
+   "tablet_r": [
+    "C",
+    5
+   ],
+   "dosya_c": [
+    "C",
+    6
+   ],
+   "bardak": [
+    "C",
+    7
+   ]
+  },
+  "accessorySlots": {
+   "lamba": [
+    1
+   ],
+   "not": [
+    7,
+    6,
+    8,
+    3,
+    10,
+    4
+   ],
+   "fincan": [
+    2,
+    4,
+    5,
+    6,
+    8,
+    9,
+    10
+   ],
+   "telefon": [
+    2,
+    3,
+    4,
+    5,
+    8,
+    9,
+    10
+   ],
+   "gozluk": [
+    2,
+    3,
+    4,
+    6,
+    8,
+    10
+   ],
+   "duduk": [
+    2,
+    4,
+    5,
+    6,
+    9,
+    10
+   ],
+   "madalya": [
+    3,
+    4,
+    5,
+    6,
+    8,
+    9
+   ],
+   "kagit": [
+    3,
+    4,
+    6,
+    7,
+    8,
+    10
+   ],
+   "cihaz_acik": [
+    3,
+    7
+   ],
+   "cihaz": [
+    7,
+    6,
+    8,
+    10,
+    3
+   ],
+   "dosya": [
+    3,
+    4,
+    6,
+    7,
+    8,
+    10
+   ],
+   "bardak": [
+    2,
+    4,
+    5,
+    6,
+    8,
+    9,
+    10
+   ]
+  },
+  "footprint": {
+   "fincan_dolu": [
+    0.206,
+    0.194,
+    5.8,
+    127.0,
+    197.0
+   ],
+   "fincan_bos": [
+    0.209,
+    0.191,
+    5.8,
+    127.0,
+    197.0
+   ],
+   "not_kapali_c": [
+    0.578,
+    0.384,
+    3.0,
+    128.0,
+    172.5
+   ],
+   "not_acik_c": [
+    0.572,
+    0.391,
+    3.0,
+    128.0,
+    172.5
+   ],
+   "kalem_c": [
+    0.641,
+    0.053,
+    2.1,
+    128.5,
+    183.2
+   ],
+   "telefon_c": [
+    0.466,
+    0.222,
+    1.5,
+    127.0,
+    183.5
+   ],
+   "telefon_r": [
+    0.219,
+    0.469,
+    1.5,
+    127.0,
+    183.5
+   ],
+   "lamba": [
+    0.259,
+    0.241,
+    28.5,
+    118.0,
+    195.0
+   ],
+   "not_kapali_r": [
+    0.416,
+    0.553,
+    2.9,
+    127.5,
+    133.2
+   ],
+   "not_acik_r": [
+    0.412,
+    0.556,
+    2.9,
+    127.5,
+    133.2
+   ],
+   "kalem_r": [
+    0.04,
+    0.694,
+    1.3,
+    127.5,
+    130.7
+   ],
+   "gozluk": [
+    0.403,
+    0.353,
+    2.6,
+    127.5,
+    132.8
+   ],
+   "duduk": [
+    0.412,
+    0.319,
+    3.6,
+    127.5,
+    134.8
+   ],
+   "madalya_kutusu": [
+    0.362,
+    0.356,
+    7.4,
+    127.5,
+    142.2
+   ],
+   "kagit_destesi_c": [
+    0.438,
+    0.581,
+    3.9,
+    127.5,
+    135.2
+   ],
+   "kupa": [
+    0.291,
+    0.253,
+    25.9,
+    127.5,
+    179.2
+   ],
+   "laptop_kapali_c": [
+    0.681,
+    0.462,
+    4.1,
+    127.5,
+    136.2
+   ],
+   "laptop_kapali_r": [
+    0.453,
+    0.691,
+    4.6,
+    127.5,
+    137.2
+   ],
+   "laptop_acik_c": [
+    0.681,
+    0.431,
+    14.0,
+    128.0,
+    155.5
+   ],
+   "laptop_acik_r": [
+    0.425,
+    0.681,
+    14.1,
+    127.5,
+    155.8
+   ],
+   "tablet_c": [
+    0.562,
+    0.406,
+    3.6,
+    127.5,
+    135.2
+   ],
+   "tablet_r": [
+    0.384,
+    0.584,
+    3.6,
+    127.5,
+    135.2
+   ],
+   "dosya_c": [
+    0.541,
+    0.484,
+    8.2,
+    128.0,
+    144.0
+   ],
+   "bardak": [
+    0.253,
+    0.253,
+    12.6,
+    127.5,
+    152.8
+   ]
+  }
+ },
+ "closeup": {
+  "day": "masa_yakin_plan_gunduz.webp",
+  "night": "masa_yakin_plan_gece.webp",
+  "deskTop": [
+   0.03,
+   0.42,
+   0.97,
+   0.75
+  ]
+ },
+ "roomTiers": {
+  "O3": {
+   "stops": [
+    {
+     "id": "masa_pencere",
+     "day": "o3_durak1_masa_pencere_gunduz.webp",
+     "night": "o3_durak1_masa_pencere_gece.webp",
+     "size": [
+      1152,
+      2048
+     ],
+     "focus": 0.5,
+     "hotspots": [
+      {
+       "id": "cam",
+       "label": "training",
+       "glyph": "cone",
+       "route": "/training",
+       "order": 3,
+       "priority": 3,
+       "z": 0,
+       "poly": [
+        [
+         0,
+         0.15
+        ],
+        [
+         0.415,
+         0.215
+        ],
+        [
+         0.415,
+         0.565
+        ],
+        [
+         0,
+         0.585
+        ]
+       ],
+       "chip": [
+        0.2,
+        0.38
+       ]
+      },
+      {
+       "id": "masa",
+       "label": "teamReport",
+       "glyph": "chart",
+       "action": "closeup",
+       "order": 5,
+       "priority": 1,
+       "z": 2,
+       "poly": [
+        [
+         0.395,
+         0.605
+        ],
+        [
+         1,
+         0.6
+        ],
+        [
+         1,
+         0.8
+        ],
+        [
+         0.92,
+         0.8
+        ],
+        [
+         0.92,
+         0.69
+        ],
+        [
+         0.4,
+         0.665
+        ]
+       ],
+       "chip": [
+        0.65,
+        0.57
+       ]
+      }
+     ],
+     "surfaces": [],
+     "glows": []
+    },
+    {
+     "id": "analiz",
+     "day": "o3_durak2_analiz_gunduz.webp",
+     "night": "o3_durak2_analiz_gece.webp",
+     "size": [
+      1152,
+      2048
+     ],
+     "focus": 0.5,
+     "hotspots": [
+      {
+       "id": "tv",
+       "label": "analysis",
+       "glyph": "play",
+       "route": "/takim/analizler?tab=siradaki",
+       "order": 6,
+       "priority": 1,
+       "z": 0,
+       "poly": [
+        [
+         0.143,
+         0.421
+        ],
+        [
+         0.569,
+         0.421
+        ],
+        [
+         0.569,
+         0.586
+        ],
+        [
+         0.143,
+         0.586
+        ]
+       ]
+      },
+      {
+       "id": "tahta",
+       "label": "tactics",
+       "glyph": "pitch",
+       "route": "/takim/kadro-taktik",
+       "order": 1,
+       "priority": 2,
+       "z": 0,
+       "poly": [
+        [
+         0.593,
+         0.421
+        ],
+        [
+         0.913,
+         0.421
+        ],
+        [
+         0.913,
+         0.586
+        ],
+        [
+         0.593,
+         0.586
+        ]
+       ]
+      },
+      {
+       "id": "klasor",
+       "label": "tactic",
+       "glyph": "clip",
+       "route": "/takim/kadro-taktik?sekme=taktik",
+       "order": 10,
+       "priority": 3,
+       "z": 1,
+       "poly": [
+        [
+         0,
+         0.8
+        ],
+        [
+         0.15,
+         0.8
+        ],
+        [
+         0.15,
+         0.99
+        ],
+        [
+         0,
+         0.99
+        ]
+       ],
+       "chip": [
+        0.075,
+        0.77
+       ]
+      }
+     ],
+     "surfaces": [
+      {
+       "kind": "tv",
+       "quad": [
+        [
+         0.148,
+         0.424
+        ],
+        [
+         0.564,
+         0.424
+        ],
+        [
+         0.564,
+         0.583
+        ],
+        [
+         0.148,
+         0.583
+        ]
+       ]
+      },
+      {
+       "kind": "board",
+       "quad": [
+        [
+         0.603,
+         0.427
+        ],
+        [
+         0.903,
+         0.427
+        ],
+        [
+         0.903,
+         0.58
+        ],
+        [
+         0.603,
+         0.58
+        ]
+       ]
+      }
+     ],
+     "glows": []
+    },
+    {
+     "id": "kimlik",
+     "day": "o3_durak3_kimlik_gunduz.webp",
+     "night": "o3_durak3_kimlik_gece.webp",
+     "size": [
+      1152,
+      2048
+     ],
+     "focus": 0.5,
+     "hotspots": [
+      {
+       "id": "forma",
+       "label": "numbers",
+       "glyph": "shirt",
+       "route": "/squad-numbers",
+       "order": 8,
+       "priority": 2,
+       "z": 0,
+       "poly": [
+        [
+         0.385,
+         0.34
+        ],
+        [
+         0.616,
+         0.34
+        ],
+        [
+         0.616,
+         0.513
+        ],
+        [
+         0.385,
+         0.513
+        ]
+       ]
+      },
+      {
+       "id": "diploma",
+       "label": "manager",
+       "glyph": "badge",
+       "route": "/manager",
+       "order": 9,
+       "priority": 1,
+       "z": 0,
+       "poly": [
+        [
+         0.642,
+         0.351
+        ],
+        [
+         0.832,
+         0.351
+        ],
+        [
+         0.832,
+         0.498
+        ],
+        [
+         0.642,
+         0.498
+        ]
+       ]
+      },
+      {
+       "id": "toplanti",
+       "label": "room",
+       "glyph": "talk",
+       "route": "/maca-hazirlik/soyunma-odasi",
+       "order": 12,
+       "priority": 3,
+       "z": 0,
+       "poly": [
+        [
+         0.875,
+         0.285
+        ],
+        [
+         1,
+         0.28
+        ],
+        [
+         1,
+         0.755
+        ],
+        [
+         0.875,
+         0.77
+        ]
+       ],
+       "chip": [
+        0.934,
+        0.62
+       ]
+      },
+      {
+       "id": "konsol",
+       "label": "organization",
+       "glyph": "book",
+       "route": "/takim/duzeni",
+       "order": 7,
+       "priority": 4,
+       "z": 1,
+       "poly": [
+        [
+         0.236,
+         0.645
+        ],
+        [
+         0.764,
+         0.645
+        ],
+        [
+         0.764,
+         0.77
+        ],
+        [
+         0.236,
+         0.77
+        ]
+       ]
+      },
+      {
+       "id": "masa",
+       "label": "teamReport",
+       "glyph": "chart",
+       "action": "closeup",
+       "order": 5,
+       "priority": 5,
+       "z": 2,
+       "poly": [
+        [
+         0,
+         0.83
+        ],
+        [
+         1,
+         0.83
+        ],
+        [
+         1,
+         1
+        ],
+        [
+         0,
+         1
+        ]
+       ],
+       "chip": [
+        0.85,
+        0.91
+       ]
+      }
+     ],
+     "surfaces": [
+      {
+       "kind": "diplomaPortrait",
+       "quad": [
+        [
+         0.6856,
+         0.364
+        ],
+        [
+         0.789,
+         0.364
+        ],
+        [
+         0.789,
+         0.438
+        ],
+        [
+         0.6856,
+         0.438
+        ]
+       ]
+      },
+      {
+       "kind": "diplomaName",
+       "quad": [
+        [
+         0.661,
+         0.445
+        ],
+        [
+         0.813,
+         0.445
+        ],
+        [
+         0.813,
+         0.464
+        ],
+        [
+         0.661,
+         0.464
+        ]
+       ]
+      },
+      {
+       "kind": "diplomaLicense",
+       "quad": [
+        [
+         0.678,
+         0.47
+        ],
+        [
+         0.7875,
+         0.47
+        ],
+        [
+         0.7875,
+         0.486
+        ],
+        [
+         0.678,
+         0.486
+        ]
+       ]
+      }
+     ],
+     "glows": []
+    },
+    {
+     "id": "giris",
+     "day": "o3_durak4_giris_gunduz.webp",
+     "night": "o3_durak4_giris_gece.webp",
+     "size": [
+      1152,
+      2048
+     ],
+     "focus": 0.5,
+     "hotspots": [
+      {
+       "id": "kapi",
+       "label": "match",
+       "glyph": "door",
+       "route": "/maca-hazirlik",
+       "order": 4,
+       "priority": 1,
+       "z": 0,
+       "poly": [
+        [
+         0.785,
+         0.232
+        ],
+        [
+         1,
+         0.215
+        ],
+        [
+         1,
+         0.745
+        ],
+        [
+         0.785,
+         0.745
+        ]
+       ]
+      },
+      {
+       "id": "kadro",
+       "label": "squad",
+       "glyph": "person",
+       "route": "/takim/kadro",
+       "order": 2,
+       "priority": 2,
+       "z": 0,
+       "poly": [
+        [
+         0.521,
+         0.367
+        ],
+        [
+         0.75,
+         0.367
+        ],
+        [
+         0.75,
+         0.592
+        ],
+        [
+         0.521,
+         0.592
+        ]
+       ]
+      }
+     ],
+     "surfaces": [
+      {
+       "kind": "roster",
+       "quad": [
+        [
+         0.53,
+         0.378
+        ],
+        [
+         0.739,
+         0.378
+        ],
+        [
+         0.739,
+         0.58
+        ],
+        [
+         0.53,
+         0.58
+        ]
+       ]
+      },
+      {
+       "kind": "clock",
+       "quad": [
+        [
+         0.583,
+         0.25
+        ],
+        [
+         0.682,
+         0.25
+        ],
+        [
+         0.682,
+         0.314
+        ],
+        [
+         0.583,
+         0.314
+        ]
+       ]
+      }
+     ],
+     "glows": []
+    }
+   ],
+   "openStop": 0,
+   "closeup": {
+    "day": "o3_masa_yakin_gunduz.webp",
+    "night": "o3_masa_yakin_gece.webp",
+    "deskTop": [
+     0.03,
+     0.42,
+     0.97,
+     0.76
+    ]
+   }
+  },
+  "O2": {
+   "stops": [
+    {
+     "id": "masa_pencere",
+     "day": "o2_durak1_masa_pencere_gunduz.webp",
+     "night": "o2_durak1_masa_pencere_gece.webp",
+     "size": [
+      1152,
+      2048
+     ],
+     "focus": 0.5,
+     "hotspots": [
+      {
+       "id": "cam",
+       "label": "training",
+       "glyph": "cone",
+       "route": "/training",
+       "order": 3,
+       "priority": 3,
+       "z": 0,
+       "poly": [
+        [
+         0,
+         0.19
+        ],
+        [
+         0.295,
+         0.255
+        ],
+        [
+         0.295,
+         0.585
+        ],
+        [
+         0,
+         0.6
+        ]
+       ],
+       "chip": [
+        0.15,
+        0.38
+       ]
+      },
+      {
+       "id": "masa",
+       "label": "teamReport",
+       "glyph": "chart",
+       "action": "closeup",
+       "order": 5,
+       "priority": 1,
+       "z": 2,
+       "poly": [
+        [
+         0.32,
+         0.61
+        ],
+        [
+         0.96,
+         0.64
+        ],
+        [
+         0.96,
+         0.83
+        ],
+        [
+         0.86,
+         0.83
+        ],
+        [
+         0.86,
+         0.68
+        ],
+        [
+         0.33,
+         0.67
+        ]
+       ],
+       "chip": [
+        0.62,
+        0.58
+       ]
+      }
+     ],
+     "surfaces": [],
+     "glows": []
+    },
+    {
+     "id": "analiz",
+     "day": "o2_durak2_analiz_gunduz.webp",
+     "night": "o2_durak2_analiz_gece.webp",
+     "size": [
+      1152,
+      2048
+     ],
+     "focus": 0.5,
+     "hotspots": [
+      {
+       "id": "tv",
+       "label": "analysis",
+       "glyph": "play",
+       "route": "/takim/analizler?tab=siradaki",
+       "order": 6,
+       "priority": 1,
+       "z": 0,
+       "poly": [
+        [
+         0.132,
+         0.367
+        ],
+        [
+         0.517,
+         0.367
+        ],
+        [
+         0.517,
+         0.496
+        ],
+        [
+         0.132,
+         0.496
+        ]
+       ]
+      },
+      {
+       "id": "tahta",
+       "label": "tactics",
+       "glyph": "pitch",
+       "route": "/takim/kadro-taktik",
+       "order": 1,
+       "priority": 2,
+       "z": 0,
+       "poly": [
+        [
+         0.55,
+         0.364
+        ],
+        [
+         0.968,
+         0.364
+        ],
+        [
+         0.968,
+         0.549
+        ],
+        [
+         0.55,
+         0.549
+        ]
+       ]
+      },
+      {
+       "id": "klasor",
+       "label": "tactic",
+       "glyph": "clip",
+       "route": "/takim/kadro-taktik?sekme=taktik",
+       "order": 10,
+       "priority": 3,
+       "z": 1,
+       "poly": [
+        [
+         0.07,
+         0.615
+        ],
+        [
+         0.295,
+         0.615
+        ],
+        [
+         0.295,
+         0.76
+        ],
+        [
+         0.07,
+         0.76
+        ]
+       ]
+      }
+     ],
+     "surfaces": [
+      {
+       "kind": "tv",
+       "quad": [
+        [
+         0.136,
+         0.369
+        ],
+        [
+         0.513,
+         0.369
+        ],
+        [
+         0.513,
+         0.493
+        ],
+        [
+         0.136,
+         0.493
+        ]
+       ]
+      },
+      {
+       "kind": "board",
+       "quad": [
+        [
+         0.56,
+         0.37
+        ],
+        [
+         0.959,
+         0.37
+        ],
+        [
+         0.959,
+         0.543
+        ],
+        [
+         0.56,
+         0.543
+        ]
+       ]
+      }
+     ],
+     "glows": []
+    },
+    {
+     "id": "kimlik",
+     "day": "o2_durak3_kimlik_gunduz.webp",
+     "night": "o2_durak3_kimlik_gece.webp",
+     "size": [
+      1152,
+      2048
+     ],
+     "focus": 0.5,
+     "hotspots": [
+      {
+       "id": "forma",
+       "label": "numbers",
+       "glyph": "shirt",
+       "route": "/squad-numbers",
+       "order": 8,
+       "priority": 2,
+       "z": 0,
+       "poly": [
+        [
+         0.385,
+         0.34
+        ],
+        [
+         0.616,
+         0.34
+        ],
+        [
+         0.616,
+         0.513
+        ],
+        [
+         0.385,
+         0.513
+        ]
+       ]
+      },
+      {
+       "id": "diploma",
+       "label": "manager",
+       "glyph": "badge",
+       "route": "/manager",
+       "order": 9,
+       "priority": 1,
+       "z": 0,
+       "poly": [
+        [
+         0.648,
+         0.353
+        ],
+        [
+         0.83,
+         0.353
+        ],
+        [
+         0.83,
+         0.495
+        ],
+        [
+         0.648,
+         0.495
+        ]
+       ]
+      },
+      {
+       "id": "kadro",
+       "label": "squad",
+       "glyph": "person",
+       "route": "/takim/kadro",
+       "order": 2,
+       "priority": 4,
+       "z": 0,
+       "poly": [
+        [
+         0.66,
+         0.522
+        ],
+        [
+         0.821,
+         0.522
+        ],
+        [
+         0.821,
+         0.592
+        ],
+        [
+         0.66,
+         0.592
+        ]
+       ]
+      },
+      {
+       "id": "toplanti",
+       "label": "room",
+       "glyph": "talk",
+       "route": "/maca-hazirlik/soyunma-odasi",
+       "order": 12,
+       "priority": 3,
+       "z": 0,
+       "poly": [
+        [
+         0.863,
+         0.34
+        ],
+        [
+         1,
+         0.34
+        ],
+        [
+         1,
+         0.752
+        ],
+        [
+         0.863,
+         0.752
+        ]
+       ]
+      }
+     ],
+     "surfaces": [
+      {
+       "kind": "diplomaPortrait",
+       "quad": [
+        [
+         0.686,
+         0.363
+        ],
+        [
+         0.79,
+         0.363
+        ],
+        [
+         0.79,
+         0.437
+        ],
+        [
+         0.686,
+         0.437
+        ]
+       ]
+      },
+      {
+       "kind": "diplomaName",
+       "quad": [
+        [
+         0.661,
+         0.445
+        ],
+        [
+         0.816,
+         0.445
+        ],
+        [
+         0.816,
+         0.465
+        ],
+        [
+         0.661,
+         0.465
+        ]
+       ]
+      },
+      {
+       "kind": "diplomaLicense",
+       "quad": [
+        [
+         0.677,
+         0.47
+        ],
+        [
+         0.795,
+         0.47
+        ],
+        [
+         0.795,
+         0.485
+        ],
+        [
+         0.677,
+         0.485
+        ]
+       ]
+      },
+      {
+       "kind": "roster",
+       "quad": [
+        [
+         0.665,
+         0.525
+        ],
+        [
+         0.816,
+         0.525
+        ],
+        [
+         0.816,
+         0.588
+        ],
+        [
+         0.665,
+         0.588
+        ]
+       ]
+      },
+      {
+       "kind": "clock",
+       "quad": [
+        [
+         0.153,
+         0.343
+        ],
+        [
+         0.281,
+         0.343
+        ],
+        [
+         0.281,
+         0.414
+        ],
+        [
+         0.153,
+         0.414
+        ]
+       ]
+      }
+     ],
+     "glows": []
+    }
+   ],
+   "openStop": 0,
+   "closeup": {
+    "day": "o2_masa_yakin_gunduz.webp",
+    "night": "o2_masa_yakin_gece.webp",
+    "deskTop": [
+     0.03,
+     0.43,
+     0.97,
+     0.75
+    ]
+   }
+  },
+  "O1": {
+   "stops": [
+    {
+     "id": "masa_pencere",
+     "day": "o1_durak1_masa_pencere_gunduz.webp",
+     "night": "o1_durak1_masa_pencere_gece.webp",
+     "size": [
+      1152,
+      2048
+     ],
+     "focus": 0.5,
+     "hotspots": [
+      {
+       "id": "cam",
+       "label": "training",
+       "glyph": "cone",
+       "route": "/training",
+       "order": 3,
+       "priority": 3,
+       "z": 0,
+       "poly": [
+        [
+         0.047,
+         0.3
+        ],
+        [
+         0.278,
+         0.335
+        ],
+        [
+         0.265,
+         0.545
+        ],
+        [
+         0.047,
+         0.555
+        ]
+       ],
+       "chip": [
+        0.16,
+        0.27
+       ]
+      },
+      {
+       "id": "masa",
+       "label": "teamReport",
+       "glyph": "chart",
+       "action": "closeup",
+       "order": 5,
+       "priority": 1,
+       "z": 2,
+       "poly": [
+        [
+         0.13,
+         0.585
+        ],
+        [
+         0.71,
+         0.585
+        ],
+        [
+         0.71,
+         0.775
+        ],
+        [
+         0.62,
+         0.775
+        ],
+        [
+         0.62,
+         0.64
+        ],
+        [
+         0.15,
+         0.64
+        ]
+       ],
+       "chip": [
+        0.42,
+        0.55
+       ]
+      },
+      {
+       "id": "konsol",
+       "label": "organization",
+       "glyph": "book",
+       "route": "/takim/duzeni",
+       "order": 7,
+       "priority": 4,
+       "z": 1,
+       "poly": [
+        [
+         0.72,
+         0.62
+        ],
+        [
+         1,
+         0.62
+        ],
+        [
+         1,
+         1
+        ],
+        [
+         0.72,
+         1
+        ]
+       ]
+      }
+     ],
+     "surfaces": [],
+     "glows": []
+    },
+    {
+     "id": "analiz",
+     "day": "o1_durak2_analiz_gunduz.webp",
+     "night": "o1_durak2_analiz_gece.webp",
+     "size": [
+      1152,
+      2048
+     ],
+     "focus": 0.5,
+     "hotspots": [
+      {
+       "id": "tv",
+       "label": "analysis",
+       "glyph": "play",
+       "route": "/takim/analizler?tab=siradaki",
+       "order": 6,
+       "priority": 1,
+       "z": 0,
+       "poly": [
+        [
+         0.368,
+         0.397
+        ],
+        [
+         0.505,
+         0.397
+        ],
+        [
+         0.505,
+         0.5125
+        ],
+        [
+         0.368,
+         0.5125
+        ]
+       ]
+      },
+      {
+       "id": "tahta",
+       "label": "tactics",
+       "glyph": "pitch",
+       "route": "/takim/kadro-taktik",
+       "order": 1,
+       "priority": 2,
+       "z": 0,
+       "poly": [
+        [
+         0.52,
+         0.395
+        ],
+        [
+         0.776,
+         0.395
+        ],
+        [
+         0.776,
+         0.515
+        ],
+        [
+         0.52,
+         0.515
+        ]
+       ]
+      },
+      {
+       "id": "klasor",
+       "label": "tactic",
+       "glyph": "clip",
+       "route": "/takim/kadro-taktik?sekme=taktik",
+       "order": 10,
+       "priority": 3,
+       "z": 1,
+       "poly": [
+        [
+         0.31,
+         0.61
+        ],
+        [
+         0.69,
+         0.61
+        ],
+        [
+         0.69,
+         0.74
+        ],
+        [
+         0.31,
+         0.74
+        ]
+       ]
+      },
+      {
+       "id": "kadro",
+       "label": "squad",
+       "glyph": "person",
+       "route": "/takim/kadro",
+       "order": 2,
+       "priority": 4,
+       "z": 0,
+       "poly": [
+        [
+         0.8,
+         0.41
+        ],
+        [
+         0.98,
+         0.41
+        ],
+        [
+         0.98,
+         0.495
+        ],
+        [
+         0.8,
+         0.495
+        ]
+       ]
+      }
+     ],
+     "surfaces": [
+      {
+       "kind": "board",
+       "quad": [
+        [
+         0.525,
+         0.4
+        ],
+        [
+         0.77,
+         0.4
+        ],
+        [
+         0.77,
+         0.505
+        ],
+        [
+         0.525,
+         0.505
+        ]
+       ]
+      },
+      {
+       "kind": "roster",
+       "quad": [
+        [
+         0.808,
+         0.42
+        ],
+        [
+         0.972,
+         0.42
+        ],
+        [
+         0.972,
+         0.487
+        ],
+        [
+         0.808,
+         0.487
+        ]
+       ]
+      }
+     ],
+     "glows": []
+    },
+    {
+     "id": "giris",
+     "day": "o1_durak3_giris_gunduz.webp",
+     "night": "o1_durak3_giris_gece.webp",
+     "size": [
+      1152,
+      2048
+     ],
+     "focus": 0.5,
+     "hotspots": [
+      {
+       "id": "toplanti",
+       "label": "room",
+       "glyph": "talk",
+       "route": "/maca-hazirlik/soyunma-odasi",
+       "order": 12,
+       "priority": 3,
+       "z": 0,
+       "poly": [
+        [
+         0.01,
+         0.32
+        ],
+        [
+         0.275,
+         0.32
+        ],
+        [
+         0.275,
+         0.775
+        ],
+        [
+         0.01,
+         0.775
+        ]
+       ]
+      },
+      {
+       "id": "kapi",
+       "label": "match",
+       "glyph": "door",
+       "route": "/maca-hazirlik",
+       "order": 4,
+       "priority": 4,
+       "z": 0,
+       "poly": [
+        [
+         0.795,
+         0.305
+        ],
+        [
+         1,
+         0.305
+        ],
+        [
+         1,
+         0.78
+        ],
+        [
+         0.795,
+         0.78
+        ]
+       ]
+      },
+      {
+       "id": "forma",
+       "label": "numbers",
+       "glyph": "shirt",
+       "route": "/squad-numbers",
+       "order": 8,
+       "priority": 2,
+       "z": 0,
+       "poly": [
+        [
+         0.316,
+         0.309
+        ],
+        [
+         0.524,
+         0.309
+        ],
+        [
+         0.524,
+         0.46
+        ],
+        [
+         0.316,
+         0.46
+        ]
+       ]
+      },
+      {
+       "id": "diploma",
+       "label": "manager",
+       "glyph": "badge",
+       "route": "/manager",
+       "order": 9,
+       "priority": 1,
+       "z": 0,
+       "poly": [
+        [
+         0.556,
+         0.31
+        ],
+        [
+         0.74,
+         0.31
+        ],
+        [
+         0.74,
+         0.39
+        ],
+        [
+         0.556,
+         0.39
+        ]
+       ]
+      }
+     ],
+     "surfaces": [
+      {
+       "kind": "diplomaPortrait",
+       "quad": [
+        [
+         0.576,
+         0.32
+        ],
+        [
+         0.632,
+         0.32
+        ],
+        [
+         0.632,
+         0.368
+        ],
+        [
+         0.576,
+         0.368
+        ]
+       ]
+      },
+      {
+       "kind": "diplomaName",
+       "quad": [
+        [
+         0.637,
+         0.338
+        ],
+        [
+         0.721,
+         0.338
+        ],
+        [
+         0.721,
+         0.35
+        ],
+        [
+         0.637,
+         0.35
+        ]
+       ]
+      },
+      {
+       "kind": "clock",
+       "quad": [
+        [
+         0.463,
+         0.2
+        ],
+        [
+         0.595,
+         0.2
+        ],
+        [
+         0.595,
+         0.285
+        ],
+        [
+         0.463,
+         0.285
+        ]
+       ]
+      }
+     ],
+     "glows": []
+    }
+   ],
+   "openStop": 0,
+   "closeup": {
+    "day": "o1_masa_yakin_gunduz.webp",
+    "night": "o1_masa_yakin_gece.webp",
+    "deskTop": [
+     0.03,
+     0.42,
+     0.97,
+     0.75
+    ]
+   }
+  }
+ }
+}

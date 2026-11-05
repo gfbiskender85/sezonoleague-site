@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "note": "PLAKA V4 (1440×900, 2026-10-27) — dört kase plakasından ÖLÇÜLDÜ. Saha dörtgeni dört plakanın saydam deliğini (köşeler şartname 363,367 / 1077,367 / 1202,656 / 238,656 ±8 içinde) 1–3 px payla kapsar; çim dörtgenden 2 px taşar, delik kenarı plakanın altında kalır. Tribün yamukları yalnız yer tutucu (plaka yokken); KALABALIK standBlocksPx bloklarına yerleşir (alt/üst kat, yürüme yolu, merdiven ve tünel hariç; sıralar iç kenara paralel). Kulübe/tünel çerçeveleri piksel profilinden; tünel plakada saha ortasının 4 px solunda (exitLv l ,507). Okuyan: lib/features/match/mac2d/mac2d_plak.dart (bilinmeyen anahtar → derlenmiş varsayılan).",
+  "plate": {
+    "canvasPx": [1440, 900],
+    "pitchQuadPx": {"farLeft": [359, 362], "farRight": [1081, 362], "nearRight": [1212, 662], "nearLeft": [228, 662]},
+    "pitchInsetPx": 1.5,
+    "pitchMarginM": 3,
+    "standQuadsPx": {
+      "far": {"inner": [[355, 295], [1085, 295]], "outer": [[245, 200], [1195, 200]]},
+      "near": {"inner": [[0, 716], [1440, 716]], "outer": [[-30, 900], [1470, 900]]},
+      "left": {"inner": [[250, 340], [112, 640]], "outer": [[100, 232], [-60, 560]]},
+      "right": {"inner": [[1190, 340], [1328, 640]], "outer": [[1340, 232], [1500, 560]]}
+    },
+    "standApron": 0.02,
+    "standBlocksPx": [
+      {"id": "far_1", "side": "far", "tier": "lower", "bands": ["b2", "b3", "b4"], "inner": [[355, 293], [408, 293]], "outer": [[246, 203], [447, 196]]},
+      {"id": "far_2", "side": "far", "tier": "lower", "bands": ["b2", "b3", "b4"], "inner": [[422, 293], [585, 293]], "outer": [[468, 196], [607, 196]]},
+      {"id": "far_3", "side": "far", "tier": "lower", "bands": ["b2", "b3", "b4"], "inner": [[612, 293], [688, 293]], "outer": [[628, 205], [689, 205]]},
+      {"id": "far_4", "side": "far", "tier": "lower", "bands": ["b2", "b3", "b4"], "inner": [[747, 293], [812, 293]], "outer": [[747, 205], [800, 205]]},
+      {"id": "far_c", "side": "far", "tier": "lower", "bands": ["b2", "b3", "b4"], "inner": [[692, 235], [745, 235]], "outer": [[692, 207], [745, 207]]},
+      {"id": "far_5", "side": "far", "tier": "lower", "bands": ["b2", "b3", "b4"], "inner": [[843, 293], [1028, 293]], "outer": [[837, 196], [978, 196]]},
+      {"id": "far_6", "side": "far", "tier": "lower", "bands": ["b2", "b3", "b4"], "inner": [[1050, 288], [1090, 296]], "outer": [[1010, 198], [1195, 207]]},
+      {"id": "left", "side": "left", "tier": "lower", "bands": ["b1", "b2", "b3", "b4"], "inner": [[250, 340], [112, 640]], "outer": [[100, 232], [-60, 560]]},
+      {"id": "right", "side": "right", "tier": "lower", "bands": ["b1", "b2", "b3", "b4"], "inner": [[1190, 340], [1328, 640]], "outer": [[1340, 232], [1500, 560]]},
+      {"id": "near_front_1", "side": "near", "tier": "lower", "bands": ["b1", "b2", "b3", "b4"], "inner": [[20, 727], [205, 712]], "outer": [[0, 762], [235, 764]]},
+      {"id": "near_front_2", "side": "near", "tier": "lower", "bands": ["b1", "b2", "b3", "b4"], "inner": [[240, 718], [512, 718]], "outer": [[235, 764], [512, 764]]},
+      {"id": "near_front_3", "side": "near", "tier": "lower", "bands": ["b1", "b2", "b3", "b4"], "inner": [[560, 716], [880, 716]], "outer": [[550, 764], [905, 764]]},
+      {"id": "near_front_4", "side": "near", "tier": "lower", "bands": ["b1", "b2", "b3", "b4"], "inner": [[930, 716], [1170, 724]], "outer": [[960, 764], [1200, 764]]},
+      {"id": "near_front_5", "side": "near", "tier": "lower", "bands": ["b1", "b2", "b3", "b4"], "inner": [[1215, 740], [1420, 725]], "outer": [[1215, 764], [1440, 758]]},
+      {"id": "near_back_1", "side": "near", "tier": "lower", "bands": ["b1", "b2", "b3", "b4"], "inner": [[0, 785], [335, 785]], "outer": [[0, 900], [300, 900]]},
+      {"id": "near_back_2", "side": "near", "tier": "lower", "bands": ["b1", "b2", "b3", "b4"], "inner": [[425, 790], [950, 790]], "outer": [[378, 900], [1060, 900]]},
+      {"id": "near_back_3", "side": "near", "tier": "lower", "bands": ["b1", "b2", "b3", "b4"], "inner": [[1030, 790], [1440, 785]], "outer": [[1130, 900], [1440, 900]]},
+      {"id": "far_up_1", "side": "far", "tier": "upper", "bands": ["b4"], "inner": [[170, 165], [270, 152]], "outer": [[88, 78], [238, 58]]},
+      {"id": "far_up_2", "side": "far", "tier": "upper", "bands": ["b4"], "inner": [[325, 160], [425, 160]], "outer": [[262, 52], [425, 50]]},
+      {"id": "far_up_3", "side": "far", "tier": "upper", "bands": ["b4"], "inner": [[472, 160], [605, 160]], "outer": [[470, 50], [610, 50]]},
+      {"id": "far_up_4", "side": "far", "tier": "upper", "bands": ["b4"], "inner": [[642, 160], [800, 160]], "outer": [[640, 50], [802, 50]]},
+      {"id": "far_up_5", "side": "far", "tier": "upper", "bands": ["b4"], "inner": [[842, 160], [950, 160]], "outer": [[842, 50], [950, 50]]},
+      {"id": "far_up_6", "side": "far", "tier": "upper", "bands": ["b4"], "inner": [[1000, 162], [1115, 162]], "outer": [[1000, 52], [1190, 60]]},
+      {"id": "far_up_7", "side": "far", "tier": "upper", "bands": ["b4"], "inner": [[1170, 152], [1270, 165]], "outer": [[1200, 60], [1352, 80]]},
+      {"id": "left_up", "side": "left", "tier": "upper", "bands": ["b4"], "inner": [[125, 172], [0, 200]], "outer": [[70, 100], [0, 85]]},
+      {"id": "right_up", "side": "right", "tier": "upper", "bands": ["b4"], "inner": [[1315, 172], [1440, 200]], "outer": [[1370, 100], [1440, 85]]},
+      {"id": "far_1_b1", "side": "far", "tier": "lower", "bands": ["b1"], "inner": [[362, 295], [400, 295]], "outer": [[333, 235], [420, 233]]},
+      {"id": "far_2_b1", "side": "far", "tier": "lower", "bands": ["b1"], "inner": [[415, 296], [585, 296]], "outer": [[443, 232], [600, 232]]},
+      {"id": "far_3_b1", "side": "far", "tier": "lower", "bands": ["b1"], "inner": [[610, 296], [688, 296]], "outer": [[625, 235], [689, 235]]},
+      {"id": "far_4_b1", "side": "far", "tier": "lower", "bands": ["b1"], "inner": [[747, 296], [830, 296]], "outer": [[745, 235], [815, 235]]},
+      {"id": "far_5_b1", "side": "far", "tier": "lower", "bands": ["b1"], "inner": [[855, 296], [1025, 296]], "outer": [[840, 232], [997, 232]]},
+      {"id": "far_6_b1", "side": "far", "tier": "lower", "bands": ["b1"], "inner": [[1040, 296], [1078, 296]], "outer": [[1020, 233], [1107, 235]]},
+      {"id": "far_up_1_b3", "side": "far", "tier": "upper", "bands": ["b3"], "inner": [[470, 158], [610, 158]], "outer": [[470, 72], [612, 72]]},
+      {"id": "far_up_2_b3", "side": "far", "tier": "upper", "bands": ["b3"], "inner": [[640, 158], [790, 158]], "outer": [[640, 72], [795, 72]]},
+      {"id": "far_up_3_b3", "side": "far", "tier": "upper", "bands": ["b3"], "inner": [[825, 158], [965, 158]], "outer": [[830, 72], [965, 72]]},
+      {"id": "left_up_b3", "side": "left", "tier": "upper", "bands": ["b3"], "inner": [[215, 188], [10, 235]], "outer": [[140, 98], [0, 130]]},
+      {"id": "right_up_b3", "side": "right", "tier": "upper", "bands": ["b3"], "inner": [[1225, 188], [1430, 235]], "outer": [[1300, 98], [1440, 130]]}
+    ],
+    "seatDepth": {"b1": 0.72, "b2": 0.85, "b3": 1.0, "b4": 1.0},
+    "benches": {
+      "b1": {"left": [[566, 305], [664, 305], [664, 328], [566, 328]], "right": [[768, 305], [866, 305], [866, 328], [768, 328]]},
+      "b2": {"left": [[566, 305], [664, 305], [664, 328], [566, 328]], "right": [[768, 305], [866, 305], [866, 328], [768, 328]]},
+      "b3": {"left": [[566, 306], [664, 306], [664, 329], [566, 329]], "right": [[768, 306], [866, 306], [866, 329], [768, 329]]},
+      "b4": {"left": [[566, 307], [664, 307], [664, 329], [566, 329]], "right": [[768, 307], [866, 307], [866, 329], [768, 329]]}
+    },
+    "tunnel": {
+      "b1": {"mouthPx": [693, 238, 739, 326], "openingPx": [700, 255, 732, 326], "exitLv": [0.507, -0.03]},
+      "b2": {"mouthPx": [693, 238, 739, 326], "openingPx": [700, 255, 732, 326], "exitLv": [0.507, -0.03]},
+      "b3": {"mouthPx": [693, 239, 739, 327], "openingPx": [700, 257, 732, 327], "exitLv": [0.507, -0.03]},
+      "b4": {"mouthPx": [693, 241, 739, 328], "openingPx": [700, 259, 732, 328], "exitLv": [0.507, -0.03]}
+    }
+  },
+  "crowdTile": {"px": [256, 256], "people": [7, 5], "widthM": 5.6, "sideFaces": "right"},
+  "token": {"px": [256, 256], "pivot": [0.5, 0.88], "discScale": 2.0},
+  "ball": {"px": [256, 256], "pivot": [0.5, 0.809], "diameterFrac": 0.617},
+  "dot": {"widthPx": 29.25, "farScale": 0.62, "pivot": [0.5, 0.55], "carrierPivot": [0.5, 0.47], "carrierWidth": 1.3}
+}
