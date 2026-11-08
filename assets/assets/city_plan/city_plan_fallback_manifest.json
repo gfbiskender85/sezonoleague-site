@@ -1,23 +1,23 @@
 {
-  "planVersion": "2.0.0",
+  "planVersion": "3.0.0",
   "plans": {
     "kasaba": {
       "cityId": "XX:~genel-kasaba",
-      "planHash": "0a273883",
-      "rawBytes": 134708,
-      "gzipBytes": 25513
+      "planHash": "e9763b01",
+      "rawBytes": 148545,
+      "gzipBytes": 29575
     },
     "sehir": {
       "cityId": "XX:~genel-sehir",
-      "planHash": "88d52b12",
-      "rawBytes": 288096,
-      "gzipBytes": 52169
+      "planHash": "2c83e134",
+      "rawBytes": 296223,
+      "gzipBytes": 56981
     },
     "buyuksehir": {
       "cityId": "XX:~genel-buyuksehir",
-      "planHash": "46a81f80",
-      "rawBytes": 642838,
-      "gzipBytes": 106516
+      "planHash": "6597beb6",
+      "rawBytes": 484813,
+      "gzipBytes": 89405
     }
   }
 }
