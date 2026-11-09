@@ -1,0 +1,114 @@
+{
+ "kale": {
+  "w": 237,
+  "h": 560,
+  "barX": 208.0,
+  "barY0": 18,
+  "barY1": 528
+ },
+ "top": {
+  "w": 768,
+  "h": 160,
+  "sh": [
+   [
+    83,
+    37
+   ],
+   [
+    78,
+    34
+   ],
+   [
+    62,
+    26
+   ],
+   [
+    39,
+    15
+   ]
+  ]
+ },
+ "pano": {
+  "w": 1800,
+  "h": 257
+ },
+ "tribun_fan": {
+  "w": 1700,
+  "h": 475
+ },
+ "tribun_koltuk": {
+  "w": 1700,
+  "h": 473
+ },
+ "tunel": {
+  "w": 1000,
+  "h": 359
+ },
+ "kulube": {
+  "w": 1300,
+  "h": 280
+ },
+ "kenar": {
+  "w": 512,
+  "h": 512
+ },
+ "fx": {
+  "grass0": [
+   152,
+   160
+  ],
+  "grass1": [
+   149,
+   160
+  ],
+  "grass2": [
+   155,
+   160
+  ],
+  "grass3": [
+   158,
+   160
+  ],
+  "grass4": [
+   156,
+   160
+  ],
+  "glove0": [
+   124,
+   128
+  ],
+  "glove1": [
+   128,
+   128
+  ],
+  "glove2": [
+   137,
+   128
+  ],
+  "trail0": [
+   93,
+   200
+  ],
+  "trail1": [
+   90,
+   200
+  ],
+  "trail2": [
+   86,
+   200
+  ]
+ },
+ "sponsor": {
+  "names": [
+   "Alazova Enerji",
+   "Yank\u0131ray Telekom",
+   "Ufukkar Hava",
+   "Ekinova G\u0131da",
+   "K\u0131vrak\u00e7a Lojistik",
+   "T\u00f6renay Bankas\u0131",
+   "Sarmal Giyim",
+   "Mevsimay Giyim",
+   "Hamle\u00e7 Spor"
+  ]
+ }
+}
