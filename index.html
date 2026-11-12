@@ -142,7 +142,7 @@
       window.addEventListener('flutter-first-frame', kaldir);
       setTimeout(kaldir, 10000);
       try {
-        fetch('main.dart.js?v=79').then(function (r) {
+        fetch('main.dart.js?v=web20261112').then(function (r) {
           var toplam = parseInt(r.headers.get('content-length') || '0', 10);
           if (!r.body || !r.body.getReader) return;
           var rd = r.body.getReader(), okunan = 0;
@@ -159,6 +159,6 @@
       } catch (e) {}
     })();
   </script>
-  <script src="flutter_bootstrap.js?v=79" async></script>
+  <script src="flutter_bootstrap.js?v=web20261112" async></script>
 </body>
 </html>

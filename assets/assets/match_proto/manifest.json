@@ -3,8 +3,8 @@
  "dosyalar": [
   {
    "ad": "atlas_meta.json",
-   "bayt": 45911,
-   "sha256": "a9d3623c8265fbc0",
+   "bayt": 47222,
+   "sha256": "2d34bc52fbaa2691",
    "grup": "meta"
   },
   {
@@ -320,6 +320,14 @@
    "grup": "figur"
   },
   {
+   "ad": "ev_a_uzgun.webp",
+   "bayt": 17626,
+   "sha256": "fd145674268b855b",
+   "w": 1024,
+   "h": 97,
+   "grup": "figur"
+  },
+  {
    "ad": "ev_duran_top_an_a.webp",
    "bayt": 83738,
    "sha256": "85203b00594d0705",
@@ -469,6 +477,14 @@
    "sha256": "afb54f9fca4b5509",
    "w": 256,
    "h": 256,
+   "grup": "sahne"
+  },
+  {
+   "ad": "fx_konfeti.webp",
+   "bayt": 28042,
+   "sha256": "4034e8c5b2ce4b5a",
+   "w": 1024,
+   "h": 125,
    "grup": "sahne"
   },
   {
@@ -723,8 +739,8 @@
   },
   {
    "ad": "top.webp",
-   "bayt": 28748,
-   "sha256": "b306dfe05dc0068c",
+   "bayt": 34146,
+   "sha256": "d819651f5de93d0f",
    "w": 768,
    "h": 160,
    "grup": "sahne"
@@ -771,7 +787,7 @@
   }
  ],
  "toplam": {
-  "sahne": 3260838,
-  "figur": 2284564
+  "sahne": 3326728,
+  "figur": 2302190
  }
 }
