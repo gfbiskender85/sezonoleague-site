@@ -644,6 +644,142 @@
    "grup": "sahne"
   },
   {
+   "ad": "m_ev_a_faul.webp",
+   "bayt": 30806,
+   "sha256": "2a78ad6a372b93bc",
+   "w": 1024,
+   "h": 590,
+   "grup": "maske"
+  },
+  {
+   "ad": "m_ev_a_hava.webp",
+   "bayt": 9688,
+   "sha256": "cfeaef3ffba730b6",
+   "w": 1024,
+   "h": 504,
+   "grup": "maske"
+  },
+  {
+   "ad": "m_ev_a_kayma.webp",
+   "bayt": 32940,
+   "sha256": "ffffa8a461a350db",
+   "w": 1024,
+   "h": 267,
+   "grup": "maske"
+  },
+  {
+   "ad": "m_ev_a_kurtaris.webp",
+   "bayt": 36240,
+   "sha256": "2159226a0f42c123",
+   "w": 1024,
+   "h": 389,
+   "grup": "maske"
+  },
+  {
+   "ad": "m_ev_a_pas.webp",
+   "bayt": 44294,
+   "sha256": "27642a2b5011ef8c",
+   "w": 1024,
+   "h": 385,
+   "grup": "maske"
+  },
+  {
+   "ad": "m_ev_a_sevinc.webp",
+   "bayt": 48710,
+   "sha256": "c3db1e2d6c744eed",
+   "w": 1024,
+   "h": 358,
+   "grup": "maske"
+  },
+  {
+   "ad": "m_ev_a_surme.webp",
+   "bayt": 35672,
+   "sha256": "3a912c5bd4d2847f",
+   "w": 1024,
+   "h": 248,
+   "grup": "maske"
+  },
+  {
+   "ad": "m_ev_a_sut.webp",
+   "bayt": 37138,
+   "sha256": "bac6f476e9b34184",
+   "w": 1024,
+   "h": 366,
+   "grup": "maske"
+  },
+  {
+   "ad": "m_ev_a_uzgun.webp",
+   "bayt": 7774,
+   "sha256": "bbff425ea45e3615",
+   "w": 1024,
+   "h": 97,
+   "grup": "maske"
+  },
+  {
+   "ad": "m_ev_duran_top_an_a.webp",
+   "bayt": 30034,
+   "sha256": "8e4cb756d51bf260",
+   "w": 1024,
+   "h": 317,
+   "grup": "maske"
+  },
+  {
+   "ad": "m_ev_sinematik_anlar_a.webp",
+   "bayt": 4554,
+   "sha256": "86951442d405ce71",
+   "w": 1024,
+   "h": 186,
+   "grup": "maske"
+  },
+  {
+   "ad": "m_kar_defansif_topuz.webp",
+   "bayt": 27056,
+   "sha256": "59303532fe192438",
+   "w": 448,
+   "h": 768,
+   "grup": "maske"
+  },
+  {
+   "ad": "m_kar_forvet_uzun.webp",
+   "bayt": 29636,
+   "sha256": "2b17fa4eac20372d",
+   "w": 448,
+   "h": 768,
+   "grup": "maske"
+  },
+  {
+   "ad": "m_kar_kaleci_uzun.webp",
+   "bayt": 22736,
+   "sha256": "ab40b5ad7cb48302",
+   "w": 448,
+   "h": 768,
+   "grup": "maske"
+  },
+  {
+   "ad": "m_kar_kanat_kisa_afro.webp",
+   "bayt": 29988,
+   "sha256": "49aa903b50846419",
+   "w": 448,
+   "h": 768,
+   "grup": "maske"
+  },
+  {
+   "ad": "m_kar_ortasaha_uzun_sac.webp",
+   "bayt": 33146,
+   "sha256": "83cd01781c39bfe3",
+   "w": 448,
+   "h": 768,
+   "grup": "maske"
+  },
+  {
+   "ad": "m_kar_stoper_iri_kel.webp",
+   "bayt": 27496,
+   "sha256": "32db937dc6df224b",
+   "w": 448,
+   "h": 768,
+   "grup": "maske"
+  },
+  {
    "ad": "meta.json",
    "bayt": 1133,
    "sha256": "f9ca9f30964c8460",
@@ -787,7 +923,8 @@
   }
  ],
  "toplam": {
-  "sahne": 3326728,
-  "figur": 2302190
+  "sahne": 3294278,
+  "figur": 2302190,
+  "maske": 487908
  }
 }
