@@ -1,0 +1,303 @@
+{
+ "attribution": [
+  {
+   "id": "natural-earth",
+   "license": "Public Domain",
+   "text": "Natural Earth",
+   "url": "https://www.naturalearthdata.com/"
+  },
+  {
+   "id": "geoboundaries",
+   "license": "ODbL 1.0",
+   "text": "geoBoundaries (gbOpen TUR ADM2) \u00a9 OpenStreetMap contributors",
+   "url": "https://www.geoboundaries.org/"
+  },
+  {
+   "id": "osm",
+   "license": "ODbL 1.0",
+   "text": "\u00a9 OpenStreetMap contributors",
+   "url": "https://www.openstreetmap.org/copyright"
+  }
+ ],
+ "bytes": 3395434,
+ "format": "webp",
+ "generator": "1.0.0",
+ "inputs": {
+  "ist_coast.json": "69bb00dd9958faf0bc71557e7b1f7c47f17dfd24ac4e461de76d4b32bd210f16",
+  "ist_roads.json": "ae864130b208a86f1111fbe1956b2d5749b820c10f227bf244cd19a66a3a80e3",
+  "ist_water.json": "71d54a00642f2f5d3994bd5e0709b01699dc8eedf57fe1b3d64c644081abef5e",
+  "ne_10m_admin_0_countries": "7ce119ef6342e43cff7c0c3004e0911ab7ec1988a14734372031d2012180e7bc",
+  "ne_10m_admin_1_states_provinces": "c6f5c8b4b1320d9417033762419c6df1eb423989cd880fba78ea0b1e3522cbe4",
+  "ne_10m_lakes": "11064fa55ed91b56a0d86733643c1a5bfcc137fdf044e83f471978a5b86617e1",
+  "ne_10m_rivers_lake_centerlines": "f9a1cf6d9f58c0a6f182a7f25771a03e0a48026253d4484aab782b2586354d78",
+  "tur_adm2.geojson": "8e7594ab12d916e3b93f920475a300c364dfb94a0e40bfa6d55f43aff0c7fd97"
+ },
+ "labels": false,
+ "name": "sezono-map-v4-tiles",
+ "pathTemplate": "{z}/{x}/{y}.webp",
+ "projection": "EPSG:3857",
+ "quality": 90,
+ "retinaPixelSize": 512,
+ "retinaTemplate": "{z}/{x}/{y}@2x.webp",
+ "schema": 1,
+ "scheme": "xyz",
+ "set": "bundled",
+ "sets": [
+  {
+   "bbox": [
+    -180.0,
+    -85.0511,
+    180.0,
+    85.0511
+   ],
+   "bytes": 593490,
+   "name": "world",
+   "sha256": "0b6c28c6f0d7d00620dae1dcf9fe5e1f715354cde700f500c2b060c20faa2956",
+   "zmax": 4,
+   "zmin": 0,
+   "zooms": [
+    {
+     "bytes": 8206,
+     "retina": false,
+     "sha256": "c8fee1ad2089c064ce82ddb18d046f0a64128892a5725ce5e5307ee9c5492e15",
+     "tiles": 1,
+     "xRange": [
+      0,
+      0
+     ],
+     "yRange": [
+      0,
+      0
+     ],
+     "z": 0
+    },
+    {
+     "bytes": 21634,
+     "retina": false,
+     "sha256": "b7df1c9ca0a9208010af0fa5f34aeca675ff9c1094b833f266c4172fe725e06e",
+     "tiles": 4,
+     "xRange": [
+      0,
+      1
+     ],
+     "yRange": [
+      0,
+      1
+     ],
+     "z": 1
+    },
+    {
+     "bytes": 54980,
+     "retina": false,
+     "sha256": "e3479f4b355ee0d8fa8ea963838ad5ed4c5f1887f65704f348ec74fa4abdac6d",
+     "tiles": 16,
+     "xRange": [
+      0,
+      3
+     ],
+     "yRange": [
+      0,
+      3
+     ],
+     "z": 2
+    },
+    {
+     "bytes": 148008,
+     "retina": false,
+     "sha256": "b9a5c8533ca15a2693a07f5ce665e19c441b0667c51acb5f18d0273e54090ac3",
+     "tiles": 64,
+     "xRange": [
+      0,
+      7
+     ],
+     "yRange": [
+      0,
+      7
+     ],
+     "z": 3
+    },
+    {
+     "bytes": 360662,
+     "retina": false,
+     "sha256": "c3cf0ef670d9a1c95ec0ebf983c1379af6b28e507ef588626211c04b4b3f9104",
+     "tiles": 256,
+     "xRange": [
+      0,
+      15
+     ],
+     "yRange": [
+      0,
+      15
+     ],
+     "z": 4
+    }
+   ]
+  },
+  {
+   "bbox": [
+    -25.0,
+    25.0,
+    65.0,
+    66.0
+   ],
+   "bytes": 1311614,
+   "name": "region",
+   "sha256": "54a495ebf12cef8607459e3b352f392e5a22c846099624b237abe725da99e752",
+   "zmax": 7,
+   "zmin": 5,
+   "zooms": [
+    {
+     "bytes": 130056,
+     "retina": false,
+     "sha256": "b3dad5e144ecd42cfb769c66675d76f291b5c0c0f8587a58b5a3dd851b93cdde",
+     "tiles": 54,
+     "xRange": [
+      13,
+      21
+     ],
+     "yRange": [
+      8,
+      13
+     ],
+     "z": 5
+    },
+    {
+     "bytes": 356072,
+     "retina": false,
+     "sha256": "6fd98aa21203cf63486851562465bb4ee3bfd3f07a3ddcc64ca539c1f12a37de",
+     "tiles": 204,
+     "xRange": [
+      27,
+      43
+     ],
+     "yRange": [
+      16,
+      27
+     ],
+     "z": 6
+    },
+    {
+     "bytes": 825486,
+     "retina": false,
+     "sha256": "52459b04d995f31aac41bc14511c761f8ff33c8f39094d604c38abc0fc426b4c",
+     "tiles": 759,
+     "xRange": [
+      55,
+      87
+     ],
+     "yRange": [
+      32,
+      54
+     ],
+     "z": 7
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.0,
+    30.0,
+    50.0,
+    46.0
+   ],
+   "bytes": 634286,
+   "name": "turkey_ring",
+   "sha256": "add40d54a7c8cd85f7bb9aa200ae6b0fcdb99ee9166f5c304dceffedcc34c488",
+   "zmax": 8,
+   "zmin": 8,
+   "zooms": [
+    {
+     "bytes": 634286,
+     "retina": false,
+     "sha256": "1fce39c691eb99b81a72e0df4af5fcbd66f5782e495e148bb8c127c96636ed09",
+     "tiles": 360,
+     "xRange": [
+      140,
+      163
+     ],
+     "yRange": [
+      91,
+      105
+     ],
+     "z": 8
+    }
+   ]
+  },
+  {
+   "bbox": [
+    25.4,
+    35.5,
+    45.2,
+    42.5
+   ],
+   "bytes": 856044,
+   "name": "turkey",
+   "sha256": "4307eddee6585988efbf9c40f83591e4054ed8ff11c991b799d52b1bb317d7d9",
+   "zmax": 9,
+   "zmin": 9,
+   "zooms": [
+    {
+     "bytes": 856044,
+     "retina": false,
+     "sha256": "1440b55aaa4d619870149cd7b32f5b4205bf37ac6ad8f58d17327f7d343a3830",
+     "tiles": 377,
+     "xRange": [
+      292,
+      320
+     ],
+     "yRange": [
+      189,
+      201
+     ],
+     "z": 9
+    }
+   ]
+  }
+ ],
+ "style": {
+  "sea": [
+   8,
+   24,
+   43
+  ],
+  "tokens": {
+   "ctx": {
+    "h": 206,
+    "l": 19,
+    "lv": 4,
+    "s": 30
+   },
+   "eu": {
+    "h": 208,
+    "l": 17,
+    "lv": 6,
+    "s": 30
+   },
+   "il": {
+    "h": 204,
+    "l": 21,
+    "lv": 6,
+    "s": 36
+   },
+   "ilce": {
+    "h": 203,
+    "l": 24,
+    "lv": 7,
+    "s": 40
+   },
+   "turkey": {
+    "h": 204,
+    "l": 24,
+    "lv": 0,
+    "s": 36
+   },
+   "world": {
+    "h": 208,
+    "l": 15,
+    "lv": 5,
+    "s": 26
+   }
+  }
+ },
+ "tileSize": 256
+}
