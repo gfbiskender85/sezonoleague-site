@@ -742,6 +742,22 @@
    "grup": "sahne"
   },
   {
+   "ad": "knr_isinma.webp",
+   "bayt": 29514,
+   "sha256": "632198d016e4d02f",
+   "w": 256,
+   "h": 384,
+   "grup": "sahne"
+  },
+  {
+   "ad": "knr_td.webp",
+   "bayt": 21796,
+   "sha256": "7260d661d0c46aec",
+   "w": 384,
+   "h": 256,
+   "grup": "sahne"
+  },
+  {
    "ad": "koreo.webp",
    "bayt": 177818,
    "sha256": "ae2c940fbcd92a55",
@@ -1347,7 +1363,7 @@
   }
  ],
  "toplam": {
-  "sahne": 3762902,
+  "sahne": 3814212,
   "figur": 4518936,
   "maske": 856200
  }
