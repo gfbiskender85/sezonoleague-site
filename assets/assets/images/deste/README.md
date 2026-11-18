@@ -12,3 +12,9 @@
   fiyat etiketi), görüşmeler (mühürlü sözleşme + dolma kalem + top), geçmiş (bağcıklı eski deri top + kum saati),
   numaralar (arkadan «10» forma); kıta kupaları üç ayrı siluet (elit: uzun kulplu · süper: kalkan plaket · yükselen: alevli ince kupa).
 - Kapsam bekçisi: `test/deste_sekme_test.dart` → «illüstrasyon kapsamı».
+- 2026-11-16 (G26): 11 Yönetim kartı illüstrasyonu (`yonetim_*`, Yönetim Deste) aynı boruyla eklendi: 384×384 WebP, 16–31 KB/dosya,
+  yaklaşık 260 KB; paket toplamı 33 dosya ≈ 680 KB. Kaynak: Gemini 1024 PNG.
+- 2026-11-17 (tek aile, bayrak `DESTE_TEK_AILE`): `ana_mesajlar.webp` — Ana Sayfa «Mesajlar» iş kartının görseli (mühürlü
+  zarf + mektup), aynı boruyla 384×384 WebP, 17 KB; paket toplamı 34 dosya. Ana Sayfa'nın diğer iş kartları sekmelerdeki
+  modül görselini kullanır (`desteAnaIllus`).
+- 2026-11-17 (G25): Maça Hazırlık V2 — `takim_kulube` (yedek kulübesi) · `takim_konusma` (düdük + pazubandı + megafon) · `takim_kadro_aciklama` (kadro panosu); aynı boru, 384×384 WebP, 26–35 KB/dosya (≈88 KB); paket toplamı 36 dosya (tek aile `ana_mesajlar` ile birlikte 37). Çim: `assets/images/match/mh_cim_yatay.webp` (1440×960).
