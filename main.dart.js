@@ -81954,7 +81954,7 @@ for(;;)switch(s){case 0:p=A.J(a,B.o,t.J)
 p.toString
 q=a.a3(t.q).f
 s=2
-return A.j(A.Ze(new A.Ii("1.0.65 (88)")),$async$aNW)
+return A.j(A.Ze(new A.Ii("1.0.66 (89)")),$async$aNW)
 case 2:q.cz(A.dc(null,null,null,null,null,B.w,null,A.U(p.gadi(),!1,null,null,null,null,null,null),null,B.b0,null,null,null,null,null,null,null,null,null,null))
 return A.A(null,r)}})
 return A.B($async$aNW,r)},
@@ -118316,7 +118316,7 @@ h.toString
 k=a.a3(t.q).f
 n=!1
 p=4
-m=A.uT(null,null,"sezono@mutig.com.tr",null,"subject="+A.ee(2,"Sezono League \u2014 sorun bildirimi (1.0.65 (88), web)",B.b_,!1),null,"mailto")
+m=A.uT(null,null,"sezono@mutig.com.tr",null,"subject="+A.ee(2,"Sezono League \u2014 sorun bildirimi (1.0.66 (89), web)",B.b_,!1),null,"mailto")
 l=null
 s=l!=null?7:9
 break
@@ -275868,7 +275868,7 @@ A.b_e.prototype={
 k(a){return new A.acm(B.cdf,A.cw(a),null)}}
 A.aNV.prototype={
 k(a){var s=null,r=A.J(a,B.o,t.J)
-return new A.zd(r.gyF(),A.a([A.uI(!0,B.bJt,s,r.gth(),new A.bOX(a),!1,!1,s),A.uI(!0,B.aer,s,r.glf(),new A.bOY(a,r),!1,!1,s),A.uI(!0,B.vd,s,r.gkQ(),new A.bOZ(a,r),!1,!1,s),A.uI(!0,B.bJ1,s,r.gade(),new A.bP_(a),!1,!1,s),A.uI(!1,B.ae9,s,r.gadh(),new A.bP0(a),!0,!1,"1.0.65 (88)"),A.uI(!1,B.bJS,s,r.gad4(),new A.bP1(a),!1,!1,s)],t.p),!1,s)}}
+return new A.zd(r.gyF(),A.a([A.uI(!0,B.bJt,s,r.gth(),new A.bOX(a),!1,!1,s),A.uI(!0,B.aer,s,r.glf(),new A.bOY(a,r),!1,!1,s),A.uI(!0,B.vd,s,r.gkQ(),new A.bOZ(a,r),!1,!1,s),A.uI(!0,B.bJ1,s,r.gade(),new A.bP_(a),!1,!1,s),A.uI(!1,B.ae9,s,r.gadh(),new A.bP0(a),!0,!1,"1.0.66 (89)"),A.uI(!1,B.bJS,s,r.gad4(),new A.bP1(a),!1,!1,s)],t.p),!1,s)}}
 A.bOX.prototype={
 $0(){return A.au(this.a).aI("/topluluk/kurallar",null,t.X)},
 $S:0}
@@ -322760,7 +322760,7 @@ s=A.bB(r,!1,t.T)
 return A.uI(!0,B.aeu,B.dGc,a.guY(),new A.dPC(this,s),!1,!1,null)},
 cIx(a){var s=a.gHh(),r=A.a([],t.p)
 r.push(this.bVk(a))
-r.push(A.uI(!0,B.ae9,null,a.gyF(),new A.dPD(this),!0,!1,"1.0.65 (88)"))
+r.push(A.uI(!0,B.ae9,null,a.gyF(),new A.dPD(this),!0,!1,"1.0.66 (89)"))
 return new A.zd(s,r,!1,null)},
 bV_(a,b){var s,r=this,q=null
 if(b){s=t.p
@@ -374270,7 +374270,7 @@ s=6
 break
 case 3:s=2
 break
-case 6:s=m!=null&&m>88?8:10
+case 6:s=m!=null&&m>89?8:10
 break
 case 8:j=B.ZN
 s=9
@@ -374288,7 +374288,7 @@ s=14
 break
 case 11:s=2
 break
-case 14:j=l!=null&&l>88?B.duv:B.ZM
+case 14:j=l!=null&&l>89?B.duv:B.ZM
 case 9:if(n.x||j.a<=n.e.a){s=1
 break}n.e=j
 n.a4()
