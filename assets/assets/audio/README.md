@@ -177,3 +177,10 @@ yalnız düşer. Yeni ses eklemek = dosya + katalog satırı + (varsa) cue.
 Silinen ölü varlıklar (hiçbir cue'ya bağlı değildi): `ui_perde`, `ui_kaydirici`, `ui_bildirim_yedek`, `motif`, `an_seviye`
 (−76 KB). `acilis_v3` kurgusunun YENİDEN üretimi `ui_perde`/`ui_kaydirici`/`motif` m4a'larını kaynak ister — git geçmişinden
 (`git show origin/main~:assets/audio/...` öncesi) alınır; paketteki `acilis*.m4a` zaten bitmiş çıktıdır.
+
+## İmza Gecesi (`imza_gecesi/`, IG-0 2026-11-18)
+
+Kaynak: `~/Downloads/sezono_imza_gecesi/ses/son/` (ElevenLabs, işlenmiş). Anonslarda yalnız yankılı sürüm
+pakettedir (`*_kuru` eşleri girmez). Adlar `SES_SISTEMI_FE.md` kural 21 katmanlarıyla yeniden verildi; kod
+kaydı `ImzaGecesiCue` (`lib/core/ui/sound_service.dart`), eşleme tablosu `docs/rules/IMZA_GECESI_FE.md`
+«Sesler». Açılışta önbelleğe ALINMAZ (yalnız akış başlarken). Toplam ≈ 2.632 KB.
