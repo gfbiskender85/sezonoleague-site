@@ -1,0 +1,155 @@
+{
+ "cell": 96,
+ "pivot": {
+  "x": 0.5,
+  "y": 0.9167
+ },
+ "bodyH": 0.75,
+ "lumRef": 215,
+ "dirs": [
+  "e",
+  "se",
+  "s",
+  "sw",
+  "w",
+  "nw",
+  "n",
+  "ne"
+ ],
+ "sheets": {
+  "kmp_yuruyus": {
+   "file": "kmp_yuruyus.webp",
+   "cols": 6,
+   "rows": 8,
+   "rowDirs": [
+    "e",
+    "se",
+    "s",
+    "sw",
+    "w",
+    "nw",
+    "n",
+    "ne"
+   ],
+   "frames": [
+    "contact",
+    "down",
+    "passing",
+    "contact2",
+    "down2",
+    "passing2"
+   ],
+   "desc": "yurume 6 kare"
+  },
+  "kmp_pas_kontrol_surme": {
+   "file": "kmp_pas_kontrol_surme.webp",
+   "cols": 8,
+   "rows": 8,
+   "rowDirs": [
+    "e",
+    "se",
+    "s",
+    "sw",
+    "w",
+    "nw",
+    "n",
+    "ne"
+   ],
+   "frames": [
+    "surme0",
+    "surme1",
+    "surme2",
+    "surme3",
+    "pas_hazirlik",
+    "pas_vurus",
+    "kontrol",
+    "kontrol_son"
+   ],
+   "desc": "surme(0-3) pas arka(4) vurus(5) kontrol(6) oturdu(7); top YOK"
+  },
+  "kmp_isinma_esneme": {
+   "file": "kmp_isinma_esneme.webp",
+   "cols": 10,
+   "rows": 5,
+   "rowDirs": null,
+   "frames": [
+    "f0",
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7",
+    "f8",
+    "f9"
+   ],
+   "desc": "yonsuz; satirlar: 0 quad esneme, 1 hamle, 2 yuksek diz, 3 jumping jack, 4 govde donusu"
+  },
+  "kmp_kaleci": {
+   "file": "kmp_kaleci.webp",
+   "cols": 8,
+   "rows": 5,
+   "rowDirs": null,
+   "frames": [
+    "f0",
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7"
+   ],
+   "desc": "yonsuz(SE); satirlar: 0 hazir, 1 sol dalis, 2 sag dalis, 3 yuksek top yakalama (top gomulu), 4 top al-at (top gomulu)"
+  },
+  "kmp_antrenor": {
+   "file": "kmp_antrenor.webp",
+   "cols": 8,
+   "rows": 5,
+   "rowDirs": null,
+   "frames": [
+    "f0",
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f7"
+   ],
+   "desc": "yonsuz(SE); satirlar: 0 kollar bagli, 1 duduk, 2 isaret, 3 tahta, 4 yuruyus"
+  }
+ },
+ "kareSecimi": {
+  "kmp_yuruyus": {
+   "ne": [
+    0,
+    1,
+    2,
+    4
+   ],
+   "nw": [
+    0,
+    1,
+    2,
+    4
+   ]
+  },
+  "olculenAci_ne": [
+   90.6,
+   90.8,
+   90.6,
+   89.5,
+   90.2,
+   88.7
+  ]
+ },
+ "yedekSatir": {
+  "kmp_pas_kontrol_surme": {
+   "n": "kmp_yuruyus",
+   "ne": "kmp_yuruyus",
+   "nw": "kmp_yuruyus"
+  }
+ }
+}
