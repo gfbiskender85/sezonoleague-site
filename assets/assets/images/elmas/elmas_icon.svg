@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="tableGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DDF4FF"/>
+      <stop offset="100%" stop-color="#B8E4FF"/>
+    </linearGradient>
+  </defs>
+  <!-- Soft navy contact shadow (#0B1226) under the diamond tip -->
+  <ellipse cx="512" cy="916" rx="220" ry="34" fill="#0B1226" fill-opacity="0.28"/>
+  <!-- Facet 1: Top-left crown facet (brightest icy highlight #DDF4FF) -->
+  <polygon points="272,136 512,112 512,200 328,228 102,348" fill="#DDF4FF"/>
+  <!-- Facet 2: Top-right crown facet (#B8E4FF) -->
+  <polygon points="512,112 752,136 922,348 696,228 512,200" fill="#B8E4FF"/>
+  <!-- Facet 3: Front-left crown facet (#B8E4FF) -->
+  <polygon points="102,348 328,228 364,396 320,444" fill="#B8E4FF"/>
+  <!-- Facet 4: Center table facet (linear gradient #DDF4FF -> #B8E4FF) -->
+  <polygon points="328,228 512,200 696,228 660,396 512,428 364,396" fill="url(#tableGrad)"/>
+  <!-- Facet 5: Front-right crown facet (#8FCBFF) -->
+  <polygon points="696,228 922,348 704,444 660,396" fill="#8FCBFF"/>
+  <!-- Facet 6: Left pavilion facet (#8FCBFF) -->
+  <polygon points="102,348 320,444 364,396 512,912" fill="#8FCBFF"/>
+  <!-- Facet 7: Center pavilion facet (#B8E4FF) -->
+  <polygon points="364,396 512,428 660,396 512,912" fill="#B8E4FF"/>
+  <!-- Facet 8: Right pavilion facet (shaded cool blue #5AA9F5) -->
+  <polygon points="660,396 704,444 922,348 512,912" fill="#5AA9F5"/>
+  <!-- Strong white specular glint on top-left facet -->
+  <polygon points="284,162 476,140 448,184 226,274" fill="#FFFFFF" fill-opacity="0.92"/>
+  <polygon points="366,248 504,226 484,264 382,292" fill="#FFFFFF" fill-opacity="0.65"/>
+</svg>
