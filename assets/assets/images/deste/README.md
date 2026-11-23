@@ -18,3 +18,5 @@
   zarf + mektup), aynı boruyla 384×384 WebP, 17 KB; paket toplamı 34 dosya. Ana Sayfa'nın diğer iş kartları sekmelerdeki
   modül görselini kullanır (`desteAnaIllus`).
 - 2026-11-17 (G25): Maça Hazırlık V2 — `takim_kulube` (yedek kulübesi) · `takim_konusma` (düdük + pazubandı + megafon) · `takim_kadro_aciklama` (kadro panosu); aynı boru, 384×384 WebP, 26–35 KB/dosya (≈88 KB); paket toplamı 36 dosya (tek aile `ana_mesajlar` ile birlikte 37). Çim: `assets/images/match/mh_cim_yatay.webp` (1440×960).
+- 2026-11-22: Yönetim Deste için `yonetim_muze.webp` (müze vitrini + altın kupa/flama/madalya) üretildi ve `yonetim_taraftarlar.webp` (megafon + bayrak + davul + atkı) güncellendi; aynı boru 384×384 RGBA WebP; paket toplamı **38 dosya**.
+- 2026-11-23: Yönetim Deste için `yonetim_forum.webp` (iki 3B konuşma balonu + kalkan rozet + not defteri ve altın dolma kalem) eklendi; aynı boru 384×384 RGBA WebP (24 KB); paket toplamı **39 dosya**.
